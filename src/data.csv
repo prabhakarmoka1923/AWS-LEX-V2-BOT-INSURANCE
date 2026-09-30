@@ -1,0 +1,929 @@
+intent_name,example_question,topic,_answer,suggestions,question_answered,more_suggestions
+FAQSIMP_Generic_Beneficiary Updates or Information,Beneficiary Updates/Information,Account_Maintenance,Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.,"Updating Beneficiaries, Current beneficiaries, Adding Contingent Beneficiaries, Show more options on Beneficiary Updates",,
+FAQSIMP_Generic_Show more options on Beneficiary Updates,Show more options on Beneficiary Updates,Account_Maintenance,"If you're looking for something else, please type in your question.","Trust as a Beneficiary, Adding Children by Representation to a Beneficiary, Beneficiary pre-determined payouts, I'm ready to move on",,
+FAQAccMaintBeneChangeIntent,Beneficiary Change,Account_Maintenance,"There are several options available for you to update your beneficiaries.
+
+You can add, change or remove your beneficiaries online. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. Update your beneficiary details
+
+Or, you can submit a ""Beneficiary and Predetermined Payout Election Form."" To do that:
+
+1. Go to your [Account](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"" 
+3. Select ""Forms"" link above the ""See Additional Product Details"" box. 
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting completed forms"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing
+
+Updates to your existing beneficiaries (e.g., changing their last name, phone/address updates, etc.) can also be done over the phone. 
+
+Customer Service Professionals are available at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET. 
+<hr class=""linebreak"" />Did that answer your question?",,"Adding Contingent Beneficiaries, Beneficiary change request status, Trust as a Beneficiary","Beneficiary pre-determined payouts, Adding Children by Representation to a Beneficiary, Transaction confirmation delivery"
+FAQAccMaintUpdateContactIntent,Update my Contact Information,Account_Maintenance,Sure. Please select an option below.,"Address & Phone # Change, Email Address Change, Add or Delete Correspondence Address, I'm ready to move on",,
+FAQAccMaintUpdateAddressIntent,Update address,Account_Maintenance,"You can change your address, email address and phone number online by accessing [""My Profile""](http://pru.us/ProfileChangeAnnRW). 
+
+Updates are usually made the same day. And when updating your mailing address,  you'll receive a confirmation letter at your old and new address – within seven days. 
+
+By the way, you can now track the pending transactions online! Use the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select the ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,"Add or Delete Correspondence Address, International Address, Unsolicited Address Change",
+FAQAccMaintUpdateEmailIntent,Update Email,Account_Maintenance,"You can update your email address online by accessing your [""My Profile""](http://pru.us/ProfileChangeAnnRW) page.
+<hr class=""linebreak"" />Did that answer your question?",,Address & Phone # Change,
+FAQAccMaintAccountCorrespondenceCopyIntent,How can I request a copy of account correspondence,Account_Maintenance,"You may access account statements, transaction confirmations and other account-related documents [online](https://pru.us/DocCenterAnnRW).
+<hr class=""linebreak"" />Did that answer your question?",,"Statement timing, Income verification letter request, Unwanted Confirmations","Transaction confirmation delivery, Duplicate copy of contract, Power of Attorney (POA) confirmation letter request"
+FAQAccMaintAddCorrespondingAddressIntent,Add correspondence address,Account_Maintenance,"You can provide us with a secondary address where all your mail will be sent. (Note - We'll still use your primary address for tax purposes.) To add, delete, or edit your address, please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Address & Phone # Change,
+FAQAccMaintUpdateTaxWithholdingIntent,I moved to a new state-how do I update my state tax withholding,Account_Maintenance,"In most instances, you can make changes to an automated withdrawal program online. To change something like a tax withholding:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""Recurring Withdrawals""
+
+Or, you can make changes using a form. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Forms"" and find the ""Annuity Automated Withdrawal Form""
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting completed forms"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing
+
+Your request will process the same day if received prior to 4 PM ET on any business day. 
+
+You can also make changes to an automated withdrawal program by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET. 
+<hr class=""linebreak"" />Did that answer your question?",,"Updating existing automated or systematic withdrawal, Updating existing RMD program, Address & Phone # Change",
+FAQAccMaintCanIHaveOverseasAddressesIntent,Can Prudential accommodate overseas addresses,Account_Maintenance,"Prudential does mail to international addresses. To add an overseas address to your contract, please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintUninitiatedAddressChangeIntent,My address was changed but I didn't initiate it,Account_Maintenance,"The U.S. Postal Service (USPS) maintains a National Change of Address (NCOA) database that we cross reference every month to ensure we have your most current address on file. If we find a discrepancy, we update the address on file to match the USPS records. We will also attempt to update your address if we receive returned mail from the USPS.
+
+If your address has changed, you can update it online on your [""My Profile""](http://pru.us/ProfileChangeAnnRW) page.
+<hr class=""linebreak"" />Did that answer your question?",,"Address & Phone # Change, Add or Delete Correspondence Address",
+FAQAccMaintWhatAddressOnFileIntent,What address is currently on file,Account_Maintenance,"Your current address can be viewed on your [""My Profile""](http://pru.us/ProfileChangeAnnRW) page.
+<hr class=""linebreak"" />Did that answer your question?",,"Address & Phone # Change, Add or Delete Correspondence Address",
+FAQAccMaintWhenAddressUpdatedIntent,When was my address last updated,Account_Maintenance,"Address changes, as well as other previous transactions, can be viewed online on the Transaction page. To start:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Transactions"" under ""Quick Actions"".
+4. Look for the event labeled ""Address Change"".
+<hr class=""linebreak"" />Did that answer your question?",,"Address & Phone # Change, Add or Delete Correspondence Address",
+FAQAccMaintIncomeVerificationLetterIntent,Request income verification letter,Account_Maintenance,"After you add an optional income benefit to your policy, you should be able to see an income amount on the most recent quarterly statement. 
+
+You can access account statements, transaction confirmations and other account-related documents [online](https://pru.us/DocCenterAnnRW).
+
+To request an income verification letter specific to your account, call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We're available Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,Duplicate statements and correspondence,
+FAQAccMaintDuplicateCopyOfContractIntent,Request a duplicate copy of contract,Account_Maintenance,"A digital copy of your contract may be available online on our [Documents](https://pru.us/DocCenterAnnRW) page. The documents are organized chronologically, and your contract will be one of the first documents you received. You may also call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintLetterForPOAIntent,Request confirmation letter to show who POA is on account,Account_Maintenance,"Customers can find the Confirmation Letter for when the Power of Attorney was added to their policy [online](https://pru.us/DocCenterAnnRW). 
+
+For a letter that shows your authorized Power of Attorney, please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We're available Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintConfirmationOptionOnlineOrMailIntent,Will I get a confirmation statement about my transaction online or via mail,Account_Maintenance,"If you are enrolled in e-Delivery, your transaction confirmations can be found on our [Documents](https://pru.us/DocCenterAnnRW) page, labeled as ""Confirms."" If you are not enrolled in e-Delivery, you will receive your confirmation in the mail within 10 business days after the transaction processes.
+<hr class=""linebreak"" />Did that answer your question?",,"Enroll in e-Delivery, Unwanted confirmations",
+FAQAccMaintOptForPaperlessIntent,Opt for Paperless Transactions or E-Delivery,Account_Maintenance,"You may sign up for e-Delivery through your online account. To do so: 
+1. Log in to your [Accounts](https://pru.us/ProfileAnnRW).
+2. Click on ""e-Delivery"" to either enroll in or manage your e-Delivery preferences. 
+<hr class=""linebreak"" />Did that answer your question?",,Email address change,
+FAQAccMaintWhenDoYouSendStatementsIntent,When do you sent statements,Account_Maintenance,"For most Prudential annuities, statements are produced quarterly, while a few provide annual statements. Annual statements can either be mailed after your contract anniversary or at the end of each calendar year. Electronic statements can be found online on the [""Documents""](https://pru.us/DocCenterAnnRW) page within a week after being produced.
+<hr class=""linebreak"" />Did that answer your question?",,Duplicate statements and correspondence,
+FAQAccMaintTooManyTransactionConfirmationsInMailIntent,Why do I keep getting transaction confirmations in the mail,Account_Maintenance,"Prudential wants to keep you apprised of any changes to your account, therefore we'll send confirmations for any withdrawals, trades, email change/updates, address changes, fees assessed, beneficiary changes/updates, etc.  Learn more about receiving confirmations <button id=""botGoto"" title=""How do I stop getting regulatory documents in the mail"" aria-label=""electronically"" role=""button"" tabindex=0>electronically.</button>
+<hr class=""linebreak"" />Did that answer your question?",,"Enroll in e-Delivery, Duplicate statements and correspondence",
+FAQAcMaintcWhatIsUpdateDigitalAddressIntent,"I received a note that says I updated my digital address, what does that mean",Account_Maintenance,"We sent a letter to confirm a recent change to your email address or mobile number. If you did not request this change, please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Unwanted Confirmations, Duplicate statements and correspondence",
+FAQAccMaintWasMyBeneChangeProcessedIntent,Was my beneficiary change processed,Account_Maintenance,"Your beneficiary change request will be processed within three business days of receipt, if it's in good order. You'll then be able to view it online the following day by accessing the ""Transactions"" page. To do that:
+
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Look for the event labeled ""Change Beneficiary""
+
+Your beneficiary confirmation is also viewable in the [""Document""](https://pru.us/DocCenterAnnRW) center. Look for the document titled ""Relationship Change"".
+
+By the way, to check on transactions that were made within the last 7 days, use the new, online Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,"Transaction confirmation delivery, Current beneficiaries",
+FAQAccMaintBeneFormRequestIntent,Beneficiary form request,Account_Maintenance,"To change your beneficiaries online:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. Update your beneficiary details
+
+You can also change your beneficiaries by completing the Beneficiary and Predetermined Payout Election Form. To get the form:
+
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"", which is under your values and benefits information.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintWhoAreMyBenesIntent,Who are my beneficiaries,Account_Maintenance,"To view your beneficiaries online:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. View or update your beneficiaries
+
+Your current beneficiaries are also shown on your statements which can be found in your [Document Center](https://pru.us/DocCenterAnnRW).  
+<hr class=""linebreak"" />Did that answer your question?",,Duplicate statements and correspondence,
+FAQAccMaintAddContingentBeneIntent,What if I want to add contingent beneficiaries,Account_Maintenance,"To add or change the primary or contingent beneficiaries online:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. Add or update the primary or contingent  beneficiary details
+
+Prudential also allows you to list one or more contingent beneficiaries on your account by using a <button id=""botGoto"" title=""Beneficiary Change"" aria-label=""Beneficiary and Predetermined Payout Election Form"" role=""button"" tabindex=0>Beneficiary and Predetermined Payout Election Form.</button>
+<hr class=""linebreak"" />Did that answer your question?",,"Changing beneficiaries, Adding Children by Representation to a Beneficiary , Trust as a Beneficiary",
+FAQAccMaintCanIChooseHowBeneGetsPaidIntent,Can I choose how my beneficiary gets paid when I pass away,Account_Maintenance,"You can instruct us how you would like your beneficiaries to be paid by completing the ""Predetermined Payout Section"" on the <button id=""botGoto"" title=""Beneficiary Change"" aria-label=""Beneficiary and Predetermined Payout Election Form"" role=""button"" tabindex=0>Beneficiary and Predetermined Payout Election Form.</button>
+<hr class=""linebreak"" />Did that answer your question?",,"Beneficiary change form request, Changing beneficiaries, Trust as a Beneficiary",
+FAQAccMaintBeneTrustIntent,Can my beneficiary be a trust,Account_Maintenance,"Prudential allows you to list a Trust as your beneficiary on your account. You can do that online and here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. Add or update the trust as your beneficiary
+
+Prudential also allows you to list one or more contingent beneficiaries on your account by using a <button id=""botGoto"" title=""Beneficiary Change"" aria-label=""Beneficiary and Predetermined Payout Election Form"" role=""button"" tabindex=0>Beneficiary and Predetermined Payout Election Form.</button>
+
+For more support, you can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Beneficiary change form request, Changing beneficiaries",
+FAQAccMaintEstateAsBeneIntent,If my account says my beneficiary is my estate what does that mean,Account_Maintenance,"If you haven't designated a beneficiary, then your estate is listed as your beneficiary. But to make a change, you can:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""My Accounts"", select Manage Beneficiaries
+3. Add or update  your beneficiary details
+
+You can also change your beneficiary at any time by completing a <button id=""botGoto"" title=""Beneficiary Change"" aria-label=""Beneficiary and Predetermined Payout Election Form"" role=""button"" tabindex=0>Beneficiary and Predetermined Payout Election Form.</button>
+<hr class=""linebreak"" />Did that answer your question?",,"Beneficiary change form request, Changing beneficiaries",
+FAQAccMaintPerStripesBeneIntent,Can I do per stirpes beneficiaries,Account_Maintenance,"Prudential does not allow ""per stirpes"" designations, but does allow ""children by representation"", which, in the event an elected beneficiary passes away before the account owner, allows for the child or children of the deceased beneficiary to claim the funds originally entitled to have been received by the parent. To elect ""children by representation"" for a particular beneficiary, simply write that designation after their name on the <button id=""botGoto"" title=""Beneficiary Change"" aria-label=""Beneficiary and Predetermined Payout Election Form"" role=""button"" tabindex=0>Beneficiary and Predetermined Payout Election Form.</button>
+<hr class=""linebreak"" />Did that answer your question?",,"Beneficiary change form request, Changing beneficiaries, Trust as a Beneficiary",
+FAQAccMaintBeneAskInfoOnaccountIntent,Can my beneficiaries ask questions on my account,Account_Maintenance,"Beneficiaries do not have any authorizations on your account. If you would like to allow one of your beneficiaries to get account information, you can add them as an interested party which can be done over the phone  by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Adding an Interested Party,
+FAQAccMaintSpouseContinueAfterDeathIntent,Can my spouse continue the account after I pass,Account_Maintenance,"Your spouse may be entitled to exercise spousal continuation of your contract after your death if they are listed as the sole primary beneficiary and married to you at the time of your passing. Under spousal continuation, your spouse will assume the role of owner and annuitant of the policy. If there were any spousal/joint living benefits on your policy at the time of your passing, your spouse will also be entitled to receive any lifetime income guarantees under that benefit.
+<hr class=""linebreak"" />Did that answer your question?",,"Beneficiary account authorizations, Adding an Interested Party",
+FAQAccMaintWhyCustodianAsBeneIntent,Why does it say Edward Jones is my beneficiary,Account_Maintenance,"When your annuity is owned by a custodian (e.g. a financial institution), the custodian is also the beneficiary. This is because the annuity is linked to the brokerage account you have with the custodian. Your true beneficiaries are laid out within your brokerage account with the custodian. Please contact your financial professional to obtain this information.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintSubAccountPerformanceIntent,How have my subaccounts performed,Account_Maintenance,"General subaccount performance can be found on the [""Performance, Prices, and Fact Cards""](https://pru.us/PerfAnnRW) page. Select your product type from the ""Product"" drop down at the top of the page, then locate your existing subaccounts within the list to see how they're performing.
+<hr class=""linebreak"" />Did that answer your question?",,"Account Value, Subaccount Values",
+FAQAccMaintChangeOwnerIntent,Changing the owner on a contract,Account_Maintenance,"Please note that changing the ownership on your account could impact living and death benefits on your contract as well as have tax consequences. Before proceeding, we suggest you reach out to your Financial Professional. You can also speak to a Customer Service Representative to review how an ownership change may impact your account.
+
+You may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice. If you would like to proceed with changing the owner on your account, you'll need to complete an Annuity Change Form.
+
+If you would like to proceed with changing the owner on your account, you'll need to complete the ""Annuity Change Form"". To get the form:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" which is under your values and benefits information.
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting completed forms"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintIntent,How can I add my banking information,Account_Maintenance,"There are certain times you can add a bank account online for Electronic Funds Transfers (EFTs):
+
+• For automatic withdrawals, EFT can be added while setting up the automated withdrawal
+• If an automatic withdrawal is already running, EFT can be added by editing the current program
+• For a one-time withdrawal, EFT can be added at the point of withdrawal
+
+You can also add a bank account for withdrawal purposes by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, Starting an automated or systematic withdrawal, Processing an RMD payment",
+FAQAccMaintUpdateCompromisedAccountIntent,"My bank account was hacked, how do I update it",Account_Maintenance,"If your bank account was compromised, you can update banking info online - for automatic withdrawal programs that are currently running. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""Recurring Withdrawals""
+
+You can also request to change a bank by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintHowLongLivingBenefitWorkIntent,How does my living benefit work,Account_Maintenance,"Each living benefit is unique. Therefore, to address any questions you may have, we recommend contacting your financial professional or our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Living Benefit Value,
+FAQAccMaintAddSomeoneToAccountIntent,How do I add an interested party to my account,Account_Maintenance,"Adding an interested party to your account allows an individual you designate to receive account information, perform account maintenance activities, and provide investment/allocation instructions. You get to select which authorizations they have, and you can revoke them at any time. If you would like to add an interested party, you'll need to complete an Owner Authorization Form. To get the form:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"", which is under your values and benefits information.
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting completed forms"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintViewDocsOnlineIntent,Can I view my documents online on the web,Account_Maintenance,"Prudential tax forms begin mailing out in mid-January. You can access these tax forms online on the [""Documents""](https://pru.us/DocCenterAnnRW) page, or log in to your account and click on the ""Documents"" tab.
+
+Please note that tax forms are not generated for all accounts. 1099-R forms will only be produced for <button id=""botGoto"" title=""Will I receive a 1099-R Form from Prudential for this tax year?"" aria-label=""reportable events"" role=""button"" tabindex=0>reportable events</button>.
+<hr class=""linebreak"" />Did that answer your question?",,"Frequently produced Prudential Annuities Tax forms,
+1099-R Tax form when they are and are not issued,
+1099-R distribution code meaning",
+FAQAccMaintUpdateProfileIntent,Update my Profile,Account_Maintenance,"You can update your account profile by accessing your [""My Profile""](http://pru.us/ProfileChangeAnnRW) page.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQCasualTalkAreYouChatbotIntent,Are you a chatbot,Casual_Talk-Chatbot,"Yes, I am a chatbot designed to assist you with Annuities related information.
+Please select a relevant option below or type in a question.",Initial Suggestions,,
+FAQCasualTalkHelloIntent,Hi,Casual_Talk-Greetings-Hi,"Hello! I'm *Rockwell*, your Prudential Virtual Assistant.
+
+To find out more information about Annuities, please select a relevant option below or type in a question.",Initial Suggestions,,
+FAQCasualTalkDescribeYourselfIntent,Describe yourself,Casual_Talk-Acquaintance,"I'm *Rockwell*, your Prudential Virtual Assistant. ",,,
+FAQCasualTalkHelpIntent,How can you help me,Casual_Talk-Help,"Sure. I can assist you with Annuities related information.
+Please select a relevant option below or type in a question.",Initial Suggestions,,
+FAQCasualTalkByeIntent,Bye,Casual_Talk-Greetings-Bye,Take care! I am here if you need any help.,,,
+FAQCasualTalkLiveAgentIntent,Transfer to a live agent,Casual_Talk-Live Agent,"Unfortunately, I am unable to do that at the moment.
+
+You can visit our [FAQs](https://www.prudential.com/faq) site or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET for your queries.
+
+You can also select below to go to the Main Menu.",Main Menu,,
+FAQCasualTalkComplimentsIntent,You are awesome,Casual_Talk-Compliments,Thank you so much. I am happy to help.,,,
+FAQCasualTalkAckIntent,Got it,Casual_Talk-Acknowledgements,You can also select below to go to the Main Menu.,Main Menu,,
+FAQCasualTalkInsultsIntent,You are horrible,Casual_Talk-Insults,"I'm sorry to hear that. Please let me know if I can assist you in any other way.
+
+You can also select below to go to the Main Menu.",Main Menu,,
+FAQHowDoIFileDeathClaimIntent,How do I file a death claim,Claim,"Please accept our condolences for your loss. Our team of specialists is ready to assist you with the claims process. Please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,How do I file a death claim,
+FAQGeneralSubmitFormIntent,Submitting completed form,General,"Once you complete the form, you can submit it [online](https://pru.us/DocVaultAnnRW). You can also <button id=""botGoto"" title=""Fax Number"" aria-label=""fax"" role=""button"" tabindex=0>fax</button>  or <button id=""botGoto"" title=""Mailing Address"" aria-label=""mail"" role=""button"" tabindex=0>mail</button> it to us.
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, Beneficiary change request status, When was RMD processed",
+FAQGeneralPhoneNumberIntent,What's the phone number,General,"Our Contact Center phone number is <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQGeneralFaxNumberIntent,What's the fax number,General,"The Prudential Annuities fax number is (800) 576-1217.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQGeneralMailingAddressIntent,What's the mailing address,General,"Our annuities regular mailing address is:
+
+Annuities Service Center
+P.O. Box 7960
+Philadelphia, PA 19176
+
+For overnight, certified or registered mail:
+
+Prudential Annuities Service Center
+1600 Malone St
+Millville, NJ 08332
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQRegisterSelfServiceIntent,Registration for Self Service,General,"For secure access to your Prudential policies and accounts, enroll [Online](http://pru.us/RegisterAnnRW). To enroll by phone, please call 1-800-PRU-HELP (778-4357). An Enrollment Specialist is available to assist you Monday through Thursday from 8:00 a.m. to 10:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Enroll in e-Delivery,
+FAQSIMP_Generic_Show more options on Tax Forms,Show more options on Tax Forms,Inquiries_on_TaxForms,"If you're looking for something else, please type in your question.","1099-R distribution codes, 1099-R Tax Forms and when they're not issued, I'm ready to move on",,
+FAQSIMP_Generic_Most frequently produced tax forms,Most Frequently Produced Tax Forms,Inquiries_on_TaxForms,"Choose a topic to find out more about a certain tax form.
+
+If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.","1099-R, 5498, 1099-INT, 1099-B, 1099-DIV, 1042-S, I'm ready to move on",,
+FAQInqTaxFormsBox2bIntent,"Box 2b ""Taxable amount not determined"" checked on 1099-R",Inquiries_on_TaxForms,"For IRA accounts, the previous Form 1099-R instructions stated that payors ""may"" check the Taxable Amount Not Determined box in section 2b. Starting with the 2024 tax year, payors, including Prudential and any third party administrators, are required to check this box for a majority of reportable distributions.
+
+Taxable Amount Not Determined is used on Non-Qualified accounts that were funded with a 1035 exchange where the prior institution did not send us the cost basis.
+
+For Roth IRA accounts we report all distributions as taxable amount not determined.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxForms1099RHighTaxIntent,Why does 1099-R show a high taxable amount,Inquiries_on_TaxForms,"If the taxable amount seems high this contract is most likely a non-qualified annuity that is part of an aggregated group
+Section 72(e) (12) of the Internal Revenue Code requires that all annuities entered into after October 21, 1988 be aggregated and treated as a single deferred annuity contract for the purpose of determining the amount of taxable gain includible in gross income. Aggregation applies to all contracts:
+^Purchased by the same contract owner^ ^From the same insurance company and its affiliates^ ^During the same calendar year^
+
+All non-qualified annuity contracts issued to the same contract owner, by the same insurance company or affiliate, in the same calendar year they are treated as a single contract for tax gain purposes. Aggregated groups are determined by the TIN of the owner.
+
+Aggregation rules do not apply to: Qualified Contracts, Immediate Annuities, contracts subject to 72(u) of the Internal Revenue Code and contracts issued prior to October 21, 1988.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxForms1099RRothConversionIntent,Why I receive 1099-R for roth conversion,Inquiries_on_TaxForms,"An IRA to Roth conversion is generally fully taxable. Taxable amounts are included in income in the year of conversion subject to ordinary income tax. 10% withholding applies unless election out. RMD, if applicable, should be removed before the conversion.
+
+Amounts converted from an eligible IRA to a Roth IRA are required to be included in the customer's taxable income in the year of conversion. Generally, this includes deductible contributions made to the IRA and any earnings on those contributions and the present value of the actuarial benefit if applicable. A Form 1099-R will be issued reflecting the conversion from the traditional to the Roth IRA. The Form 1099-R will reflect a distribution code of either a 2 (under 59 1/2 with an exception) or 7 (over 59 1/2). In addition, a Form 5498 will be generated to reflect the amounts converted to the Roth IRA.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxForms1099DeathClaimIntent,1099-R Tax form for death claim,Inquiries_on_TaxForms,"Death proceeds from an annuity contract are taxable to the extent that there is gain. Under normal circumstances a beneficiary is responsible for the income tax on the death benefit they receive. However, there are exceptions to this general rule as indicated below.
+
+On an annuitant driven contract the death proceeds are payable at the death of the annuitant and are payable to the beneficiary. If the annuitant is the owner, tax reporting is to the beneficiary. If the annuitant and owner are different, tax reporting is to the owner.
+
+On an owner driven contract the proceeds become payable upon death of the owner. For single owned contracts, the proceeds are paid to and reportable to the beneficiary. For Jointly owned contracts, if the surviving owner is not the beneficiary, the surviving owner will receive the tax reporting, however, the beneficiary will receive the proceeds.
+
+On an Entity owned contract the death proceeds are payable at the death of the annuitant and are paid to the beneficiary. The tax reporting is to the owner.
+
+On an annuitant driven account the death proceeds are payable at the death of the annuitant and are payable to the beneficiary. If the annuitant is the owner, tax reporting is to the beneficiary. If the annuitant and owner are different, tax reporting is to the owner.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxForms1099RAddressChangeIntent,1099-R Address Change,Inquiries_on_TaxForms,"We are unable to amend prior year Tax Forms. You may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxFormsWillIReceive1099RIntent,Will I receive a 1099-R Form from Prudential for this tax year,Inquiries_on_TaxForms,"1099-R Forms are issued for:
+^Distributions from IRA, NQ, and 403(b) contracts that result in taxable income.^ ^Distributions from Non Trusteed Pension Plans.^ ^1035 Exchanges, Direct-Rollovers, Recharacterizations and Roth Conversions.^ ^Non-spousal ownership change.^ ^Earnings on contracts subject to 72(u).^ ^TPIA fees from NQ accounts- if certain requirements ** are not met.^
+** Based on an Internal Revenue Service (IRS) Private Letter Ruling (PLR) that was received by Prudential that allows for favorable tax treatment of advisory fees withdrawals from Non-Qualified fee-based annuities, we will be able to suppress tax reporting Non-Qualified Annuities for investment advisory fees if certain requirements are met based on guidelines of the PLR.
+
+The Registered Investment Advisor (RIA) firm must attest to the following:
+^The fees will not exceed an annual rate of 1.5% of the Contract's cash value based on the period in which the fees are related.^ ^The fees coming from the contract are ONLY for investment advice; no other services.^ ^The fees coming from the contract are ONLY for investment advice for the contract the fees are being disbursed from.^
+1099-R forms are not issued for:
+^Distributions from a NQ contract that do not result in taxable income.^ ^Qualified transfers (i.e. IRA to IRA.)^ ^Spousal ownership change.^ ^Distributions from Custodial or Qualified Funding Vehicles (i.e. Trustee Pension Plan, 401(k), Profit Sharing Plan).^ ^TPIA fees from IRA accounts.^
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQSIMP_TaxForms_Distribution codes on 1099-R form,Distribution codes on 1099-R form,Inquiries_on_TaxForms,"The latest 1099-R instructions and distribution code reasons can be found on the [Internal Revenue Service website](https://www.irs.gov/instructions/i1099r).
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxFormsIRARollOverLimitationsIntent,Are there any limitations to the number of IRA rollovers in a 12 month period,Inquiries_on_TaxForms,"Beginning January 1, 2015, you can make only one rollover from an IRA to another (or the same) IRA in any 12-month period, regardless of the number of IRAs you own.
+
+The one IRA rollover limit does not apply to:
+^Direct rollovers from Traditional IRAs to Roth IRAs (conversions)^ ^Trustee to Trustee transfers to another IRA^ ^IRA to Plan direct rollovers^ ^Plan to IRA direct rollovers^ ^Plan to Plan direct rollovers^
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQInqTaxFormsImportTaxSoftwareIntent,What tax forms are available to be imported into TurboTax or H&R Block software,Inquiries_on_TaxForms,"Effective 2025, tax forms can no longer be imported, the information must be entered manually.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMoneyInIRAIntent,IRA contribution,Money_In,"Your account may or may not allow contributions. To find out, please contact your financial professional or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMoneyInAddMoneyIntent,Can I add money to my account,Money_In,"Your account may or may not allow subsequent/additional payments. To find out, please contact your financial professional or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQSIMP_Generic_Moving money within your account,Moving money within your account,Moving_money_within_account_flow,Please select an option below or type in a question.,"Making a trade within your variable annuity, Market Volatility, Prices and Performance, I'm ready to move on",,
+FAQMoneyTradeAnnuityIntent,How do I make a trade in my variable annuity,Moving_money_within_account_flow,"You may request trades in your variable annuity online by [clicking here](https://pru.us/AccountAnnRW) at www.prudential.com. Log in to your account and then:
+
+1. Click on ""My Accounts"".
+2. Click on the ""View Details"" link on the account overview page.
+3. Click on the ""Reallocations"" link from the list on the top of the next page.
+
+The site will bring you into the system where you can request a trade.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMoneyVolatilityIntent,I'm worried about market volatility. What can I do to make sure my assets are safe,Moving_money_within_account_flow,"Market volatility, understandably, can make customers with variable annuities feel uneasy. Please contact your financial professional to discuss your concerns about market volatility and what steps you may be able to take to mitigate or reduce your risk.
+<hr class=""linebreak"" />Did that answer your question?",,Making a trade within your variable annuity,
+FAQOtherMoreHelpIntent,"Yes, I would like more help",Other_Scenarios-MoreHelp,"To find out more information about Annuities, please select a relevant option below or type in a question.",Initial Suggestions,,
+FAQOtherMenuIntent,Menu,Other_Scenarios-Menu,"Below are some helpful Annuities topics. In a few words, you can always type in a question too.",Initial Suggestions,,
+FAQOtherFeedbackIntent,Feedback,Other_Scenarios-Feedback,NA,,,
+QuestionAnswered-Yes,Feedback,Other_Scenarios-Feedback,NA,,,
+FAQOtherOutOfScopeIntent,Retirement plan,Other_Scenarios-OutOfScope,"Unfortunately I am not trained in that area, and can only assist you with annuities-related inquires. However:
+
+For Individual Life Insurance, you can reference our Chatbot on the ""Individual Life Insurance"" tab.
+
+For Group Insurance, you can reference [www.prudential.com/mybenefits](https://pru.us/BenefitsAnnRW) for more information.
+
+For Retirement, you can contact our Retirement Service Center at (800) 621-1089 for assistance, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET. 
+
+Please select a relevant option below or type in a question.",Main Menu,,
+FAQOtherScenariosThanksIntent,Thanks,Other_Scenarios-Feedback,NA,,,Feedback
+FAQOtherScenariosMoveOnIntent,I'm ready to move on,Other_Scenarios-I'm ready to move on,Please select an option below or type in a question.,,,
+FAQOtherScenariosIntent,I can't find what I'm looking for,Other_Scenarios- Can't find,"I am sorry I am unable to assist you. Please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+
+You can also select below to go to the Main Menu.",Main Menu,,
+FAQSIMP_Generic_Values,Values,Values,"Your Account value, along with other account information, can be found on your [Account](https://pru.us/AccountAnnRW) page then select ""View Details"".
+<hr class=""linebreak"" />Did that answer your question?",,"Account Value, Living Benefit Value, Death Benefit Value",
+FAQValuesAccountValueIntent,Account Value,Values,"Your Account value, along with other account information, can be found on your [Account](https://pru.us/AccountAnnRW) page then select ""View Details"".
+<hr class=""linebreak"" />Did that answer your question?",,"Living Benefit Value, Death Benefit Value",
+FAQValuesBenefitValueIntent,Benefit Value,Values,Please select the type of benefit value.,"Living Benefit Value, Death Benefit Value, I'm ready to move on",,
+FAQValuesLivingBenefitValueIntent,Living benefit value,Values,"If you have a living benefit on your account, those values can be found online, along with other account information on your Product Summary page. To access:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Your benefit values are displayed under the ""Income Generation"" section.
+<hr class=""linebreak"" />Did that answer your question?",,"Account Value, Death Benefit Value, Subaccount Values",
+FAQValuesDeathBenefitIntent,Death benefit value,Values,"Your death benefit value can be found online, along with other account information on your Product Summary page. To access:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Your benefit values are displayed under the ""Protection"" section.
+<hr class=""linebreak"" />Did that answer your question?",,"Account Value, Living Benefit Value, Subaccount Values",
+FAQValuesSubAccountIntent,Individual subaccount values,Values,"Subaccounts are the investments you selected within your account that add up to determine your Account value. Depending on your contract type, your subaccounts may be variable, fixed, or based on an index. Please see your contract or prospectus for specifics on how your subaccounts work. To view your subaccount values, [click here](https://pru.us/AccountAnnRW).
+<hr class=""linebreak"" />Did that answer your question?",,"Account Value, Living Benefit Value, Death Benefit Value",
+FAQWithdrawals,Withdrawals,Withdrawals,Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.,"Processing a Partial or Full Withdrawal, Starting an automated or systematic withdrawal, Status, Show more options on Withdrawals",,
+FAQSIMP_Generic_Show more options on Withdrawals,Show more options on Withdrawals,Withdrawals,"If you're looking for something else, please type in your question.","Existing automated or systematic withdrawal program details, Prior Withdrawal Details, Add banking, I'm ready to move on",,
+FAQWhoMayWithdrawFunds,Who may withdraw funds from my annuity account,Withdrawals,"Generally, only you as the account owner may withdraw funds from your annuity. In certain circumstances, you may be able to provide a third party with the right to withdraw funds on your behalf (e.g., a trustee, a person with a power of attorney, etc.) via a <button id=""botGoto"" title=""Adding an Interested Party"" aria-label=""form"" role=""button"" tabindex=0>form.</button>
+
+You can request most types of withdrawals online by logging in to your Prudential account. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Select ""Withdrawal""
+
+Your financial professional may have the ability to process a withdrawal on your behalf, though it is not common.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, Starting an automated or systematic withdrawal, Processing an RMD payment",
+FAQWillPruWithholdTaxes,Will Prudential withhold income taxes from my withdrawal,Withdrawals,"Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.
+
+If you elect to not have income taxes withheld, you may incur penalties under the estimated tax rules if your withholding and estimated tax payments are not sufficient. There is a minimum 10% federal income tax withholding required on the taxable portion of non-periodic payments, and we will report transactions to you and the Internal Revenue Service (IRS) if required under tax law.
+
+You may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, Starting an automated or systematic withdrawal, Processing an RMD payment","How long to receive money, Cash surrender charge- What is it and when do they apply, Partial or Full Withdrawal - Impact to benefits"
+FAQWhatIsCashSurrenderCharge,What is a cash surrender charge,Withdrawals,"A contingent deferred sales charge is a contractual fee that's applied to the amount you'd receive after you make a partial or full withdrawal. The withdrawal from your annuity account has to take place during the ""surrender period."" By the way, a ""surrender period"" is a set period of time - after either the contract is issued or when funds are received, depending on the product.
+
+Generally speaking, a contingent deferred sales charge:
+
+1. May apply if you surrender the annuity contract before a pre-determined date. Oftentimes, the contingent deferred sales charge decreases, the longer you own the annuity. 
+
+2. May be based on how much time has passed since you added money to your annuity account. 
+
+To get your cash surrender value, go to [this page](https://pru.us/AccountAnnRW).  Otherwise, you may log onto www.prudential.com to view your contract and current values – including potential contingent deferred sales charges that would apply to withdrawals. 
+
+Just note that based on the type of account you have, you may be able to withdraw up to a pre-determined amount without incurring a contingent deferred sales charge (the ""charge-free"" amount). 
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, Partial or Full Withdrawal - Impact to benefits, Fees when closing account","Prior Withdrawal Details, Tax Withholding"
+FAQAboutRMDIntent,What is a Required Minimum Distribution,Withdrawals,"Your RMD is the amount the IRS requires you to withdraw from your retirement account when you reach the applicable age. 
+
+Depending on the year you were born, that age is anywhere between 70½ and 75 years. This required withdrawal makes sure money saved in these accounts is eventually taxed by the IRS. 
+
+Once you reach the applicable age, the IRS requires that you take an RMD payment for that year – and every year going forward.
+
+Every January, we’ll communicate the RMD amount for your Prudential annuity contract. And this amount will only be for your Prudential contract. 
+
+You can request an RMD withdrawal online by logging in to your Prudential account. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""Required Minimum Distribution""
+
+Just so you know, RMDs are generally required for most retirement accounts like 403(b) accounts and traditional, SEP, and SIMPLE IRA accounts. RMDs also apply for accounts from other financial institutions.
+
+In the case that you don’t take an RMD, you may have to pay a 25% excise tax on amounts not distributed as required (this may be reduced to 10% if corrected in a timely manner). This excise tax would be in addition to any ordinary income taxes you may owe.
+
+Click [here](https://www.prudential.com/links/faq#Annuities) for more information and Frequently Asked Questions about RMDs.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing an RMD payment, Updating existing RMD program, RMD amount","Will Prudential automatically send RMD, When does RMD need to be satisfied, Satisfying your RMD"
+FAQProcessingPartialWithdrawalIntent,Processing of a partial withdrawal,Withdrawals,"In most cases, you can request partial and full withdrawals online. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Select ""Withdrawal""
+
+Withdrawals process the same business day. So, you should receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within 10 business days if you elected check.
+
+You can also now track the status of your withdrawal transactions online! Use the new Annuity Status Tracker for recent or even pending transactions. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+For assistance, you can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, How long to receive money, Processing an RMD payment",
+FAQDIFFSLOT_ProcessingPartialWithdrawalIntent,Processing of a partial withdrawal,Withdrawals,"In most cases, you can request partial and full withdrawals online. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Select ""Withdrawal""
+
+Withdrawals process the same business day. So, you should receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within 10 business days if you elected check.
+
+You can also now track the status of your withdrawal transactions online! Use the new Annuity Status Tracker for recent or even pending transactions. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+For assistance, you can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, How long to receive money, Processing an RMD payment",
+FAQStopReissueCheckIntent,Stopping and reissuing a check,Withdrawals,"Sorry that you have not yet received your money. To request a stop and re-issue of your check, please wait 10 business days from the date the original check was sent, then call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQCancelWithdrawalIntent,Cancel withdrawal,Withdrawals,"If you would like to cancel a pending withdrawal request, you must do so prior to 4:00 p.m. ET on the day the withdrawal is set to process. Please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQWasMyPartialWithdrawalProcessedIntent,Was my partial withdrawal processed,Withdrawals,"Use the new, online Annuity Status Tracker to check on withdrawal updates or other transactions! Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+By the way, the date listed is the day the withdrawal processed. Your money leaves the following business day. 
+
+So, it can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or 10 business days if you elected check.
+<hr class=""linebreak"" />Did that answer your question?",,"How long to receive money, Prior Withdrawal Details, Check Stop or Re-Issue",
+FAQDIFFSLOT_WasMyPartialWithdrawalProcessedIntent,Was my partial withdrawal processed,Withdrawals,"Use the new, online Annuity Status Tracker to check on withdrawal updates or other transactions! Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+By the way, the date listed is the day the withdrawal processed. Your money leaves the following business day. 
+
+So, it can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or 10 business days if you elected check.
+<hr class=""linebreak"" />Did that answer your question?",,"How long to receive money, Prior Withdrawal Details, Check Stop or Re-Issue",
+FAQHowMuchMoneyWasSentIntent,How much money was sent,Withdrawals,"Withdrawal details, including pending transactions, can be tracked online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+By the way, the date listed is the day the withdrawal processed. Your money leaves the following business day. 
+
+So, it can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or 10 business days if you elected check.
+<hr class=""linebreak"" />Did that answer your question?",,"How long to receive money, Check Stop or Re-Issue, Existing automated or systematic withdrawal program details",
+FAQDIFFSLOT_HowMuchMoneyWasSentIntent,How much money was sent,Withdrawals,"Withdrawal details, including pending transactions, can be tracked online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+By the way, the date listed is the day the withdrawal processed. Your money leaves the following business day. 
+
+So, it can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or 10 business days if you elected check.
+<hr class=""linebreak"" />Did that answer your question?",,"How long to receive money, Check Stop or Re-Issue, Existing automated or systematic withdrawal program details",
+FAQWithdrawalRequestFormIntent,Request form for withdrawal,Withdrawals,"You can request withdrawals online by logging in to your Prudential account in most instances. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Withdrawal"" under ""Quick Actions"".
+4. Select ""One-Time Withdrawal"".
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, How long to receive money, Transaction confirmation delivery","Partial or Full Withdrawal - Impact to benefits, Non-lifetime Withdrawals, Fees when closing account"
+FAQWhenWillMoneyArriveIntent,When will my money arrive,Withdrawals,"After a withdrawal has processed, it generally takes up to three business days to receive your funds electronically. For a paper check, you'll generally receive it within 10 business days.
+
+You can now track these pending transactions online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date requested to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, Prior Withdrawal Details, Check Stop or Re-Issue",
+FAQDIFFSLOT_WhenWillMoneyArriveIntent,When will my money arrive,Withdrawals,"After a withdrawal has processed, it generally takes up to three business days to receive your funds electronically. For a paper check, you'll generally receive it within 10 business days.
+
+You can now track these pending transactions online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date requested to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,"Partial or Full Withdrawal status, Prior Withdrawal Details, Check Stop or Re-Issue",
+FAQWithdrawalImpactBenefitsIntent,Will a withdrawal impact my benefits,Withdrawals,"Each contract and benefit is unique and withdrawals will impact your values, so it's important to review how your withdrawal will impact your contract with your Financial Professional or a customer service professional. You can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Taking more or less than living benefit guarantees, Processing a Partial or Full Withdrawal",
+FAQWhatIsLifetimeWithdrawalIntent,What is a lifetime withdrawal,Withdrawals,"Please contact your financial professional for a complete explanation of a Lifetime Withdrawal and how it differs from a Non-Lifetime Withdrawal. You can also call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQDIFFSLOT_WhatIsLifetimeWithdrawalIntent,What is a lifetime withdrawal,Withdrawals,"Please contact your financial professional for a complete explanation of a Lifetime Withdrawal and how it differs from a Non-Lifetime Withdrawal. You can also call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQWhatIsMaximumWithhold,What is the maximum I can withhold,Withdrawals,"There is no maximum withholding amount imposed by the Internal Revenue Service (IRS). You can also elect to withhold 100% of the taxable amount of your withdrawal. 
+
+For any tax questions, you may want to consult with a tax advisor. Because each situation is unique, neither we nor our customer service representatives can provide tax advice.
+
+That said, if you want to make a withdrawal online, you can: 
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""One-Time Withdrawal""                                  
+<hr class=""linebreak"" />Did that answer your question?",,Processing a Partial or Full Withdrawal,
+FAQWireFundsIntent,Can I have funds wired to access them immediately,Withdrawals,"The fastest way to have funds sent directly to your bank is Electronic Funds Transfer (EFT), which can take up to three business days. 
+
+If you need your funds sooner, you can request to have them wired to your bank. But there might be an associated charge. 
+
+You can also request most types of withdrawals online. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""One-Time Withdrawal""
+
+For more help, call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, How long to receive money",
+FAQFeesClosingAccountIntent,Are there any fees associated with closing the account,Withdrawals,"There may be fees and contingent deferred sales charges associated with terminating your contract. 
+
+To view your cash surrender value, go to your [Accounts](https://pru.us/AccountAnnRW) page and select ""View Details"". This value will include any associated fees.
+
+If you'd like, you can request a withdrawal like this online. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""One-Time Withdrawal""
+<hr class=""linebreak"" />Did that answer your question?",,"Processing a Partial or Full Withdrawal, Online availability of account after closing, Reinstatement of closed account",
+FAQAccessClosedAccountIntent,"After I close my account, can I see any details online",Withdrawals,"Unfortunately, once your account has been terminated, you can no longer access it online.
+<hr class=""linebreak"" />Did that answer your question?",,Reinstatement of closed account,
+FAQReopenClosedAccountIntent,I closed my account. Can I reopen account,Withdrawals,"Unfortunately, once your account has been terminated, it cannot be reinstated.
+<hr class=""linebreak"" />Did that answer your question?",,Online availability of account after closing,
+FAQSetupSystematicWithdrawalIntent,Setting up a systematic withdrawal,Withdrawals,"You can request automated withdrawals online in most instances by logging in to your Prudential account. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Withdrawal"" under ""Quick Actions"".
+4. Select ""Recurring Withdrawals"".
+
+If you would like to process your automated withdrawal via a form:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms""  and find the ""Annuity Automated Withdrawal Form"".
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+
+Once you complete the form, you can submit it electronically through our secure [DocVault](https://pru.us/DocVaultAnnRW) system. Your request will process the same day if received prior to 4 p.m. ET on any business day.
+<hr class=""linebreak"" />Did that answer your question?",,"Automated or systematic withdrawal payment frequency options, Updating existing automated or systematic withdrawal, When to expect to receive my systematic/automated withdrawal payment","Canceling an automated or systematic withdrawal, Transaction confirmation delivery"
+FAQCancelSystematicWithdrawalIntent,Canceling a systematic withdrawal,Withdrawals,"You can request to stop your automated withdrawals online in most instances. To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""Recurring Withdrawals""
+
+Or, you can also call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,Updating existing automated or systematic withdrawal,
+FAQUpdateSystematicWithdrawalIntent,Update existing systematic withdrawal,Withdrawals,"You can make changes to the automated withdrawal program online in most instances. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Withdrawal"" under ""Quick Actions"".
+4. Select ""Recurring Withdrawals"".
+
+You can also make changes to the automated withdrawal program by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET or by completing a form. If you would like to make changes via a form:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Annuity Automated Withdrawal Form"".
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+
+Your request will process the same day if received prior to 4 p.m. ET on any business day. 
+<hr class=""linebreak"" />Did that answer your question?",,When to expect to receive my systematic/automated withdrawal payment,
+FAQWhenRMDGetIntent,When will I get my funds each month,Withdrawals,"We'll process your automated withdrawal on the date you provided on the Annuity Automated Withdrawal Form. 
+
+Your money will be sent the following business day and can take up to three business days for you to receive. If your scheduled withdrawal date falls on a weekend or holiday, your withdrawal will process the next business day.  
+
+By the way, you can now track pending transactions online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Look for events labeled ""Withdrawal"" in the ""Transaction Pending"" section at the top                   
+<hr class=""linebreak"" />Did that answer your question?",,"Updating existing automated or systematic withdrawal, Updating existing RMD program",
+FAQRMDMoreOrLessGuaranteeIntent,Can I take out more or less than the living benefit guarantee,Withdrawals,"You are permitted to withdraw an amount greater or less than your Living Benefit Guarantee amount, but doing so could impact future guarantees and result in charges. For full details, please contact your financial professional or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Partial or Full Withdrawal - Impact to benefits,
+FAQOptionsRegularRMDIntent,What options do I have to take money out each month or quarter or semi-annually or year,Withdrawals,"You can schedule automated withdrawals for a day of your choosing (1st - 28th) on a monthly, quarterly, semi-annual, or annual basis. 
+
+Your money will debit the following business day, and can take up to three business days for us to receive. If your scheduled withdrawal date falls on a weekend or holiday, your withdrawal will process the next business day.  
+
+Note that some products may have initial waiting periods before income withdrawals can begin. 
+
+It's recommended that you speak with your Financial Professional if you're interested in starting withdrawals. For more support, our Contact Center is available at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"Starting an automated or systematic withdrawal, Processing an RMD payment",
+FAQHowMuchMySystematicRMDWithdrawalIntent,How much is my systematic withdrawal processing for,Withdrawals,"You can view withdrawals that have processed through your automated withdrawal program online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,"Updating existing automated or systematic withdrawal, Canceling an automated or systematic withdrawal",
+FAQProcessingRMDIntent,Processing an RMD payment,Withdrawals,"You can satisfy your Required Minimum Distribution (RMD) each year as a <button id=""botGoto"" title=""Processing a Partial or Full Withdrawal"" aria-label=""one-time withdrawal"" role=""button"" tabindex=0>one-time withdrawal</button>, or you can establish an <button id=""botGoto"" title=""RMD form request"" aria-label=""automated program"" role=""button"" tabindex=0>automated program</button> where your RMD is taken out as a series of withdrawals. We suggest you talk to your financial professional to understand which option is best for you.
+<hr class=""linebreak"" />Did that answer your question?",,"Required Minimum Distribution (RMD) overview, Updating existing RMD program, RMD form request","RMD amount, Transaction confirmation delivery, When does RMD need to be satisfied"
+FAQChangesToRMDIntent,Update existing RMD program,Withdrawals,"You can make changes to your Required Minimum Distribution (RMD) program by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.  You can also make by changes by completing a form available on the website:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Annuity Automated Withdrawal Form"".
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+
+Your request will process the same day if we receive it in good order prior to 4 p.m. ET on any business day.
+<hr class=""linebreak"" />Did that answer your question?",,When to expect to receive my systematic/automated withdrawal payment,
+FAQRMDFormRequestIntent,RMD Form request,Withdrawals,"To set up automated Required Minimum Distribution (RMD) withdrawals on your account:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Annuity Automated Withdrawal Form"".
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+
+Your request will process the same day if we receive it in good order prior to 4 p.m. ET on any business day.
+<hr class=""linebreak"" />Did that answer your question?",,When to expect to receive my systematic/automated withdrawal payment,
+FAQRMDInAYearIntent,What is my RMD in a given year,Withdrawals,"Beginning in the year you reach the applicable RMD age, you'll receive an annual letter that provides the Required Minimum Distribution (RMD) amount on your account. 
+
+You can access this letter online by logging in to your account, clicking on [""Documents""](https://pru.us/DocCenterAnnRW), and locating the ""Annual Tax Letter"".
+
+Just so you know, here are the current IRS RMD Rules:
+
+<table><style> table,th,td {border:1px solid black;border-collapse: collapse;}</style><tr><th>If you were born...</th><th>Applicable RMD age</th></tr><tr><td>Before July 1, 1949</td><td style=""text-align: center;"">70.5</td></tr><tr><td>After June 30, 1949 and before 1951</td><td style=""text-align: center;"">72</td></tr><tr><td>After 1950 and before 1960</td><td style=""text-align: center;"">73</td></tr><tr><td>After 1960</td><td style=""text-align: center;"">75</td></tr></table>
+<hr class=""linebreak"" />Did that answer your question?",,"Processing an RMD payment, Will Prudential automatically send RMD, When does RMD need to be satisfied",
+FAQDIFFSLOT_RMDInAYearIntent,What is my RMD in a given year,Withdrawals,"Beginning in the year you reach the applicable RMD age, you'll receive an annual letter that provides the Required Minimum Distribution (RMD) amount on your account. 
+
+You can access this letter online by logging in to your account, clicking on [""Documents""](https://pru.us/DocCenterAnnRW), and locating the ""Annual Tax Letter"".
+
+Just so you know, here are the current IRS RMD Rules:
+
+<table><style> table,th,td {border:1px solid black;border-collapse: collapse;}</style><tr><th>If you were born...</th><th>Applicable RMD age</th></tr><tr><td>Before July 1, 1949</td><td style=""text-align: center;"">70.5</td></tr><tr><td>After June 30, 1949 and before 1951</td><td style=""text-align: center;"">72</td></tr><tr><td>After 1950 and before 1960</td><td style=""text-align: center;"">73</td></tr><tr><td>After 1960</td><td style=""text-align: center;"">75</td></tr></table>
+<hr class=""linebreak"" />Did that answer your question?",,"Processing an RMD payment, Will Prudential automatically send RMD, When does RMD need to be satisfied",
+FAQWillPruAutomaticallySendRMDIntent,Does Prudential automatically send me my RMD?,Withdrawals,"Prudential will only send Required Minimum Distributions (RMDs) automatically if there is an automated RMD withdrawal program established on your policy.  If you had established an automated RMD program, you would have received a confirmation that can viewed in your [Document Center](https://pru.us/DocCenterAnnRW) on the website.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing an RMD payment, RMD amount, Satisfying your RMD",
+FAQHowTakeRMDWithoutMessingBenefitIntent,How do I take RMD without messing up my benefit,Withdrawals,"Each contract and benefit is unique and withdrawals will impact your values, so it's important to review how your withdrawal will impact your contract with your Financial Professional or a customer service professional. You can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Processing an RMD payment,
+FAQDoINeedToTakeRMDFromThisAccount,Do I have to take the RMD from this account specifically,Withdrawals,"The Internal Revenue Service (IRS) does permit you to satisfy your Required Minimum Distributions (RMDs) by taking withdrawals from any of your Individual Retirement Accounts (IRAs). However, as RMD requirements are aggregated, all RMDs from each of your IRAs must be satisfied.
+
+You may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.
+<hr class=""linebreak"" />Did that answer your question?",,"Waiving out of RMD, Processing an RMD payment",
+FAQHowWaiveRMDIntent,How do I waive out of RMD on my account,Withdrawals,"If you wish to satisfy your Required Minimum Distribution (RMD) by withdrawing from another IRA or qualified account, please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAnnualRMDLetterIntent,Annual RMD letter questions,Withdrawals,"You have received a Required Minimum Distribution (RMD) letter because you own one or more Prudential IRA annuities and are of the age that you must begin taking withdrawals annually. For more information about RMDs, please refer to the FAQ on your RMD letter or speak with your financial professional or tax advisor.
+<hr class=""linebreak"" />Did that answer your question?",,"Processing an RMD payment, Will Prudential automatically send RMD, When does RMD need to be satisfied","RMD impact to benefits, Waiving out of RMD"
+FAQWhenWasMyRMDProcessed,When was my RMD processed,Withdrawals,"To see an RMD transaction that was made within the last 7 days, use the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+But, if your RMD was processed over 7 days ago, access the details online as follows.
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Under ""Quick Actions"", select ""Transactions""
+3. Scroll down to Transaction History
+4. Match the ""Transaction Type"" with the date the request was made to confirm the status.
+
+You can also call our Contact Center for more help at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,"How long to receive money, How much money was sent, Check Stop or Re-Issue",
+FAQSIMP_Generic_Transaction Status,Transaction Status,Withdrawals,Please select an option below or type in a question.,"Partial or Full Withdrawal status, How long to receive money, Beneficiary change request status, Show more options on Transaction Status",,
+FAQSIMP_Generic_Show more options on Transaction Status,Show more options on Transaction Status,Withdrawals,"If you're looking for something else, please type in your question.","When was RMD processed, I'm ready to move on",,
+FAQSIMP_Generic_Account Maintenance,Account Maintenance,Account Maintenance,Please select an option below or type in a question.,"Beneficiary Change, Update my Contact Information, Duplicate statements and correspondence, I'm ready to move on",,
+FAQSIMP_Generic_tax forms,Tax form,Inquiries_on_TaxForms,"Prudential tax forms begin mailing out in mid-January. If you'd like to request another copy, I can help you - right here in this chat.
+
+Or you can choose a different tax topic. In a few words, you can always type something too.","Request tax forms in the mail (using this chat), Log in and download tax forms online , Frequently produced Prudential Annuities Tax forms, Show more options on Tax Forms",,
+FAQSIMP_TaxForms_1099,1099,Inquiries_on_TaxForms,"Choose a topic to find out more about a certain tax form.
+
+If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.","1099-R, 1099-INT, 1099-B, 1099-DIV, I'm ready to move on",,
+FAQSIMP_TaxForms_1099-R,1099-R,Inquiries_on_TaxForms,"Here's a definition of what a 1099-R form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />1099-R - IRS Form reporting distributions from Pensions, Annuities, Retirement or Profit Sharing, Plans, IRAs, and Insurance contracts. This form is mailed to contract owners by January 31st.
+
+You will receive a 1099-R if a reportable tax event from a Pension, Annuity, Retirement/Profit Sharing Plan, IRA or Insurance Contract occurred.
+<hr class=""linebreak"" />Did that answer your question?",,"1099-R box 2b checked, 1099-R high taxable amount compared to cost basis, Tax - IRA to Roth IRA conversion","Death claim Taxability, Tax Form - Prior Year Updates"
+FAQSIMP_TaxForms_5498,5498,Inquiries_on_TaxForms,"Here's a definition of what a 5498 form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />The 5498 tax form can generally be found online as part of your Fourth Quarter Statement, unless any changes are made to your contract that require an update and/or you make an attributed contribution between January 1 and the tax return filing deadline (not including extensions). You may access account statements, transaction confirmations and other account-related documents [online](https://pru.us/DocCenterAnnRW).
+<hr class=""linebreak"" />Did that answer your question?",,Frequently produced Prudential Annuities Tax forms,
+FAQSIMP_TaxForms_1099-INT,1099-INT,Inquiries_on_TaxForms,"Here's a definition of what a 1099-INT form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />1099-INT - Reports Interest income i.e. delayed claim interest and delayed legal interest mainly. There is a Contractual interest $10 threshold and a Non-Contractual $600 threshold. This form is mailed to contract owners by January 31st.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQSIMP_TaxForms_1099-B,1099-B,Inquiries_on_TaxForms,"Here's a definition of what a 1099-B form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />1099-B - reports the proceeds resulting from the sale redemption or liquidation of shares of mutual funds.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQSIMP_TaxForms_1099-DIV,1099-DIV,Inquiries_on_TaxForms,"Here's a definition of what a 1099-DIV form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />1099-DIV - reports distributions such as dividends, capital gain distributions, or nontaxable distributions that were paid on stock (including mutual funds).
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQSIMP_TaxForms_1042-S,1042-S,Inquiries_on_TaxForms,"Here's a definition of what a 1042-S form is. If you'd like, I can also help you <button id=""botGoto"" title=""Get your tax forms"" aria-label=""form"" role=""button"" tabindex=0>get your tax forms</button> from last year.
+<hr class=""linebreak"" />1042-S - reports US taxable income and the corresponding withholding relating to the income received by nonresident aliens (NRAs). This includes Interest accumulated in this account. Distributions to a Foreign Entity are also reported on this form in accordance with FATCA.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMoneyInWereFundsReceivedIntent,Did you receive additional money to be added to contract,Money_In,"You can view 1035 Exchanges, Transfers, Rollovers, and contributions  online the day after they're applied to your contract by accessing the ""Transactions"" page. To do so:
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Transactions"" under ""Quick Actions"".
+4. Select ""Investment"".
+<hr class=""linebreak"" />Did that answer your question?",,"Adding Money to Account, Subsequent payments",
+FAQMoneyInIRSContrLimitsIntent,What are the IRS contribution limits,Money_In,"IRS [contribution limits](https://pru.us/IRSAnnRW) can be found on the IRS website.
+
+Please note that your account may or may not allow contributions. To find out, please contact your financial professional or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintSubaccountsInvestInIntent,What subaccounts can I invest in,Account_Maintenance,"To review your investment/subaccount options, please contact your financial professional or call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Subaccount Performance,
+FAQAccMaintOwnershipChangeProcessedIntent,Was my change of ownership processed,Account_Maintenance,"Your ownership change request will be processed within three business days of receipt, if it's in good order. You'll then be able to confirm it online the next day by accessing the ""Transactions"" page. To do that:
+
+1. Go to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""View Details""
+3. Select ""Transactions"" under ""Quick Actions""
+4. Look for the event labeled ""Contract Authorization Maintenance""
+
+Your ownership change confirmation is also viewable in the [""Document""](https://pru.us/DocCenterAnnRW) center. Look for the ""Ownership Change"" document.
+
+You can track these pending transactions online using the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+<hr class=""linebreak"" />Did that answer your question?",,Ownership Change,
+FAQAccMaintContractFeesChargesIntent,What are the fees and Charges on my contract,Account_Maintenance,"Please see your contract for a breakdown of fees and charges. If you have additional questions, please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintAddBankInTrustNameIntent,Add bank account in the name of a trust,Account_Maintenance,"You can add a bank account that's listed in the name of a trust, provided that the owner is listed as a trustee on the check. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Electronic Funds Transfer"" form.
+4. Complete the form, then submit it <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing. 
+
+We will process your request the same day if we receive it in good order on a business day prior to 4:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Add banking,
+FAQAccMaintMultipleAccountsIntent,Can I have multiple bank accounts on file,Account_Maintenance,"You can add multiple bank accounts or update your current bank to a new one (if you have an automatic withdrawal program already running). To do that:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details""
+3. Select ""Withdrawal"" under ""Quick Actions""
+4. Select ""Recurring Withdrawals""
+
+You can also use a form to add a bank account. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Electronic Funds Transfer"" form.
+4. Complete the form, then submit it <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing. 
+
+We will process your request the same day if we receive it in good order on a business day prior to 4 PM ET.
+
+If you'd like to add a bank account by phone, call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,Add banking,
+FAQAccMaintSendFundsJointAccIntent,Can I send funds to a joint account,Account_Maintenance,"You can add a joint bank account to your account for withdrawal purposes, provided you are the owner of the bank account. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""View Details"".
+3. Select ""Forms"" and find the ""Electronic Funds Transfer"" form.
+4. Complete the form, then submit it <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+
+We will process your request the same day if we receive it in good order on a business day prior to 4:00 p.m. ET.
+
+You can also add a bank account by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Add banking,
+FAQAccMainWasFormProcessedIntent,Was form processed,Account_Maintenance,"To see if your recent request was processed, use the new, online Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+Or to get the confirmation letter:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""Documents""
+3. Select ""Letter"" under ""Quick Actions""
+4. Look for events matching your request
+<hr class=""linebreak"" />Did that answer your question?",,Add banking,
+FAQAccMaintCanPOAWithdrawMoneyIntent,Can my POA withdraw money from my account,Account_Maintenance,"Your Power of Attorney (POA) may or may not be allowed to withdrawal funds on your account. To find out, please contact your financial professional or call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,Withdrawal Authorizations,
+FAQAccMaintWhatPOADoIntent,What can my POA do with my policy on my behalf,Account_Maintenance,"To verify if there is a Power of Attorney (POA) on your account and confirm which authorizations they have, please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintAddPOAIntent,How do I add a POA to my contract,Account_Maintenance,"You may add a Power of Attorney to your account. To do that, you'll need to send us appropriate Power of Attorney documentation by either <button id=""botGoto"" title=""What's the fax number"" aria-label=""fax"" role=""button"" tabindex=0>fax</button> or <button id=""botGoto"" title=""What's the mailing address"" aria-label=""mail"" role=""button"" tabindex=0>mail</button>.
+<hr class=""linebreak"" />Did that answer your question?",,Adding an Interested Party,
+FAQAccMaintPOAStatusIntent,What is the status of my POA,Account_Maintenance,"To check the status of your Power of Attorney (POA) paperwork online, use the new Annuity Status Tracker. Here's how:
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. From My Accounts Select ""View Details""
+3. Click the ""Take me there"" link from the ""New Feature"" pop-up or Select ""Transactions"" tab
+4. View ""Pending Transactions"" top of page
+5. Match the ""Transaction Type"" with the date the request was made to confirm the status
+
+Or to get the confirmation letter for a Power of Attorney (POA) that was added: 
+
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page
+2. Select ""Documents""
+3. Select ""Letter"" under ""Quick Actions""
+4. Look for events matching your request
+
+For further assistance, call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We're available Monday through Friday from 8 AM to 6 PM ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMaturityWhenContractMatureIntent,When will my contract mature,Maturity,"You can view your maturity/annuitization date online. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW) page.
+2. Select ""Account Details"".
+3. Look for ""Annuitization Date"".
+
+If you have additional questions you can call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQMaturityWhatContractMaturesIntent,What happens when my contract matures,Maturity,"We will send you a maturity package 90 days prior to the maturity date on your account. It will describe all options available upon maturity. You can view the package online on the [""Documents""](https://pru.us/DocCenterAnnRW) page the day after it is sent.
+
+If you have additional questions you can call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQComplaintsFormalComplaintIntent,How do I make a formal complaint,Complaints,"One of our Customer Service Professionals can answer your questions and assist with any account-related transactions. Please call <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+
+If you have a specific grievance or dissatisfaction with a Prudential product, service, or associate,  please tell us about it using this [form](https://pru.us/ComplaintAnnRW).
+<hr class=""linebreak"" />Did that answer your question?",,Phone Number,
+FAQPruHelpLoginViewAccountIntent,How do I log in to view my account?,PruHelp,"To log in to your account: 
+
+1. Go to www.prudential.com and select ""Log In"" at the upper right
+2. Click ""Personal log in""
+2. Enter your User ID (which you chose during the registration process) and your password
+3. If you don't have a password or forgot it, [click here](https://pru.us/PassResetAnnRW)
+<hr class=""linebreak"" />Did that answer your question?",,"Phone Number, Forgot Password, Contact PruHelp",
+FAQPruHelpForgotPasswordIntent,Forgot Password,PruHelp,"You can reset your password by using the [Forgot your password](https://pru.us/PassResetAnnRW) link on the [Login](https://pru.us/LoginAnnRW) screen.
+<hr class=""linebreak"" />Did that answer your question?",,"View Account Online, Contact PruHelp",
+FAQPruHelpContactIntent,Contact PruHelp,PruHelp,"I'm sorry you're experiencing technical problems. Please call 800-PRU-HELP (778-4357) for assistance. Our support specialists are available Mon.-Fri., 8 a.m.-10 p.m. All times are Eastern Time.
+<hr class=""linebreak"" />Did that answer your question?",,"View Account Online, Forgot Password",
+FAQMaturityAnnutizationPaymentOptionsIntent,"If I were to annuitize my annuity, what would my payment be",Maturity,"To review the annuitization options associated with your annuity, please contact your financial professional or call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQNewBusinessTransferFormIntent,Does the Annuity Transfer form need to be a wet signature,New Business,"The Annuity Transfer form does require a wet signature. Please mail it back using our <button id=""botGoto"" title=""What's the mailing address"" aria-label=""mailing address"" role=""button"" tabindex=0>mailing address</button>. If you have any additional questions please contact your financial professional or call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 am to 6:00 pm ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQNewBusinessContractDeliveryReceiptIntent,How do I acknowledge delivery of my contract?,New Business,"In most cases you can confirm delivery of your contract online. To do so:
+1. Log in to your [Account](https://pru.us/AccountAnnRW) page. If you don't have an account, you can <button id=""botGoto"" title=""How to register for online access"" aria-label=""register"" role=""button"" tabindex=0>register</button> for one here.
+2. On the welcome page, select ""Acknowledge Delivery of Contract"".
+
+You can <button id=""botGoto"" title=""What's the fax number"" aria-label=""fax"" role=""button"" tabindex=0>fax</button> the Contract Delivery Receipt to us or confirm delivery by calling our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+
+*Louisiana and South Dakota require a wet signature on the Contract Delivery Receipt.
+<hr class=""linebreak"" />Did that answer your question?
+",,,
+FAQAccMaintFundAnnualRptIntent,Looking for the fund annual report,Account Maintenance,"The Annual Fund Report can be found on the [""Investment Options""](https://pru.us/InvestAnnRW) page. Select the Annual Shareholder Report under each subaccount. 
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintUpdateNameMarriageIntent,How do I update my name due to marriage,Account Maintenance,"To update your legal name, we will require you to complete a form and provide supporting legal documentation, such as a marriage license, divorce decree, drivers license, etc. To obtain the form: 
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW).
+2. Select ""View Details"".
+3. Select ""Forms,"" then click on  ""Annuity Change Form"".
+4. Once complete, submit the <button id=""botGoto"" title=""Submitting a form"" aria-label=""form"" role=""button"" tabindex=0>form</button> for processing.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQPruHelpQuickActionsIntent,"where is the ""Quick Actions"" button",PruHelp,"After successfully logging in, the Quick Actions feature can be found in the middle of the [Annuity](https://pru.us/AnnuitiesRW) page.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQPruHelpLinkInsuAccountIntent,"How do I link my Life Insurance and Annuity Account, I have a log in for life insurance, but my annuity doesn't show up there.",PruHelp,"You can view your life insurance and annuity details under the same account. To do so:
+1. Log into to your [Account](https://pru.us/AccountAnnRW).
+2. Click on ""My Accounts"".
+3. Locate the banner "" Have Another Account? Get Your Big Picture"" and click to ""Link Accounts"".
+4. Log into the other account using your login credentials.
+5. Click on ""Link Account"".
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQPruHelpContractNumberIntent,Where can I find my contract number,PruHelp,"You can find your contract number on your My Accounts page. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW).
+2. Click on the last 4 digits of your account number; the full account will appear.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQPruHelpRetrieveUserIDIntent,Retrieve User ID,PruHelp,"You can retrieve your user name by clicking on [Forgot your password](https://pru.us/PassResetAnnRW) on the [Login](https://pru.us/LoginAnnRW) screen.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQPruHelpPolicyNameIntent,Access policy name,PruHelp,"You can find your product name on your My Accounts page. To do so:
+1. Log in to your [Accounts](https://pru.us/AccountAnnRW).
+2. The product name will be listed in bold on the top left.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQGeneralLocateProspectusIntent,Where can I find a prospectus,General,"The prospectus can be found by [clicking here](https://pru.us/ProspectusAnnRW). Select either the desired product or subaccount prospectus from the list.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQTaxFormsTwoFormsIntent,Why am I getting 2 tax forms when I changed my address,Inquiries_on_TaxForms,"If you made an update to your permanent residential address or tax domicile, you may receive two forms for that tax year. You may wish to consult with your tax advisor if you have any tax specific questions. Because each situation is unique, neither we nor our representatives can provide tax advice.
+If you still have questions please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQWithdrawalsTransferAccountIntent,How do I transfer my account to another account,Withdrawals,"One of our customer service representatives will be glad to assist you over the phone. Please call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,"
+
+Processing a Partial or Full Withdrawal",
+FAQWithdrawalsTakeMoneyDivorceIntent,How do I withdrawal my money due to a divorce,Withdrawals,"To process a withdrawal on your account due to a divorce, you must complete and submit a form. To obtain the form:
+1. Log in to  your [Accounts](https://pru.us/AccountAnnRW).
+2. Select ""View Details"".
+3. Select ""Forms""  then click on ""Notification of Divorce and Division "".
+
+Once you complete the form, you can submit it electronically through our secure [DocVault](https://pru.us/DocVaultAnnRW) system. Your request will process the same day if received in good order prior to 4 p.m. ET on any business day.
+<hr class=""linebreak"" />Did that answer your question?",,Processing a Partial or Full Withdrawal,
+FAQNewBusinessOpenContractIntent,I want to start an annuity and need more information,New Business,"To open an annuity, please contact your financial professional. If you do not have a financial professional, you can find one close by [online](https://pru.us/AgentAnnRW) or call our Annuities Service Center at <a href='tel:8887782888'>(888) 778-2888</a> for assistance. We are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQTaxFormsW8BENIntent,Where do I find the W-8 BEN form?,Tax Forms,"You can access a W-8BEN form on the [IRS website](https://www.irs.gov). This will also include instructions on completing the form. Once you complete the form, you can submit it electronically through our secure [DocVault](https://pru.us/DocVaultAnnRW) system. Your request will process within three days.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQFeesSubaccountFeesIntent,How do I find out what the fees are that are being charged in each subaccount,Fees and Charges,"You can find general subaccount fees on the [""Performance, Prices, and Fact Cards""](https://pru.us/PerfAnnRW) page. Select your product type from the ""Product"" drop down at the top of the page, then select ""Fact Card"" and locate your existing subaccounts within the list to see a breakdown of the fees.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintFPChangeIntent,How do I change my financial professional,Account Maintenance,"To change the financial professional that services your contract, please call the broker dealer on your account or our Customer Service Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.
+<hr class=""linebreak"" />Did that answer your question?",,,
+FAQAccMaintFindFPIntent,How do I find a financial professional,Account Maintenance,"Click here to find a [financial professional](https://pru.us/AgentAnnRW) in your area.
+<hr class=""linebreak"" />Did that answer your question?
+",,,
+FAQGeneralHoldTimeIntent,Hold Time,General,"I'm sorry you've experienced an extended hold. We strive to answer all of our callers' questions promptly. Please ask your question here and I will assist you.
+<hr class=""linebreak"" />Did that answer your question?",,,

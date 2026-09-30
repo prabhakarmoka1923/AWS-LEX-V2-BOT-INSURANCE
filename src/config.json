@@ -1,0 +1,111 @@
+{
+  "self_service_options": [
+    {
+      "type":"hyperlink",
+      "text": "Register for an Online Account",
+      "value": "http://pru.us/RegisterAnnRW"
+    }
+  ],
+  "self_service_suggestions":[
+    "Yes, it answered my question",
+    "No, I'm still unclear",
+    "Show me a different topic<br> (go back to Main Menu)"
+  ],
+  "show_more_options":[
+    "Duplicate statements and correspondence",
+    "Values",
+    "Beneficiary Updates/Information",
+    "Update my contact information"
+  ],
+  "welcome_suggestions":[
+    "Get your Tax Forms",
+    "Withdrawals",
+    "Required Minimum Distribution (RMD)",
+    "Show more options"
+  ],
+  "initial_suggestions":[
+    "Get your Tax Forms",
+    "Withdrawals",
+    "Required Minimum Distribution (RMD)",
+    "Show more options"
+  ],
+  "show_more_info_suggestions":[
+    "Yes, it answered my question",
+    "No, I'm still unclear",
+    "I want more information on this topic",
+    "Show me a different topic<br> (go back to Main Menu)"
+  ],
+  "params": {
+    "kendra_ans_1": "x-amz-lex:kendra-search-response-question_answer-answer-1"
+  },
+  "sagemaker_endpoint":{
+    "confidence_threshold": 0.4
+  },
+  "rating_messages": {
+    "3": "I see there is room for improvement. I will work to be better next time.\n\nWe at Prudential always want to better serve you.\n\nCould you please let us know how we can improve?",
+    "gt_3": "I'm glad that you had a positive experience.\n\nWe at Prudential always want to better serve you.\n\nCould you please let us know how we can improve?",
+    "lt_3": "I'm sorry you had a negative experience. I'm still learning everyday.\n\nWe at Prudential always want to better serve you.\n\nCould you please let us know how we can improve?"
+  },
+  "show_success_suggestions":[
+    "Yes, I'm done",
+    "No, it didn't",
+    "Request tax forms for another contract by mail",
+    "Show me a different topic<br> (go back to Main Menu)"
+  ],
+  "show_failure_suggestions":[
+    "Request tax forms for another contract by mail",
+    "Log in and download tax forms online",
+    "Show me a different topic<br> (go back to Main Menu)",
+    "I don't have any other questions"
+  ],
+  "main_menu":[
+    "Main Menu"
+  ],
+  "main_menu_different_topic":[
+    "Show me a different topic<br> (go back to Main Menu)"
+  ],
+  "messages": {
+    "welcome": "Hi! I'm *Rockwell*, your Prudential Virtual Assistant.\n\nFor more on Annuities, please choose a topic. Or in a few words, you can type a question too.<hr class='linebreak' />_By using this chatbot, you agree to Prudential's policies on the use of your data to further improve the experience. See our [Privacy Center](https://pru.us/PrivacyAnnRW) for more information._",
+    "menu_options": "If you have more questions, you can return to the Main Menu.",
+    "alternative_options": "If you're looking for something else, please type in your question.",
+    "please_rate_experience_msg": "That's great. I'm happy to help!\n\nCould you please rate your experience out of 5 stars? We would really appreciate it.",
+    "please_rate_experience": "Please rate your experience by simply hovering over the number of stars you would like to select and click to submit.",
+    "your_feedback_is_valued":  "Thank you. We always strive to improve.",
+    "your_feedback_is_valued_desc": "Thank you for your feedback. We truly value your thoughts.",
+    "register_digital_service": "<hr class='linebreak' />If you still have not registered you're missing out on 24/7 digital service.",
+    "your_feedback_is_valued_self_help":"If you are registered, you can sign up for E-delivery or update your online account by visiting your [Profile Page](https://pru.us/ProfileAnnRW).\n\nDid you know you can <button id=\"botGoto\" title=\"Processing a Partial or Full Withdrawal\" aria-label=\"process your withdrawals\" role=\"button\" tabindex=0>process your withdrawals</button> online too?",
+    "contact_us":"Please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Thursday from 8:00 AM to 6:00 PM ET, and Friday from 8:00 AM to 5:00 PM ET.",
+    "please_give_feedback":"I'm sorry about that. I'm trying to learn every day to better assist you.\n\nCould you please provide comments below on how I can improve?",
+    "cust_not_found": "I'm sorry. I don't recognize you in our system.\n\nYou can also access tax forms online on the [Documents](https://pru.us/DocCenterAnnRW) page, or log in to your account and click on the 'Documents' tab.\n\nFor further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr class='linebreak' />Please choose an option below to continue. Or you can type in a question too.",
+    "second_fallback": "Apologies. I'm unable to find your tax forms right now. You can also access tax forms online on the [\"Documents\"](https://pru.us/DocCenterAnnRW) page, or log in to your account and click on the \"Documents\" tab.\n\nFor further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr class='linebreak' />Please choose an option below to continue. You can always type a question too.",
+    "all_taxform_success": "Success! The following tax forms will be sent to your mailing address on file within 5 business days:\n\n{}\nI'm glad I was able to help. Thank you.<hr class='linebreak' />Did that complete your request?",
+    "some_taxform_success_failed": "Success! The following tax forms will be sent to your mailing address on file within 5 business days:\n\n{}\nI'm having a technical issue right now and can't mail you these forms:\n\n{}\nFor further assistance, you can also call our contact center at \n<a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n\nI'm glad I was able to help you today. Thank you.<hr class='linebreak' />Did that complete your request?",
+    "all_taxform_failed": "Sorry. I'm having a technical issue right now and can't mail you these forms:\n\n{}\nFor further assistance, you can also call our contact center at \n<a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n\nI'm here to help if you need something else. Thank you.<hr class='linebreak' />Did that complete your request?",
+    "form_mailed_lst": "• {} ({})\n",
+    "api_failure": "I'm having technical issues right now. I'm sorry about that.\n\nYou can also access tax forms online on the [Documents](https://pru.us/DocCenterAnnRW) page, or log in to your account and click on the 'Documents' tab.\n\nFor further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n\nIf you have other Annuity questions, you can go back to the Main Menu.",
+    "no_tax_form": "It seems like you don't have any available Prudential tax forms. Please note, there are many instances when a tax form is not <button id='botGoto' title='1099R and when they are not issued' aria-label='produced' role='button' tabindex=0>produced</button>.\n\nFor further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n<hr class='linebreak' />Please choose an option below to continue. Or you can type in a question too.",
+    "show_more_options": "Please select a relevant option below or type in a question.",
+    "technical_issue": "I'm having technical issues right now. I'm sorry about that.\n\nYou can also access tax forms online on the [Documents](https://pru.us/DocCenterAnnRW) page, or log in to your account and click on the 'Documents' tab.\n\nFor further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n\nIf you have other Annuity questions, you can go back to the Main Menu.",
+    "no_suggestions_to_show": "There don't seem to be any more options to show you right now. If you'd like, you can return to the Main Menu or type in another question.\n\nFor further assistance, you can call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.",
+    "fallback_timeout_special_case": "Too much time has passed since your last response. To continue please choose an option below or in a few words, type in a question.",
+    "unsupported_intent": "I'm having technical issues right now. I'm sorry about that.\n\nFor further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.\n\nIf you have other Annuity questions, you can go back to the Main Menu."
+  },
+  "prompts_for_retries": [
+    "I'm sorry. I didn't quite get that. Could you try rephrasing your question?\n\nI work best with descriptive phrases like \"partial withdrawal\", \"change my beneficiaries\" etc.",
+    "I'm sorry. I didn't quite get that. I work best with shorter requests like \"partial withdrawal\", \"change my beneficiaries\" etc.\n\nCould you try rephrasing your question? Or call our Contact Center at\n<a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.",
+    "Unfortunately, I can't help you with that at the moment.\n\nYou can visit our [FAQs](https://www.prudential.com/faq) site or call our Contact Center, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET at\n<a href='tel:8887782888'>(888) 778-2888</a> for your queries.\n\nYou can also select below to go to the Main Menu.",
+    "I think this is what you were looking for, if not please rephrase your question or <button id='botGoto' title='Whats the phone number' aria-label='call us' role='button' tabindex=0>call us</button>.\n\nI work best with shorter requests, like \"partial withdrawal\", \"change my beneficiaries\" etc."
+  ],
+  "contract_number_prompts":[
+    "All of your Prudential tax forms will be mailed to you within 5 business days.\n\nTo begin, *enter your full contract number* with all the letters and numbers (like E0123456).<hr class='linebreak' />• _If you need to find your contract number, log in to your [Account](https://pru.us/AccountAnnRW). Then, click on the last 4 digits of your account number and the full account will show._\n\n• _To view your mailing address, go to [My Profile](https://pru.us/ProfileAnnRW) from your online account. Any updates should be made before you request your tax forms._",
+    "I'm sorry. I don't recognize what you just put in. Please *enter your full contract number*.<hr class='linebreak' />Make sure to include all leading zeroes and letters, without any spaces in between (for example, 000123456, E0123456 or F1234567)."
+  ],
+  "dob_prompts":[
+    "You're almost there! Now, enter your date of birth in *mm/dd/yyyy* format.\n\nMake sure to use slashes with no spaces in between (for example, 02/15/1953).",
+    "I'm sorry. I don't recognize what you just put in. Please enter your date of birth in *mm/dd/yyyy* format.\n\nMake sure to use slashes, with no spaces in between (for example, 02/15/1953)."
+  ],
+  "ssn_prompts":[
+    "This is the last step!\n\nPlease enter the *last 4 digits* of your Social Security Number and your tax forms should be on the way.",
+    "I'm sorry. I don't recognize what you just put in. Please enter the *last 4 digits* of your Social Security Number."
+  ]
+}
