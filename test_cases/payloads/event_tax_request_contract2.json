@@ -1,0 +1,231 @@
+{
+    "request":{
+    "requestAttributes": {
+        "x_pru_env": "Custom"
+    },
+    "sessionId": "446b636d-6af0-4b06-8841-43bd983f6429",
+    "inputTranscript": "E1234",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {
+                    "dob": null,
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234",
+                            "resolvedValues": [
+                                "e1234"
+                            ],
+                            "interpretedValue": "e1234"
+                        }
+                    },
+                    "ssn": null
+                },
+                "confirmationState": "None",
+                "name": "ProcessCustDupTaxFormIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {
+                    "HowSlot": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234",
+                            "resolvedValues": [],
+                            "interpretedValue": "E1234"
+                        }
+                    },
+                    "RMD_topic_slot": null,
+                    "IRASlot": null,
+                    "TakeSlot": null,
+                    "accountSlot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQDoINeedToTakeRMDFromThisAccount",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.32
+        },
+        {
+            "intent": {
+                "slots": {
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "PronounSlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234",
+                            "resolvedValues": [],
+                            "interpretedValue": "E1234"
+                        }
+                    },
+                    "QuestionWhySlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.31
+        },
+        {
+            "intent": {
+                "slots": {
+                    "POASlotType": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234",
+                            "resolvedValues": [],
+                            "interpretedValue": "E1234"
+                        }
+                    },
+                    "NeedSlot": null,
+                    "MailSlot": null,
+                    "ReturnSlot": null,
+                    "PronounSlot": null,
+                    "HowSlot": null,
+                    "SendSlot": null,
+                    "WhereSlot": null,
+                    "CitySlot": null,
+                    "PersonSlot": null,
+                    "FormSlot": null,
+                    "W8BENSlotType": null,
+                    "OnlineSlot": null,
+                    "WhatSlot": null,
+                    "CompanyNameSlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQGeneralSubmitFormIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.25
+        },
+        {
+            "intent": {
+                "slots": {
+                    "NeedSlot": null,
+                    "EmailSlot": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234",
+                            "resolvedValues": [],
+                            "interpretedValue": "E1234"
+                        }
+                    }
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintUpdateEmailIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.25
+        }
+    ],
+    "proposedNextState": {
+        "intent": {
+            "slots": {
+                "dob": null,
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1234",
+                        "resolvedValues": [
+                            "e1234"
+                        ],
+                        "interpretedValue": "e1234"
+                    }
+                },
+                "ssn": null
+            },
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "state": "InProgress"
+        },
+        "dialogAction": {
+            "slotToElicit": "dob",
+            "type": "ElicitSlot"
+        },
+        "prompt": {
+            "attempt": "Initial"
+        }
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "FAQSIMP_Generic_tax forms",
+            "cn_prompt_counter": 2
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {
+                "dob": null,
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1234",
+                        "resolvedValues": [
+                            "e1234"
+                        ],
+                        "interpretedValue": "e1234"
+                    }
+                },
+                "ssn": null
+            },
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "state": "InProgress"
+        },
+        "originatingRequestId": "6023a38a-af7c-4ee9-85e2-b6ee76588111"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "ProcessCustDupTaxFormIntent"
+            },
+            "transcription": "E1234",
+            "resolvedSlots": {
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1234",
+                        "resolvedValues": [
+                            "e1234"
+                        ]
+                    }
+                }
+            },
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "71",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    }
+},
+"response":[{"contentType": "PlainText", "content": "Apologies. I'm unable to find your tax forms right now. You can also access tax forms online on the <a href=\"https://pru.us/DocCenterAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"\"Documents\"\" tabindex=0>\"Documents\"</a> page, or log in to your account and click on the \"Documents\" tab.<br><br>For further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Please choose an option below to continue. You can always type a question too."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"}]
+}

@@ -1,0 +1,115 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "sessionId": "1f0af2c9-8335-4f0d-a685-5075fb3be7c9",
+        "inputTranscript": "how can you help me",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "name": "FAQCasualTalkHelpIntent",
+                    "slots": {},
+                    "state": "ReadyForFulfillment",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "MoreSuggestions",
+                    "slots": {},
+                    "state": "ReadyForFulfillment",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.74,
+                "intent": {
+                    "name": "FAQOtherMenuIntent",
+                    "slots": {},
+                    "state": "ReadyForFulfillment",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.74,
+                "intent": {
+                    "name": "FAQAccMaintWhoAreMyBenesIntent",
+                    "slots": {
+                        "WhoSlotType": null,
+                        "BeneficiariesChangeSlotType": null
+                    },
+                    "state": "ReadyForFulfillment",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.74,
+                "intent": {
+                    "name": "FAQAccMaintFindFPIntent",
+                    "slots": {
+                        "PersonSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "SpeakSlot": null,
+                        "AgentSlotType": null,
+                        "CompanyNameSlotType": null,
+                        "NeedToSlot": null
+                    },
+                    "state": "ReadyForFulfillment",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA",
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "7faf540c-ebd9-4392-85fa-5f23f4e4713c",
+            "sessionAttributes": {
+                "Utterance_History": "Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "WelcomeIntent"
+            },
+            "activeContexts": [
+                {
+                    "name": "more_suggestions",
+                    "contextAttributes": {},
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 84,
+                        "turnsToLive": 4
+                    }
+                }
+            ],
+            "intent": {
+                "name": "FAQCasualTalkHelpIntent",
+                "slots": {},
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "FulfillmentCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "FAQCasualTalkHelpIntent"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1.0,
+                "transcription": "how can you help me"
+            }
+        ]
+    },
+    "response": [{"contentType": "PlainText", "content": "Sure. I can assist you with Annuities related information.<br>Please select a relevant option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Get your Tax Forms\", \"Withdrawals\", \"Required Minimum Distribution (RMD)\", \"Show more options\"]}}"}]
+}

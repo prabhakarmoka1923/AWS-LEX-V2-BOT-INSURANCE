@@ -1,0 +1,236 @@
+{
+    "request":
+{
+    "sessionId": "83453094-bc75-4798-83f7-e84320276216",
+    "inputTranscript": "121",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 1.0,
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "10/10/1993",
+                            "resolvedValues": [
+                                "1993-10-10"
+                            ],
+                            "interpretedValue": "1993-10-10"
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "abcd12345",
+                            "resolvedValues": [
+                                "abcd12345"
+                            ],
+                            "interpretedValue": "abcd12345"
+                        }
+                    },
+                    "ssn": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "121",
+                            "resolvedValues": []
+                        }
+                    }
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "intent": {
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.79,
+            "intent": {
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.79,
+            "intent": {
+                "name": "FAQAccMaintBeneTrustIntent",
+                "slots": {
+                    "AnnuitySlotType": null,
+                    "BeneficiariesChangeSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.78,
+            "intent": {
+                "name": "FAQSIMP_TaxForms_Intent",
+                "slots": {
+                    "CopySlot": null,
+                    "WhereSlot": null,
+                    "whatSlot": null,
+                    "FormSlot": null,
+                    "report": null,
+                    "howSlot": null,
+                    "taxForm_topic_slot": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        }
+    ],
+    "bot": {
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA",
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "proposedNextState": {
+        "prompt": {
+            "attempt": "Retry2"
+        },
+        "intent": {
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "10/10/1993",
+                        "resolvedValues": [
+                            "1993-10-10"
+                        ],
+                        "interpretedValue": "1993-10-10"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "abcd12345",
+                        "resolvedValues": [
+                            "abcd12345"
+                        ],
+                        "interpretedValue": "abcd12345"
+                    }
+                },
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        },
+        "dialogAction": {
+            "type": "ElicitSlot",
+            "slotToElicit": "ssn"
+        }
+    },
+    "sessionState": {
+        "originatingRequestId": "c8ea0ef7-b138-45e6-b906-91d24367ad92",
+        "sessionAttributes": {
+            "dob_prompt_counter": "1",
+            "Utterance_History": "121, 10/10/1993, abcd12345, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+            "ssn_prompt_counter": "2",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+            "cn_prompt_counter": "1"
+        },
+        "activeContexts": [],
+        "intent": {
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "10/10/1993",
+                        "resolvedValues": [
+                            "1993-10-10"
+                        ],
+                        "interpretedValue": "1993-10-10"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "abcd12345",
+                        "resolvedValues": [
+                            "abcd12345"
+                        ],
+                        "interpretedValue": "abcd12345"
+                    }
+                },
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        }
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "ProcessCustDupTaxFormIntent"
+            },
+            "resolvedSlots": {
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "transcriptionConfidence": 1.0,
+            "transcription": "121"
+        }
+    ],
+    "inputMode": "Text"
+},"response":[{"contentType": "PlainText", "content": "Apologies. I'm unable to find your tax forms right now. You can also access tax forms online on the <a href=\"https://pru.us/DocCenterAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"\"Documents\"\" tabindex=0>\"Documents\"</a> page, or log in to your account and click on the \"Documents\" tab.<br><br>For further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Please choose an option below to continue. You can always type a question too."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"}]
+}

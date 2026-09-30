@@ -1,0 +1,97 @@
+{"request": {
+    "sessionId": "29921906-7194-4246-a8b9-302a2573785e",
+    "inputTranscript": "Initial Intent",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "Test",
+                "state": "InProgress"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {
+                    "NeedSlot": null,
+                    "EmailSlot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintUpdateEmailIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.32
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintWhenDoYouSendStatementsIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.31
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQCasualTalkInsultsIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.27
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "InProgress"
+            }
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {},
+        "activeContexts": [],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "Test",
+            "state": "InProgress"
+        },
+        "originatingRequestId": "5ce9a09b-b92d-423f-aaf3-e9aa376dd9f0"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "Test"
+            },
+            "transcription": "Initial Intent",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "71",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    }
+},
+"response": [
+    {
+        "contentType": "PlainText",
+        "content": "I'm having technical issues right now. I'm sorry about that.<br><br>For further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><br>If you have other Annuity questions, you can go back to the Main Menu."
+    },
+    {
+        "contentType": "CustomPayload",
+        "content": "{\"website\": {\"suggestions\": [\"Main Menu\"]}}"
+    }
+]
+}

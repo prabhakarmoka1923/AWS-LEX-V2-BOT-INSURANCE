@@ -1,0 +1,170 @@
+{
+"request":
+{
+    "inputMode": "Text",
+    "sessionId": "7537b9d1-022a-4d49-8148-371a2c60a6f9",
+    "inputTranscript": "Request tax forms in the mail (using this chat)",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 1.0,
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": null,
+                    "contractId": null,
+                    "ssn": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.81,
+            "intent": {
+                "name": "FAQGeneralSubmitFormIntent",
+                "slots": {
+                    "POASlotType": null,
+                    "NeedSlot": null,
+                    "MailSlot": null,
+                    "ReturnSlot": null,
+                    "HowSlot": null,
+                    "SendSlot": null,
+                    "WhereSlot": null,
+                    "CitySlot": null,
+                    "AnnuitySlotType": null,
+                    "PersonSlot": null,
+                    "RequestReceiveSlotType": null,
+                    "FormSlot": null,
+                    "W8BENSlotType": null,
+                    "OnlineSlot": null,
+                    "WhatSlot": null,
+                    "CompanyNameSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.81,
+            "intent": {
+                "name": "FAQWithdrawalsTransferAccountIntent",
+                "slots": {
+                    "IRASlotType": null,
+                    "FormSlotType": null,
+                    "HowSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.8,
+            "intent": {
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.8,
+            "intent": {
+                "name": "FAQRMDFormRequestIntent",
+                "slots": {
+                    "AnnuitySlotType": null,
+                    "NeedSlot": null,
+                    "FormSlot": null,
+                    "RMD_Slot": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        }
+    ],
+    "bot": {
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA",
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "proposedNextState": {
+        "prompt": {
+            "attempt": "Initial"
+        },
+        "intent": {
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": null,
+                "contractId": null,
+                "ssn": null
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        },
+        "dialogAction": {
+            "type": "ElicitSlot",
+            "slotToElicit": "contractId"
+        }
+    },
+    "sessionState": {
+        "originatingRequestId": "2ec0a4b4-d6b9-4293-9659-231266f94ca9",
+        "sessionAttributes": {
+            "Utterance_History": "Get your Tax Forms, Initial Intent, ",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "FAQSIMP_Generic_Intent"
+        },
+        "activeContexts": [],
+        "intent": {
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": null,
+                "contractId": null,
+                "ssn": null
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        }
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "ProcessCustDupTaxFormIntent"
+            },
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1.0,
+            "transcription": "Request tax forms in the mail (using this chat)"
+        }
+    ]
+},
+"response":[{"contentType": "PlainText", "content": "All of your Prudential tax forms will be mailed to you within 5 business days.<br><br>To begin, <b>enter your full contract number</b> with all the letters and numbers (like E0123456).<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>\u2022 <i>If you need to find your contract number, log in to your <a href=\"https://pru.us/AccountAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"Account\" tabindex=0>Account</a>. Then, click on the last 4 digits of your account number and the full account will show.</i><br><br>\u2022 <i>To view your mailing address, go to <a href=\"https://pru.us/ProfileAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"My Profile\" tabindex=0>My Profile</a> from your online account. Any updates should be made before you request your tax forms.</i>"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"inputMasked\": \"Mask after value\"}}"}]
+}

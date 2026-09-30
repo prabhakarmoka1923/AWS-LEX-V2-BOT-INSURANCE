@@ -1,0 +1,229 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "requestAttributes": {
+            "annuities.TaxDNPQ20Response": "[{'2022-1099-INT': 'Success'}, {'2022-1099-R': 'Success'}, {'2022-1099-DIV': 'Success'}]"
+        },
+        "sessionId": "d79cb1a0-752d-4224-ae04-a65f6771d2d6",
+        "inputTranscript": "Annuities mail tax doc Tax_DNPQ20 success",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "name": "HandleProxyReqResponseIntent",
+                    "slots": {
+                        "type": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "mail tax doc",
+                                "resolvedValues": [
+                                    "mail tax"
+                                ],
+                                "interpretedValue": "mail tax"
+                            }
+                        },
+                        "status": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "success",
+                                "resolvedValues": [
+                                    "success"
+                                ],
+                                "interpretedValue": "success"
+                            }
+                        }
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.77,
+                "intent": {
+                    "name": "FAQWhenWillMoneyArriveIntent",
+                    "slots": {
+                        "WithdrawSlotType": null,
+                        "MoneySlotType": null,
+                        "EmailSlotType": null,
+                        "WhereSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "BankAccountSlotType": null,
+                        "MonthlySlotType": null,
+                        "EFTSlotType": null,
+                        "PaymentSlotType": null,
+                        "QuestionWhatSlotType": null,
+                        "AnnuitySlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.76,
+                "intent": {
+                    "name": "FAQAccMaintFundAnnualRptIntent",
+                    "slots": {
+                        "MoneySlotType": null,
+                        "ReportSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.76,
+                "intent": {
+                    "name": "FAQInqTaxForms1099DeathClaimIntent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "TaxSlotType": null,
+                        "DeathClaimSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA",
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "a9e425b6-4199-4889-b28f-0ac2a0d8dfae",
+            "sessionAttributes": {
+                "dob_prompt_counter": "0",
+                "Utterance_History": "1505, 10/18/1957, E0429299, Request tax forms for another contract by mail, ",
+                "ssn_prompt_counter": "0",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+                "cn_prompt_counter": "0"
+            },
+            "activeContexts": [
+                {
+                    "name": "handle-proxy-response",
+                    "contextAttributes": {
+                        "dob": "1957-10-18",
+                        "contractId": "e0429299",
+                        "ssn": "1505"
+                    },
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 72,
+                        "turnsToLive": 4
+                    }
+                }
+            ],
+            "intent": {
+                "name": "HandleProxyReqResponseIntent",
+                "slots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "mail tax doc",
+                            "resolvedValues": [
+                                "mail tax"
+                            ],
+                            "interpretedValue": "mail tax"
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "success",
+                            "resolvedValues": [
+                                "success"
+                            ],
+                            "interpretedValue": "success"
+                        }
+                    }
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "HandleProxyReqResponseIntent"
+                },
+                "resolvedSlots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "mail tax doc",
+                            "resolvedValues": [
+                                "mail tax"
+                            ]
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "success",
+                            "resolvedValues": [
+                                "success"
+                            ]
+                        }
+                    }
+                },
+                "transcriptionConfidence": 1.0,
+                "transcription": "Annuities mail tax doc Tax_DNPQ20 success"
+            }
+        ]
+    },
+    "response": [
+        [
+            {
+                "contentType": "PlainText",
+                "content": "Success! The following tax forms will be sent to your mailing address on file within 5 business days:<br><br>\u2022 1099-INT (2022)<br>\u2022 1099-R (2022)<br>\u2022 1099-DIV (2022)<br><br>I'm glad I was able to help. Thank you.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Did that complete your request?"
+            },
+            {
+                "contentType": "CustomPayload",
+                "content": "{\"website\": {\"suggestions\": [\"Yes, I'm done\", \"No, it didn't\", \"Request tax forms for another contract by mail\", \"Show me a different topic<br> (go back to Main Menu)\"]}}"
+            }
+        ],
+        [
+            {
+                "contentType": "PlainText",
+                "content": "Sorry. I'm having a technical issue right now and can't mail you these forms:<br><br>\u2022 1099-INT (2022)<br>\u2022 1099-R (2022)<br><br>For further assistance, you can also call our contact center at <br><a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><br>I'm here to help if you need something else. Thank you.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Did that complete your request?"
+            },
+            {
+                "contentType": "CustomPayload",
+                "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"
+            }
+        ],
+        [
+            {
+                "contentType": "PlainText",
+                "content": "Success! The following tax forms will be sent to your mailing address on file within 5 business days:<br><br>\u2022 1099-INT (2022)<br><br>I'm having a technical issue right now and can't mail you these forms:<br><br>\u2022 1099-R (2022)<br><br>For further assistance, you can also call our contact center at <br><a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><br>I'm glad I was able to help you today. Thank you.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Did that complete your request?"
+            },
+            {
+                "contentType": "CustomPayload",
+                "content": "{\"website\": {\"suggestions\": [\"Yes, I'm done\", \"No, it didn't\", \"Request tax forms for another contract by mail\", \"Show me a different topic<br> (go back to Main Menu)\"]}}"
+            }
+        ]
+    ]
+}

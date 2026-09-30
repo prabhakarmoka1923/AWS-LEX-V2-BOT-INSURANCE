@@ -1,0 +1,129 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "sessionId": "cbb5aab5-da75-44c4-894e-aa293de98203",
+        "inputTranscript": "abcdwqe",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.84,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQValuesLivingBenefitValueIntent",
+                    "slots": {
+                        "BenefitSlotType": null,
+                        "AIWASlotType": null,
+                        "LivingBenefitSlotType": null,
+                        "MoneySlotType": null,
+                        "GenericSlot": null,
+                        "PolicyNumberSlot": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.82,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQWithdrawalsTransferAccountIntent",
+                    "slots": {
+                        "IRASlotType": null,
+                        "FormSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.78,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQComplaintsFormalComplaintIntent",
+                    "slots": {
+                        "WillorWouldSlotType": null,
+                        "VerbTakeSlotType": null,
+                        "ComplaintSlotType": null,
+                        "FormSlot": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "QuestionWhereSlotType": null,
+                        "OnlineSlot": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.77,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQOtherMenuIntent",
+                    "slots": {},
+                    "state": "InProgress"
+                }
+            }
+        ],
+        "bot": {
+            "aliasId": "935Q3PXHDN",
+            "aliasName": "dev",
+            "name": "Annuities-FAQ-dev",
+            "version": "3",
+            "localeId": "en_US",
+            "id": "VAMG7GYPFQ"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "94ae5acd-387b-4e16-9af2-92a92c7469d3",
+            "sessionAttributes": {
+                "Utterance_History": "Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "WelcomeIntent"
+            },
+            "activeContexts": [
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 86,
+                        "turnsToLive": 4
+                    },
+                    "name": "more_suggestions",
+                    "contextAttributes": {}
+                }
+            ],
+            "intent": {
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "FallbackIntent"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1,
+                "transcription": "abcdwqe"
+            }
+        ]
+    },
+    "response": [
+        {
+            "contentType": "PlainText",
+            "content": "I'm sorry. I didn't quite get that. Could you try rephrasing your question?<br><br>I work best with descriptive phrases like \"partial withdrawal\", \"change my beneficiaries\" etc."
+        }
+    ]
+}

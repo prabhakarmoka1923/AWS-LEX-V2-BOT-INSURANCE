@@ -1,0 +1,118 @@
+{
+    "request":
+{
+    "requestAttributes": {
+        "x_pru_env": "Custom"
+    },
+    "sessionId": "1d069299-7888-40c2-9bc0-dc62f68626ea",
+    "inputTranscript": "Yes, it answered my question",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "QuestionAnswered-Yes",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherMenuIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.31
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "QuestionAnswered-No",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.3
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherFeedbackIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.29
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "FAQProcessingPartialWithdrawalIntent"
+        },
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 170
+                },
+                "name": "question_answered_yes",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 170
+                },
+                "name": "question_answered_no",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 170
+                },
+                "name": "question_answered_more_info",
+                "contextAttributes": {
+                    "suggestions": "Partial or Full Withdrawal status, How long to receive money, Processing an RMD payment,I'm ready to move on"
+                }
+            }
+        ],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "QuestionAnswered-Yes",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "ccc21b0b-b1ca-43a9-860d-7f67291f6cac"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "transcription": "Yes, it answered my question",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1,
+            "resolvedContext": {
+                "intent": "QuestionAnswered-Yes"
+            }
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "71",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    }
+},"response":[{"contentType": "CustomPayload", "content": "{\"website\": {\"feedback\": \"That's great. I'm happy to help!\\n\\nCould you please rate your experience out of 5 stars? We would really appreciate it.\"}}"}]
+}

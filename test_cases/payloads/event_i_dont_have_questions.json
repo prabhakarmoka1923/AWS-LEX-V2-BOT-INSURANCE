@@ -1,0 +1,118 @@
+{
+    "request":
+{
+    "sessionId": "777228421253493",
+    "inputTranscript": "I don't have any more questions",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherFeedbackIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "QuestionAnswered-No",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.27
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "MoreSuggestions",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.19
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintSubAccountPerformanceIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.18
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "QuestionAnswered-Yes",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.17
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "FAQWhatIsCashSurrenderCharge"
+        },
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 144
+                },
+                "name": "more_suggestions",
+                "contextAttributes": {
+                    "more_suggestions": "Prior Withdrawal Details, Tax Withholding"
+                }
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 144
+                },
+                "name": "question_answered_yes",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 144
+                },
+                "name": "question_answered_no",
+                "contextAttributes": {
+                    "suggestions": "Processing a Partial or Full Withdrawal, Partial or Full Withdrawal - Impact to benefits, Fees when closing account,Show more options"
+                }
+            }
+        ],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FAQOtherFeedbackIntent",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "4f0c82fd-0d34-4186-88e1-ac3addf75453"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedSlots": {},
+            "resolvedContext": {
+                "intent": "FAQOtherFeedbackIntent"
+            },
+            "transcription": "I don't have any more questions",
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "Annuities-FAQ-qa",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "LWLNZYBBOQ"
+    }
+}, "response":[{"contentType": "CustomPayload", "content": "{\"website\": {\"feedback\": \"That's great. I'm happy to help!\\n\\nCould you please rate your experience out of 5 stars? We would really appreciate it.\"}}"}]
+}

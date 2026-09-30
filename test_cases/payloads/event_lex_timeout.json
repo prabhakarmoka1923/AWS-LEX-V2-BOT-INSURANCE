@@ -1,0 +1,126 @@
+{
+    "request":{
+        "sessionId": "b1128d46-c18b-481e-b6a6-85730402bbc7",
+        "inputTranscript": "E1823585",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.85,
+                "intent": {
+                    "name": "FAQWithdrawalsTransferAccountIntent",
+                    "slots": {
+                        "IRASlotType": null,
+                        "FormSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.83,
+                "intent": {
+                    "name": "FAQSIMP_Generic_Intent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "questionAboutSlot": null,
+                        "VerbTakeSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "DateSlotType": null,
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "NumberSlot": null,
+                        "FormSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "simpleGeneric_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.78,
+                "intent": {
+                    "name": "FAQTaxFormsW8BENIntent",
+                    "slots": {
+                        "QuestionWhatSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "W8BENSlotType": null,
+                        "QuestionWhereSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "FAQOtherMenuIntent",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "3",
+            "localeId": "en_US",
+            "id": "VAMG7GYPFQ",
+            "aliasId": "935Q3PXHDN",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "be75bf59-4fe7-47d4-837c-a41671c0d782",
+            "sessionAttributes": {},
+            "activeContexts": [],
+            "intent": {
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1,
+                "resolvedContext": {
+                    "intent": "FallbackIntent"
+                },
+                "transcription": "E1823585"
+            }
+        ],
+        "inputMode": "Text"
+    }
+    ,
+"response": [
+    {
+        "contentType": "PlainText",
+        "content": "Too much time has passed since your last response. To continue please choose an option below or in a few words, type in a question."
+    },
+    {
+        "contentType": "CustomPayload",
+        "content": "{\"website\": {\"suggestions\": [\"Get your Tax Forms\", \"Withdrawals\", \"Required Minimum Distribution (RMD)\", \"Show more options\"]}}"
+    }
+]
+}

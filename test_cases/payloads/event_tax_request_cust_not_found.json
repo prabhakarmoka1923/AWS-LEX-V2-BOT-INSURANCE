@@ -1,0 +1,195 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "requestAttributes": {
+            "annuities.clientValidationError": "{'response': \"{'messages': {'informationalMessages': [{'code': 200, 'message': 'Customer data not found'}]}, 'traceId': '0ae7116f-34-lex-cdo-2403071153'}\", 'responseCode': 200}"
+        },
+        "sessionId": "2319dda7-a484-4e8e-9c55-346695f6ee4f",
+        "inputTranscript": "Annuities customer validation failed",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "name": "HandleProxyReqResponseIntent",
+                    "slots": {
+                        "type": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "customer",
+                                "resolvedValues": [
+                                    "client"
+                                ],
+                                "interpretedValue": "client"
+                            }
+                        },
+                        "status": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "failed",
+                                "resolvedValues": [
+                                    "failure"
+                                ],
+                                "interpretedValue": "failure"
+                            }
+                        }
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "FAQAnnualRMDLetterIntent",
+                    "slots": {
+                        "MonthlySlotType": null,
+                        "RMDSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "FAQAccMaintFundAnnualRptIntent",
+                    "slots": {
+                        "MoneySlotType": null,
+                        "ReportSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.74,
+                "intent": {
+                    "name": "FAQAccMaintSpouseContinueAfterDeathIntent",
+                    "slots": {
+                        "PersonSlotType": null,
+                        "AnnuitySlotType": null,
+                        "DeathSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA",
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "6d02455b-72fb-441e-b427-5fb434232a62",
+            "sessionAttributes": {
+                "dob_prompt_counter": "0",
+                "Utterance_History": "1234, 10/10/1992, abcd123, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+                "ssn_prompt_counter": "0",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+                "cn_prompt_counter": "0"
+            },
+            "activeContexts": [
+                {
+                    "name": "handle-proxy-response",
+                    "contextAttributes": {
+                        "dob": "1992-10-10",
+                        "contractId": "abcd123",
+                        "ssn": "1234"
+                    },
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 90,
+                        "turnsToLive": 4
+                    }
+                }
+            ],
+            "intent": {
+                "name": "HandleProxyReqResponseIntent",
+                "slots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "customer",
+                            "resolvedValues": [
+                                "client"
+                            ],
+                            "interpretedValue": "client"
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "failed",
+                            "resolvedValues": [
+                                "failure"
+                            ],
+                            "interpretedValue": "failure"
+                        }
+                    }
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "HandleProxyReqResponseIntent"
+                },
+                "resolvedSlots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "customer",
+                            "resolvedValues": [
+                                "client"
+                            ]
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "failed",
+                            "resolvedValues": [
+                                "failure"
+                            ]
+                        }
+                    }
+                },
+                "transcriptionConfidence": 1.0,
+                "transcription": "Annuities customer validation failed"
+            }
+        ],
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook"
+    },
+    "response": [
+        {
+            "contentType": "PlainText",
+            "content": "I'm sorry. I don't recognize you in our system.<br><br>You can also access tax forms online on the <a href=\"https://pru.us/DocCenterAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"Documents\" tabindex=0>Documents</a> page, or log in to your account and click on the 'Documents' tab.<br><br>For further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Please choose an option below to continue. Or you can type in a question too."
+        },
+        {
+            "contentType": "CustomPayload",
+            "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"
+        }
+    ]
+}

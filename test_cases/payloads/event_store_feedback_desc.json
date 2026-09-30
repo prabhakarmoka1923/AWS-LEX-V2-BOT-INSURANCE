@@ -1,0 +1,156 @@
+{
+    "request":
+{
+    "sessionId": "3e8b00b5-78f4-436e-bea8-ce5d1e2cb66d",
+    "inputTranscript": "nothing",
+    "interpretations": [
+        {
+            "nluConfidence": 1.0,
+            "intent": {
+                "name": "StoreFeedbackDesc",
+                "slots": {
+                    "FeedbackDescription": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "nothing",
+                            "resolvedValues": []
+                        }
+                    }
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "intent": {
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.73,
+            "intent": {
+                "name": "FAQAccMaintWhyCustodianAsBeneIntent",
+                "slots": {
+                    "BeneficiarySlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.73,
+            "intent": {
+                "name": "FAQCasualTalkAreYouChatbotIntent",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.72,
+            "intent": {
+                "name": "FAQTaxFormsTwoFormsIntent",
+                "slots": {
+                    "SimpleTaxFormSlotType": null,
+                    "TaxSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "interpretationSource": "Lex"
+        }
+    ],
+    "bot": {
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA",
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "proposedNextState": {
+        "prompt": {
+            "attempt": "Initial"
+        },
+        "intent": {
+            "name": "StoreFeedbackDesc",
+            "slots": {
+                "FeedbackDescription": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "nothing",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        },
+        "dialogAction": {
+            "type": "ElicitSlot",
+            "slotToElicit": "FeedbackDescription"
+        }
+    },
+    "sessionState": {
+        "sessionAttributes": {
+            "Utterance_History": "No I'm still unclear, Required Minimum Distribution (RMD), Initial Intent, ",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "QuestionAnswered-No"
+        },
+        "activeContexts": [
+            {
+                "name": "store-feedback-desc",
+                "contextAttributes": {},
+                "timeToLive": {
+                    "timeToLiveInSeconds": 178,
+                    "turnsToLive": 1
+                }
+            }
+        ],
+        "intent": {
+            "name": "StoreFeedbackDesc",
+            "slots": {
+                "FeedbackDescription": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "nothing",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress",
+            "confirmationState": "None"
+        },
+        "originatingRequestId": "c3af737b-795f-4498-ba99-1c89761b8ff8"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "StoreFeedbackDesc"
+            },
+            "transcriptionConfidence": 1.0,
+            "transcription": "nothing",
+            "resolvedSlots": {
+                "FeedbackDescription": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "nothing",
+                        "resolvedValues": []
+                    }
+                }
+            }
+        }
+    ],
+    "inputMode": "Text"
+},"response":[{"contentType": "PlainText", "content": "Thank you. We always strive to improve.<br><br>If you have more questions, you can return to the Main Menu."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Go back to Main Menu\"]}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"text\": \"<hr style=\\\"margin-top: 10px; margin-bottom: 10px;\\\"/>If you still have not registered you're missing out on 24/7 digital service.\"}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions_links\": [{\"type\": \"hyperlink\", \"text\": \"Register for an Online Account\", \"value\": \"http://pru.us/RegisterAnnRW\"}]}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"text\": \"If you are registered, you can sign up for E-delivery or update your online account by visiting your <a href=\\\"https://pru.us/ProfileAnnRW\\\" target=\\\"_blank\\\" role=\\\"link\\\" aria-label=\\\"Profile Page\\\" tabindex=0>Profile Page</a>.<br><br>Did you know you can <button id=\\\"botGoto\\\" title=\\\"Processing a Partial or Full Withdrawal\\\" aria-label=\\\"process your withdrawals\\\" role=\\\"button\\\" tabindex=0>process your withdrawals</button> online too?\"}}"}]
+}

@@ -1,0 +1,502 @@
+{
+    "request": {
+        "sessionId": "7fc17e8e-e1d7-4951-a8eb-a304962f944d",
+        "inputTranscript": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+        "interpretations": [
+            {
+                "nluConfidence": 1,
+                "intent": {
+                    "name": "ProcessCustDupTaxFormIntent",
+                    "slots": {
+                        "dob": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                                "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg==",
+                                "interpretedValue": "symenc:6MUu/PBs59Hez0HZGLSoHg=="
+                            }
+                        },
+                        "contractId": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:1yJPOwphAgSYrrDpzLGcJQ==",
+                                "resolvedValues": "symenc:yQJXxxmpynokneogpsVUdQ==",
+                                "interpretedValue": "symenc:8J0+KFIayjBYIxQARGuHRw=="
+                            }
+                        },
+                        "ssn": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.89,
+                "intent": {
+                    "name": "FAQAccMaintViewDocsOnlineIntent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "StatementSlotType": null,
+                        "PersonSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "VerbTakeSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "OnlineSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "MonthlySlotType": null,
+                        "RMDSlot": null,
+                        "DateSlotType": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                                "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg==",
+                                "interpretedValue": "symenc:6MUu/PBs59Hez0HZGLSoHg=="
+                            }
+                        },
+                        "CopySlotType": null,
+                        "NumberSlot": null,
+                        "AnnuitySlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "FormSlotType": null,
+                        "CorrespondenceSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.82,
+                "intent": {
+                    "name": "FAQSIMP_TaxForms_Intent",
+                    "slots": {
+                        "CopySlot": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                                "resolvedValues": [],
+                                "interpretedValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ=="
+                            }
+                        },
+                        "WhereSlot": null,
+                        "whatSlot": null,
+                        "FormSlot": null,
+                        "report": null,
+                        "howSlot": null,
+                        "taxForm_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.81,
+                "intent": {
+                    "name": "FAQSIMP_Generic_Intent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "questionAboutSlot": null,
+                        "VerbTakeSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "DateSlotType": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                                "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg==",
+                                "interpretedValue": "symenc:6MUu/PBs59Hez0HZGLSoHg=="
+                            }
+                        },
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "NumberSlot": null,
+                        "FormSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "simpleGeneric_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.77,
+                "intent": {
+                    "name": "FAQAccMaintCanIHaveOverseasAddressesIntent",
+                    "slots": {
+                        "CountrySlot": null,
+                        "QuestionNeedToSlot": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                                "resolvedValues": [],
+                                "interpretedValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ=="
+                            }
+                        },
+                        "AnnuitySlotType": null,
+                        "ForeignSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "1",
+            "localeId": "en_US",
+            "id": "VAMG7GYPFQ",
+            "aliasId": "935Q3PXHDN",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "proposedNextState": {
+            "prompt": {
+                "attempt": "Initial"
+            },
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                            "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg==",
+                            "interpretedValue": "symenc:6MUu/PBs59Hez0HZGLSoHg=="
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "symenc:1yJPOwphAgSYrrDpzLGcJQ==",
+                            "resolvedValues": "symenc:yQJXxxmpynokneogpsVUdQ==",
+                            "interpretedValue": "symenc:8J0+KFIayjBYIxQARGuHRw=="
+                        }
+                    },
+                    "ssn": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "dialogAction": {
+                "type": "ElicitSlot",
+                "slotToElicit": "ssn"
+            }
+        },
+        "sessionState": {
+            "sessionAttributes": {
+                "dob_prompt_counter": "1",
+                "Utterance_History": "symenc:d4Rwiq29USfzSGEBiPT9H1mrYgXLqJ5Ahjcc/EttFwfQb1vVWbuHoSHtNwOR5JprSxxrhY1VfrmP7ePxVqk7wpyy4qhhZdfcLMPPYA489Z3amNHqRiHqT0s6pv7Y3Unu",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+                "cn_prompt_counter": "1"
+            },
+            "activeContexts": [],
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                            "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg==",
+                            "interpretedValue": "symenc:6MUu/PBs59Hez0HZGLSoHg=="
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "symenc:1yJPOwphAgSYrrDpzLGcJQ==",
+                            "resolvedValues": "symenc:yQJXxxmpynokneogpsVUdQ==",
+                            "interpretedValue": "symenc:8J0+KFIayjBYIxQARGuHRw=="
+                        }
+                    },
+                    "ssn": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "originatingRequestId": "390536b8-2cf2-4609-b056-7dfbbb704a2c"
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "ProcessCustDupTaxFormIntent"
+                },
+                "transcriptionConfidence": 1,
+                "transcription": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                "resolvedSlots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "symenc:7avJnA/N8Hh8AQ//e3AjvQ==",
+                            "resolvedValues": "symenc:X9jjVhelQ1zP4SasQ3pdNg=="
+                        }
+                    }
+                }
+            }
+        ],
+        "inputMode": "Text",
+        "SessionEncKey": "enc2201_5qR5g02LntkYRM3WXI+onuzr5mqwZ9qykKMle9Frpi+svzGdWjhe9LJ2htBvJKjXAPZKoGviH27NsC6QIwvgECahDHhYG9CWncn8PAhpUk51XW857obN9gI+lV1PQ47v19KrE3OKY/V+zgpQPhy3r2Qr2/KU/kneW+d/F1hjVhN0ivoq1TYtdeenEu4KRgTKQ7loxXs3fS0AMNdegHl93+GaZwOmTEOHXo4AVjoaAWF4LK0NJZDLDNY/MCcWn6MProBJ02AvBQXcj1bCJ4H7rznJFrXtTUZa+kv5pilFzjj2eXP0GSC+qeBaioGBH9ZHLS5uNQ3n9CEGe9JBO7uatQ=="
+    },
+    "response": {
+        "sessionId": "7fc17e8e-e1d7-4951-a8eb-a304962f944d",
+        "inputTranscript": "01/01/2023",
+        "interpretations": [
+            {
+                "nluConfidence": 1,
+                "intent": {
+                    "name": "ProcessCustDupTaxFormIntent",
+                    "slots": {
+                        "dob": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "01/01/2023",
+                                "resolvedValues": "['2023-01-01']",
+                                "interpretedValue": "2023-01-01"
+                            }
+                        },
+                        "contractId": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "E1819830",
+                                "resolvedValues": "['e1819830']",
+                                "interpretedValue": "e1819830"
+                            }
+                        },
+                        "ssn": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.89,
+                "intent": {
+                    "name": "FAQAccMaintViewDocsOnlineIntent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "StatementSlotType": null,
+                        "PersonSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "VerbTakeSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "OnlineSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "MonthlySlotType": null,
+                        "RMDSlot": null,
+                        "DateSlotType": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "01/01/2023",
+                                "resolvedValues": "['2023-01-01']",
+                                "interpretedValue": "2023-01-01"
+                            }
+                        },
+                        "CopySlotType": null,
+                        "NumberSlot": null,
+                        "AnnuitySlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "FormSlotType": null,
+                        "CorrespondenceSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.82,
+                "intent": {
+                    "name": "FAQSIMP_TaxForms_Intent",
+                    "slots": {
+                        "CopySlot": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "01/01/2023",
+                                "resolvedValues": [],
+                                "interpretedValue": "01/01/2023"
+                            }
+                        },
+                        "WhereSlot": null,
+                        "whatSlot": null,
+                        "FormSlot": null,
+                        "report": null,
+                        "howSlot": null,
+                        "taxForm_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.81,
+                "intent": {
+                    "name": "FAQSIMP_Generic_Intent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "questionAboutSlot": null,
+                        "VerbTakeSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "DateSlotType": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "01/01/2023",
+                                "resolvedValues": "['2023-01-01']",
+                                "interpretedValue": "2023-01-01"
+                            }
+                        },
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "NumberSlot": null,
+                        "FormSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "simpleGeneric_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.77,
+                "intent": {
+                    "name": "FAQAccMaintCanIHaveOverseasAddressesIntent",
+                    "slots": {
+                        "CountrySlot": null,
+                        "QuestionNeedToSlot": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "01/01/2023",
+                                "resolvedValues": [],
+                                "interpretedValue": "01/01/2023"
+                            }
+                        },
+                        "AnnuitySlotType": null,
+                        "ForeignSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                },
+                "interpretationSource": "Lex"
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "1",
+            "localeId": "en_US",
+            "id": "VAMG7GYPFQ",
+            "aliasId": "935Q3PXHDN",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "proposedNextState": {
+            "prompt": {
+                "attempt": "Initial"
+            },
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "01/01/2023",
+                            "resolvedValues": "['2023-01-01']",
+                            "interpretedValue": "2023-01-01"
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1819830",
+                            "resolvedValues": "['e1819830']",
+                            "interpretedValue": "e1819830"
+                        }
+                    },
+                    "ssn": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "dialogAction": {
+                "type": "ElicitSlot",
+                "slotToElicit": "ssn"
+            }
+        },
+        "sessionState": {
+            "sessionAttributes": {
+                "dob_prompt_counter": "1",
+                "Utterance_History": "E1819830, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+                "cn_prompt_counter": "1"
+            },
+            "activeContexts": [],
+            "intent": {
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "01/01/2023",
+                            "resolvedValues": "['2023-01-01']",
+                            "interpretedValue": "2023-01-01"
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1819830",
+                            "resolvedValues": "['e1819830']",
+                            "interpretedValue": "e1819830"
+                        }
+                    },
+                    "ssn": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            },
+            "originatingRequestId": "390536b8-2cf2-4609-b056-7dfbbb704a2c"
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "ProcessCustDupTaxFormIntent"
+                },
+                "transcriptionConfidence": 1,
+                "transcription": "01/01/2023",
+                "resolvedSlots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "01/01/2023",
+                            "resolvedValues": "['2023-01-01']"
+                        }
+                    }
+                }
+            }
+        ],
+        "inputMode": "Text",
+        "SessionEncKey": "enc2201_5qR5g02LntkYRM3WXI+onuzr5mqwZ9qykKMle9Frpi+svzGdWjhe9LJ2htBvJKjXAPZKoGviH27NsC6QIwvgECahDHhYG9CWncn8PAhpUk51XW857obN9gI+lV1PQ47v19KrE3OKY/V+zgpQPhy3r2Qr2/KU/kneW+d/F1hjVhN0ivoq1TYtdeenEu4KRgTKQ7loxXs3fS0AMNdegHl93+GaZwOmTEOHXo4AVjoaAWF4LK0NJZDLDNY/MCcWn6MProBJ02AvBQXcj1bCJ4H7rznJFrXtTUZa+kv5pilFzjj2eXP0GSC+qeBaioGBH9ZHLS5uNQ3n9CEGe9JBO7uatQ=="
+    }
+}

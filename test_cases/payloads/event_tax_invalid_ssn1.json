@@ -1,0 +1,236 @@
+{
+    "request":
+{
+    "sessionId": "83453094-bc75-4798-83f7-e84320276216",
+    "inputTranscript": "121",
+    "interpretations": [
+        {
+            "nluConfidence": 1.0,
+            "intent": {
+                "confirmationState": "None",
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "10/10/1993",
+                            "resolvedValues": [
+                                "1993-10-10"
+                            ],
+                            "interpretedValue": "1993-10-10"
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "abcd12345",
+                            "resolvedValues": [
+                                "abcd12345"
+                            ],
+                            "interpretedValue": "abcd12345"
+                        }
+                    },
+                    "ssn": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "121",
+                            "resolvedValues": []
+                        }
+                    }
+                },
+                "state": "InProgress"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "intent": {
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.79,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": null
+                },
+                "state": "InProgress"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.79,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQAccMaintBeneTrustIntent",
+                "slots": {
+                    "AnnuitySlotType": null,
+                    "BeneficiariesChangeSlotType": null
+                },
+                "state": "InProgress"
+            },
+            "interpretationSource": "Lex"
+        },
+        {
+            "nluConfidence": 0.78,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQSIMP_TaxForms_Intent",
+                "slots": {
+                    "CopySlot": null,
+                    "WhereSlot": null,
+                    "whatSlot": null,
+                    "FormSlot": null,
+                    "report": null,
+                    "howSlot": null,
+                    "taxForm_topic_slot": null
+                },
+                "state": "InProgress"
+            },
+            "interpretationSource": "Lex"
+        }
+    ],
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "proposedNextState": {
+        "prompt": {
+            "attempt": "Retry1"
+        },
+        "intent": {
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "10/10/1993",
+                        "resolvedValues": [
+                            "1993-10-10"
+                        ],
+                        "interpretedValue": "1993-10-10"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "abcd12345",
+                        "resolvedValues": [
+                            "abcd12345"
+                        ],
+                        "interpretedValue": "abcd12345"
+                    }
+                },
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress"
+        },
+        "dialogAction": {
+            "slotToElicit": "ssn",
+            "type": "ElicitSlot"
+        }
+    },
+    "sessionState": {
+        "sessionAttributes": {
+            "dob_prompt_counter": "1",
+            "Utterance_History": "10/10/1993, abcd12345, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+            "ssn_prompt_counter": "1",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+            "cn_prompt_counter": "1"
+        },
+        "activeContexts": [],
+        "intent": {
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "10/10/1993",
+                        "resolvedValues": [
+                            "1993-10-10"
+                        ],
+                        "interpretedValue": "1993-10-10"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "abcd12345",
+                        "resolvedValues": [
+                            "abcd12345"
+                        ],
+                        "interpretedValue": "abcd12345"
+                    }
+                },
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "state": "InProgress"
+        },
+        "originatingRequestId": "c8ea0ef7-b138-45e6-b906-91d24367ad92"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "ProcessCustDupTaxFormIntent"
+            },
+            "transcriptionConfidence": 1.0,
+            "transcription": "121",
+            "resolvedSlots": {
+                "ssn": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "121",
+                        "resolvedValues": []
+                    }
+                }
+            }
+        }
+    ],
+    "inputMode": "Text"
+},"response":[{"contentType": "PlainText", "content": "I'm sorry. I don't recognize what you just put in. Please enter the <b>last 4 digits</b> of your Social Security Number."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"inputMasked\": \"Mask after value\"}}"}]
+}

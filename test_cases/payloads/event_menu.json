@@ -1,0 +1,89 @@
+{
+    "request":{
+    "sessionId": "777228421253493",
+    "inputTranscript": "Menu",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherMenuIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQValuesLivingBenefitValueIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.23
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQGeneralPhoneNumberIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.2
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQHowWaiveRMDIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.19
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.18
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "FAQInqTaxForms1099RAddressChangeIntent"
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FAQOtherMenuIntent",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "4f0c82fd-0d34-4186-88e1-ac3addf75453"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedSlots": {},
+            "resolvedContext": {
+                "intent": "FAQOtherMenuIntent"
+            },
+            "transcription": "Menu",
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "Annuities-FAQ-qa",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "LWLNZYBBOQ"
+    }
+},
+"response":[{"contentType": "PlainText", "content": "Below are some helpful Annuities topics. In a few words, you can always type in a question too."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Get your Tax Forms\", \"Withdrawals\", \"Required Minimum Distribution (RMD)\", \"Show more options\"]}}"}]
+}

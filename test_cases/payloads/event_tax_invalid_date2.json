@@ -1,0 +1,141 @@
+{
+    "request": {
+    "requestAttributes": {
+        "x_pru_env": "Custom"
+    },
+    "sessionId": "5d20fa54-6d0d-4616-92fd-3cfd49b4a8f8",
+    "inputTranscript": "12/ab/1990",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "12/ab/1990",
+                            "resolvedValues": [],
+                            "interpretedValue": "12"
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1234567",
+                            "resolvedValues": [
+                                "e1234567"
+                            ],
+                            "interpretedValue": "e1234567"
+                        }
+                    },
+                    "ssn": null
+                },
+                "confirmationState": "None",
+                "name": "ProcessCustDupTaxFormIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.95
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "InProgress"
+            }
+        }
+    ],
+    "proposedNextState": {
+        "intent": {
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "12/ab/1990",
+                        "resolvedValues": [],
+                        "interpretedValue": "12"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1234567",
+                        "resolvedValues": [
+                            "e1234567"
+                        ],
+                        "interpretedValue": "e1234567"
+                    }
+                },
+                "ssn": null
+            },
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "state": "InProgress"
+        },
+        "dialogAction": {
+            "slotToElicit": "dob",
+            "type": "ElicitSlot"
+        },
+        "prompt": {
+            "attempt": "Retry1"
+        }
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "dob_prompt_counter": 2,
+            "Kendra_Intent_Name": "FAQSIMP_Generic_tax forms",
+            "cn_prompt_counter": "1"
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "12/ab/1990",
+                        "resolvedValues": [],
+                        "interpretedValue": "12"
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1234567",
+                        "resolvedValues": [
+                            "e1234567"
+                        ],
+                        "interpretedValue": "e1234567"
+                    }
+                },
+                "ssn": null
+            },
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "state": "InProgress"
+        },
+        "originatingRequestId": "f15cca6d-eca7-4b7b-86be-3588ae79c899"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "FallbackIntent"
+            },
+            "transcription": "abc",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "71",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    }
+},
+"response":[{"contentType": "PlainText", "content": "Apologies. I'm unable to find your tax forms right now. You can also access tax forms online on the <a href=\"https://pru.us/DocCenterAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"\"Documents\"\" tabindex=0>\"Documents\"</a> page, or log in to your account and click on the \"Documents\" tab.<br><br>For further assistance, you can also call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Please choose an option below to continue. You can always type a question too."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"}]
+}

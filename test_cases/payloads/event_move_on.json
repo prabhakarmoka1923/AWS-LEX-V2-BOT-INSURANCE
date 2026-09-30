@@ -1,0 +1,93 @@
+{
+    "request":{
+    "sessionId": "777228421253888",
+    "inputTranscript": "I'm ready to move on",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherScenariosMoveOnIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintChangeOwnerIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.19
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintBeneTrustIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.17
+        },
+        {
+            "intent": {
+                "slots": {
+                    "whatSlot": null,
+                    "report": null,
+                    "howSlot": null,
+                    "taxForm_topic_slot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQSIMP_TaxForms_Intent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.16
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "ReadyForFulfillment"
+            }
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "fallbackCount": "2"
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FAQOtherScenariosMoveOnIntent",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "ed1ae601-41a3-4702-aabf-b1fac134e19d"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedSlots": {},
+            "resolvedContext": {
+                "intent": "FAQOtherScenariosMoveOnIntent"
+            },
+            "transcription": "I'm ready to move on",
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "Annuities-FAQ-qa",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "LWLNZYBBOQ"
+    }
+},
+"response":[{"contentType": "PlainText", "content": "Please select an option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Yes, it answered my question\", \"No, I'm still unclear\", \"Show me a different topic<br> (go back to Main Menu)\"]}}"}]
+}

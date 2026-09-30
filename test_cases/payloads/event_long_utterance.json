@@ -1,0 +1,97 @@
+{
+    "request":
+{
+    "sessionId": "777228421253824",
+    "inputTranscript": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "InProgress"
+            }
+        },
+        {
+            "intent": {
+                "slots": {
+                    "QuestionSlotType": null,
+                    "HowSlot": null,
+                    "InfoSlotType": null,
+                    "RequestSlotType": null,
+                    "NeedSlot": null,
+                    "ExplainSlotType": null,
+                    "Policy_topic_Slot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintRequestPolicyExplanation",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.17
+        },
+        {
+            "intent": {
+                "slots": {
+                    "VerbSlot": null,
+                    "ReceiveSlotType": null,
+                    "NeedSlot": null,
+                    "RequestSlotType": null,
+                    "QuestionHowSlotType": null,
+                    "QuestionSlot": null,
+                    "DuplicateSlotType": null,
+                    "Policy_topic_Slot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintRequestPolicyCopy",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.14
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQCasualTalkComplimentsIntent",
+                "state": "InProgress"
+            },
+            "nluConfidence": 0.14
+        }
+    ],
+    "sessionState": {
+        "sessionAttributes": {
+            "Lex_Intent_Name": "WelcomeIntent"
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FallbackIntent",
+            "state": "InProgress"
+        },
+        "originatingRequestId": "7c78f6b9-f426-4f03-8c7d-c0e9f9f6cdea"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "invocationSource": "DialogCodeHook",
+    "messageVersion": "1.0",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "FallbackIntent"
+            },
+            "transcription": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "REBN1X1GGP",
+        "aliasName": "dev",
+        "name": "DeathClaim-FAQ-dev",
+        "version": "25",
+        "localeId": "en_US",
+        "id": "8ZX7ELPDZE"
+    }
+},
+"response": [{"contentType": "PlainText", "content": "I'm sorry. I didn't quite get that. I work best with shorter requests like \"partial withdrawal\", \"change my beneficiaries\" etc.<br><br>Could you try rephrasing your question? Or call our Contact Center at<br><a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET."}]
+}

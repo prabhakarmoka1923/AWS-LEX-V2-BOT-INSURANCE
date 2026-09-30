@@ -1,0 +1,23 @@
+{"slots": {
+    "dob": {
+        "shape": "Scalar",
+        "value": {
+            "originalValue": "10/10/1993",
+            "resolvedValues": [
+                "1993-10-10"
+            ],
+            "interpretedValue": "1993-10-10"
+        }
+    },
+    "contractId": {
+        "shape": "Scalar",
+        "value": {
+            "originalValue": "abcd12345",
+            "resolvedValues": [
+                "abcd12345"
+            ],
+            "interpretedValue": "abcd12345"
+        }
+    }
+}
+}

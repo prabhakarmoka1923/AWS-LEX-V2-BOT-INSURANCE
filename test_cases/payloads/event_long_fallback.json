@@ -1,0 +1,136 @@
+{
+    "request": {
+        "sessionId": "05ad210e-794b-434f-b3cc-62b97245a4e0",
+        "inputTranscript": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.8,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQOtherOutOfScopeIntent",
+                    "slots": {
+                        "HowSlot": null,
+                        "CompanySlot": null,
+                        "WhereSlot": null,
+                        "NumberSlot": null,
+                        "FormSlot": null,
+                        "NeedSlot": null,
+                        "OutOfScopeSlot": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.78,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQGeneralHoldTimeIntent",
+                    "slots": {
+                        "HoldStatusSlotType": null,
+                        "DurationSlot": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQAccMaintUpdateProfileIntent",
+                    "slots": {
+                        "WillorWouldSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "AnnuitySlotType": null,
+                        "ChangeSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "FormSlotType": null,
+                        "OnlineSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "CorrespondenceSlotType": null,
+                        "MonthlySlotType": null,
+                        "LoginSlotType": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.74,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQAccMaintUpdateNameMarriageIntent",
+                    "slots": {
+                        "ChangeSlotType": null,
+                        "NeedSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress"
+                }
+            }
+        ],
+        "bot": {
+            "aliasId": "935Q3PXHDN",
+            "aliasName": "dev",
+            "name": "Annuities-FAQ-dev",
+            "version": "3",
+            "localeId": "en_US",
+            "id": "VAMG7GYPFQ"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "4be7958c-8490-4597-abc5-cba7e7e1a091",
+            "sessionAttributes": {
+                "Utterance_History": "Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "WelcomeIntent"
+            },
+            "activeContexts": [
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 86,
+                        "turnsToLive": 4
+                    },
+                    "name": "more_suggestions",
+                    "contextAttributes": {}
+                }
+            ],
+            "intent": {
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "FallbackIntent"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1,
+                "transcription": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback"
+            }
+        ],
+        "inputMode": "Text"
+    },
+    "response": [
+        {
+            "contentType": "PlainText",
+            "content": "I'm sorry. I didn't quite get that. I work best with shorter requests like \"partial withdrawal\", \"change my beneficiaries\" etc.<br><br>Could you try rephrasing your question? Or call our Contact Center at<br><a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET."
+        }
+    ]
+}

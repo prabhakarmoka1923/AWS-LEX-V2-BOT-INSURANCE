@@ -1,0 +1,213 @@
+{
+    "request":
+{
+    "inputMode": "Text",
+    "sessionId": "d3426588-aa9c-47cb-91d8-421fb8883c9e",
+    "inputTranscript": "Get your Tax Forms",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 1.0,
+            "intent": {
+                "name": "FAQSIMP_Generic_Intent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "questionAboutSlot": null,
+                    "QuestionWhenSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "simpleGeneric_topic_slot": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "Tax Forms",
+                            "resolvedValues": [
+                                "tax forms",
+                                "Most frequently produced tax forms",
+                                "Show more options on Tax Forms"
+                            ],
+                            "interpretedValue": "tax forms"
+                        }
+                    }
+                },
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.84,
+            "intent": {
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": null
+                },
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.77,
+            "intent": {
+                "name": "FAQAccMaintBeneFormRequestIntent",
+                "slots": {
+                    "QuestionNeedToSlot": null,
+                    "VerbTakeSlotType": null,
+                    "ChangeSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "FormSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "QuestionWhereSlotType": null,
+                    "BeneficiariesChangeSlotType": null
+                },
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.76,
+            "intent": {
+                "name": "FAQAccMaintAddSomeoneToAccountIntent",
+                "slots": {
+                    "PersonSlotType": null,
+                    "ChangeSlotType": null,
+                    "AnnuitySlotType": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "NeedSlotType": null,
+                    "QuestionHowCanISlotType": null
+                },
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.75,
+            "intent": {
+                "name": "FAQWithdrawalsTransferAccountIntent",
+                "slots": {
+                    "IRASlotType": null,
+                    "FormSlotType": null,
+                    "HowSlotType": null
+                },
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        }
+    ],
+    "bot": {
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA",
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "originatingRequestId": "e493564e-513a-4112-8d13-9e12ec5027c9",
+        "sessionAttributes": {
+            "Utterance_History": "Initial Intent, ",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "WelcomeIntent"
+        },
+        "activeContexts": [
+            {
+                "name": "more_suggestions",
+                "contextAttributes": {},
+                "timeToLive": {
+                    "timeToLiveInSeconds": 65,
+                    "turnsToLive": 4
+                }
+            }
+        ],
+        "intent": {
+            "name": "FAQSIMP_Generic_Intent",
+            "slots": {
+                "1099RSlotType": null,
+                "QuestionNeedToSlot": null,
+                "EmailSlotType": null,
+                "VerbTakeSlotType": null,
+                "questionAboutSlot": null,
+                "QuestionWhenSlotType": null,
+                "QuestionHowCanISlotType": null,
+                "TaxSlotType": null,
+                "DateSlotType": null,
+                "CopySlotType": null,
+                "AnnuitySlotType": null,
+                "NumberSlot": null,
+                "FormSlotType": null,
+                "RequestReceiveSlotType": null,
+                "simpleGeneric_topic_slot": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "Tax Forms",
+                        "resolvedValues": [
+                            "tax forms",
+                            "Most frequently produced tax forms",
+                            "Show more options on Tax Forms"
+                        ],
+                        "interpretedValue": "tax forms"
+                    }
+                }
+            },
+            "state": "ReadyForFulfillment",
+            "confirmationState": "None"
+        }
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "FAQSIMP_Generic_Intent"
+            },
+            "resolvedSlots": {
+                "simpleGeneric_topic_slot": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "Tax Forms",
+                        "resolvedValues": [
+                            "tax forms",
+                            "Most frequently produced tax forms",
+                            "Show more options on Tax Forms"
+                        ]
+                    }
+                }
+            },
+            "transcriptionConfidence": 1.0,
+            "transcription": "Get your Tax Forms"
+        }
+    ]
+},
+"response":[{"contentType": "PlainText", "content": "Prudential tax forms begin mailing out in mid-January. If you'd like to request another copy, I can help you - right here in this chat.<br><br>Or you can choose a different tax topic. In a few words, you can always type something too."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Request tax forms in the mail (using this chat)\", \"Log in and download tax forms online\", \"Frequently produced Prudential Annuities Tax forms\", \"Show more options on Tax Forms\"]}}"}]
+}

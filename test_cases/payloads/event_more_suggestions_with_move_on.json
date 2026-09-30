@@ -1,0 +1,164 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "sessionId": "70a7ede9-d243-4c77-9399-127a4277a71e",
+        "inputTranscript": "show more options",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "name": "MoreSuggestions",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.93,
+                "intent": {
+                    "name": "QuestionAnswered-MoreInfo",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.82,
+                "intent": {
+                    "name": "FAQSIMP_Generic_Intent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "VerbTakeSlotType": null,
+                        "questionAboutSlot": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "DateSlotType": null,
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "NumberSlot": null,
+                        "FormSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "simpleGeneric_topic_slot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.78,
+                "intent": {
+                    "name": "FAQAccMaintUpdateTaxWithholdingIntent",
+                    "slots": {
+                        "WithdrawSlotType": null,
+                        "ChangeSlotType": null,
+                        "HowSlotType": null,
+                        "TaxSlotType": null,
+                        "WithheldSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.76,
+                "intent": {
+                    "name": "FAQRegisterSelfServiceIntent",
+                    "slots": {
+                        "HowSlot": null,
+                        "CountrySlot": null,
+                        "IRASlotType": null,
+                        "AnnuitySlotType": null,
+                        "RegisterSlotType": null,
+                        "OnlineSlot": null,
+                        "LoginSlotType": null,
+                        "WantSlot": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA",
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "ff946699-24c2-4757-a336-15afcc894298",
+            "sessionAttributes": {
+                "Utterance_History": "Changing beneficiaries, I want more information on this topic, Trust as a Beneficiary, Show more options on Beneficiary Updates, Beneficiary Updates/Information, Show more options, Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "FAQAccMaintBeneChangeIntent"
+            },
+            "activeContexts": [
+                {
+                    "name": "more_suggestions",
+                    "contextAttributes": {
+                        "more_suggestions": "Beneficiary pre-determined payouts, Adding Children by Representation to a Beneficiary, Transaction confirmation delivery"
+                    },
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 172,
+                        "turnsToLive": 1
+                    }
+                },
+                {
+                    "name": "question_answered_yes",
+                    "contextAttributes": {},
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 172,
+                        "turnsToLive": 1
+                    }
+                },
+                {
+                    "name": "question_answered_no",
+                    "contextAttributes": {},
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 172,
+                        "turnsToLive": 1
+                    }
+                },
+                {
+                    "name": "question_answered_more_info",
+                    "contextAttributes": {
+                        "suggestions": "Adding Contingent Beneficiaries, Beneficiary change request status, Trust as a Beneficiary,Show more options"
+                    },
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 172,
+                        "turnsToLive": 1
+                    }
+                }
+            ],
+            "intent": {
+                "name": "MoreSuggestions",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "MoreSuggestions"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1.0,
+                "transcription": "show more options"
+            }
+        ]
+    },
+    "response": [{"contentType": "PlainText", "content": "Please select a relevant option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Beneficiary pre-determined payouts\", \" Adding Children by Representation to a Beneficiary\", \" Transaction confirmation delivery\", \"I'm ready to move on\"]}}"}]
+}

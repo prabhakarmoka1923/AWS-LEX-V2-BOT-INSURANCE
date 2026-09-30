@@ -1,0 +1,178 @@
+{
+    "request":
+{
+    "requestAttributes": {
+        "x_pru_env": "Custom"
+    },
+    "sessionId": "ad1a7fb4-400a-45d9-bbd5-823e5cfe903c",
+    "inputTranscript": "Withdrawals",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQWithdrawals",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {
+                    "WillorWouldSlotType": null,
+                    "ProcessSlotType": null,
+                    "WithdrawSlotType": {
+                        "shape": "List",
+                        "value": {
+                            "originalValue": "Withdrawals",
+                            "resolvedValues": [
+                                "withdrawals",
+                                "withdrawal",
+                                "withdraw",
+                                "make withdrawals",
+                                "full withdrawals"
+                            ],
+                            "interpretedValue": "Withdrawals"
+                        },
+                        "values": [
+                            {
+                                "shape": "Scalar",
+                                "value": {
+                                    "originalValue": "Withdrawals",
+                                    "resolvedValues": [
+                                        "withdrawals",
+                                        "withdrawal",
+                                        "withdraw",
+                                        "make withdrawals",
+                                        "full withdrawals"
+                                    ],
+                                    "interpretedValue": "Withdrawals"
+                                }
+                            }
+                        ]
+                    },
+                    "QuestionNeedToSlot": null,
+                    "MoneySlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionWhereSlotType": null,
+                    "QuestionSlotType": null,
+                    "QuestionWhatSlotType": null,
+                    "AnnuitySlotType": null,
+                    "SlotForAnyText": null,
+                    "RequestReceiveSlotType": null,
+                    "FormSlotType": null,
+                    "CurrencySlot": null,
+                    "MonthlySlot": null,
+                    "TerminateSlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQProcessingPartialWithdrawalIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {
+                    "AnnuitySlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "MonthlySlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQHowMuchMoneyWasSentIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.38
+        },
+        {
+            "intent": {
+                "slots": {
+                    "WillorWouldSlotType": null,
+                    "request_slot": null,
+                    "NeedSlot": null,
+                    "PaymentsSlotType": null,
+                    "CorrespondenceSlot": null,
+                    "MonthlySlotType": null,
+                    "HowSlot": null,
+                    "VerbSlot": null,
+                    "DateSlotType": null,
+                    "WhereSlot": null,
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "FormSlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQAccMaintAccountCorrespondenceCopyIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.36
+        },
+        {
+            "intent": {
+                "slots": {
+                    "ProcessSlotType": null,
+                    "WithdrawSlotType": null,
+                    "EmailSlotType": null,
+                    "AnnuitySlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "FormSlotType": null,
+                    "InitiateSlotType": null,
+                    "QuestionDidSlotType": null,
+                    "QuestionWhySlotType": null,
+                    "QuestionMyselfSlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQWasMyPartialWithdrawalProcessedIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.24
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {},
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "timeToLiveInSeconds": 86,
+                    "turnsToLive": 4
+                },
+                "name": "more_suggestions",
+                "contextAttributes": {}
+            }
+        ],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FAQWithdrawals",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "9b54aa65-2c76-420a-892f-d832d014a2e3"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "FAQWithdrawals"
+            },
+            "transcription": "Withdrawals",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "71",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    }
+}, "response" :[{"contentType": "PlainText", "content": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Processing a Partial or Full Withdrawal\", \"Starting an automated or systematic withdrawal\", \"Status\", \"Show more options on Withdrawals\"]}}"}]
+}

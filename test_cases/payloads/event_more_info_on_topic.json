@@ -1,0 +1,160 @@
+{
+    "request": {
+        "sessionId": "21aafbd7-28fd-482c-a074-05b798484d73",
+        "inputTranscript": "I want more information on this topic",
+        "interpretations": [
+            {
+                "nluConfidence": 1.0,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "QuestionAnswered-MoreInfo",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.84,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "MoreSuggestions",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.8,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQMoneyInIRAIntent",
+                    "slots": {
+                        "IRASlotType": null,
+                        "MoneySlotType": null,
+                        "AnnuitySlotType": null
+                    },
+                    "state": "ReadyForFulfillment"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.78,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQRegisterSelfServiceIntent",
+                    "slots": {
+                        "HowSlot": null,
+                        "CountrySlot": null,
+                        "IRASlotType": null,
+                        "AnnuitySlotType": null,
+                        "RegisterSlotType": null,
+                        "OnlineSlot": null,
+                        "LoginSlotType": null,
+                        "WantSlot": null
+                    },
+                    "state": "ReadyForFulfillment"
+                },
+                "interpretationSource": "Lex"
+            },
+            {
+                "nluConfidence": 0.77,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQNewBusinessOpenContractIntent",
+                    "slots": {
+                        "QuestionNeedToSlot": null,
+                        "AnnuitySlotType": null,
+                        "RegisterSlotType": null,
+                        "QuestionHowCanISlotType": null
+                    },
+                    "state": "ReadyForFulfillment"
+                },
+                "interpretationSource": "Lex"
+            }
+        ],
+        "bot": {
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev",
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "sessionAttributes": {
+                "Utterance_History": "Required Minimum Distribution (RMD), Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "FAQAboutRMDIntent"
+            },
+            "activeContexts": [
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "more_suggestions",
+                    "contextAttributes": {
+                        "more_suggestions": "Will Prudential automatically send RMD, When does RMD need to be satisfied, Satisfying your RMD"
+                    }
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_yes",
+                    "contextAttributes": {}
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_no",
+                    "contextAttributes": {}
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_more_info",
+                    "contextAttributes": {
+                        "suggestions": "Processing an RMD payment, Updating existing RMD program, RMD amount,Show more options"
+                    }
+                }
+            ],
+            "intent": {
+                "confirmationState": "None",
+                "name": "QuestionAnswered-MoreInfo",
+                "slots": {},
+                "state": "ReadyForFulfillment"
+            },
+            "originatingRequestId": "283a4083-ee7c-4650-a5c1-d952d6830558"
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "FulfillmentCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "QuestionAnswered-MoreInfo"
+                },
+                "transcriptionConfidence": 1.0,
+                "transcription": "I want more information on this topic",
+                "resolvedSlots": {}
+            }
+        ],
+        "inputMode": "Text"
+    },
+    "response": [
+        {
+            "contentType": "PlainText",
+            "content": "If you're looking for something else, please type in your question."
+        },
+        {
+            "contentType": "CustomPayload",
+            "content": "{\"website\": {\"suggestions\": [\"Processing an RMD payment\", \" Updating existing RMD program\", \" RMD amount\", \"Show more options\"]}}"
+        }
+    ]
+}

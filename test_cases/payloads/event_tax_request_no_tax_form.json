@@ -1,0 +1,210 @@
+{
+    "request": {
+        "requestAttributes": {
+            "annuities.TaxDNPQ30Error": "{'response': {}, 'responseCode': 204}"
+        },
+        "sessionId": "672662d8-7064-44e3-a91b-2dbc5d8748f5",
+        "inputTranscript": "Annuities doc search Tax_DNPQ30 failed",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "name": "HandleProxyReqResponseIntent",
+                    "slots": {
+                        "type": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "doc search",
+                                "resolvedValues": [
+                                    "doc search"
+                                ],
+                                "interpretedValue": "doc search"
+                            }
+                        },
+                        "status": {
+                            "shape": "Scalar",
+                            "value": {
+                                "originalValue": "failed",
+                                "resolvedValues": [
+                                    "failure"
+                                ],
+                                "interpretedValue": "failure"
+                            }
+                        }
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.78,
+                "intent": {
+                    "name": "FAQAccMaintFundAnnualRptIntent",
+                    "slots": {
+                        "MoneySlotType": null,
+                        "ReportSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "FAQWhenWillMoneyArriveIntent",
+                    "slots": {
+                        "WithdrawSlotType": null,
+                        "MoneySlotType": null,
+                        "EmailSlotType": null,
+                        "WhereSlotType": null,
+                        "QuestionWhenSlotType": null,
+                        "BankAccountSlotType": null,
+                        "MonthlySlotType": null,
+                        "EFTSlotType": null,
+                        "PaymentSlotType": null,
+                        "QuestionWhatSlotType": null,
+                        "AnnuitySlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "HowSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.75,
+                "intent": {
+                    "name": "FAQAnnualRMDLetterIntent",
+                    "slots": {
+                        "MonthlySlotType": null,
+                        "RMDSlotType": null
+                    },
+                    "state": "InProgress",
+                    "confirmationState": "None"
+                }
+            }
+        ],
+        "bot": {
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA",
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "70038561-920b-4a6d-ba23-134efeed48d2",
+            "sessionAttributes": {
+                "dob_prompt_counter": "0",
+                "Utterance_History": "6262, 03/03/1950, e1821590, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+                "ssn_prompt_counter": "0",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+                "cn_prompt_counter": "0"
+            },
+            "activeContexts": [
+                {
+                    "name": "handle-proxy-response",
+                    "contextAttributes": {
+                        "dob": "1950-03-03",
+                        "contractId": "e1821590",
+                        "ssn": "6262"
+                    },
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 75,
+                        "turnsToLive": 4
+                    }
+                }
+            ],
+            "intent": {
+                "name": "HandleProxyReqResponseIntent",
+                "slots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "doc search",
+                            "resolvedValues": [
+                                "doc search"
+                            ],
+                            "interpretedValue": "doc search"
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "failed",
+                            "resolvedValues": [
+                                "failure"
+                            ],
+                            "interpretedValue": "failure"
+                        }
+                    }
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "HandleProxyReqResponseIntent"
+                },
+                "resolvedSlots": {
+                    "type": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "doc search",
+                            "resolvedValues": [
+                                "doc search"
+                            ]
+                        }
+                    },
+                    "status": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "failed",
+                            "resolvedValues": [
+                                "failure"
+                            ]
+                        }
+                    }
+                },
+                "transcriptionConfidence": 1.0,
+                "transcription": "Annuities doc search Tax_DNPQ30 failed"
+            }
+        ],
+        "inputMode": "Text"
+    },
+    "response": [
+        [
+        {
+            "contentType": "PlainText",
+            "content": "It seems like you don't have any available Prudential tax forms. Please note, there are many instances when a tax form is not <button id='botGoto' title='1099R and when they are not issued' aria-label='produced' role='button' tabindex=0>produced</button>.<br><br>For further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Please choose an option below to continue. Or you can type in a question too."
+        },
+        {
+            "contentType": "CustomPayload",
+            "content": "{\"website\": {\"suggestions\": [\"Request tax forms for another contract by mail\", \"Log in and download tax forms online\", \"Show me a different topic<br> (go back to Main Menu)\", \"I don't have any other questions\"]}}"
+        }
+    ],
+    [
+        {"contentType": "PlainText", "content": "I'm having technical issues right now. I'm sorry about that.<br><br>You can also access tax forms online on the <a href=\"https://pru.us/DocCenterAnnRW\" target=\"_blank\" role=\"link\" aria-label=\"Documents\" tabindex=0>Documents</a> page, or log in to your account and click on the 'Documents' tab.<br><br>For further assistance, you can call our contact center at <a href='tel:8887782888'>(888) 778-2888</a>. Customer Service Professionals are available Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><br>If you have other Annuity questions, you can go back to the Main Menu."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Main Menu\"]}}"}
+]
+]
+}

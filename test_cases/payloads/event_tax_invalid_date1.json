@@ -1,0 +1,240 @@
+{
+    "request":{
+    "inputMode": "Text",
+    "sessionId": "d32ba531-fe18-465b-ae99-bed2d0ba031e",
+    "inputTranscript": "13/13/1993",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 1.0,
+            "intent": {
+                "confirmationState": "None",
+                "name": "ProcessCustDupTaxFormIntent",
+                "slots": {
+                    "dob": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "13/13/1993",
+                            "resolvedValues": []
+                        }
+                    },
+                    "contractId": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "E1821590",
+                            "resolvedValues": [
+                                "e1821590"
+                            ],
+                            "interpretedValue": "e1821590"
+                        }
+                    },
+                    "ssn": null
+                },
+                "state": "InProgress"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.86,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQAccMaintViewDocsOnlineIntent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "PersonSlotType": null,
+                    "StatementSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "QuestionWhenSlotType": null,
+                    "OnlineSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "MonthlySlotType": null,
+                    "RMDSlot": null,
+                    "DateSlotType": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "13/13/1993",
+                            "resolvedValues": []
+                        }
+                    },
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "CorrespondenceSlotType": null
+                },
+                "state": "InProgress"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.78,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQSIMP_TaxForms_Intent",
+                "slots": {
+                    "CopySlot": null,
+                    "WhereSlot": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "13/13/1993",
+                            "resolvedValues": [],
+                            "interpretedValue": "13/13/1993"
+                        }
+                    },
+                    "whatSlot": null,
+                    "FormSlot": null,
+                    "report": null,
+                    "howSlot": null,
+                    "taxForm_topic_slot": null
+                },
+                "state": "InProgress"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.78,
+            "intent": {
+                "confirmationState": "None",
+                "name": "FAQSIMP_Generic_Intent",
+                "slots": {
+                    "1099RSlotType": null,
+                    "QuestionNeedToSlot": null,
+                    "EmailSlotType": null,
+                    "VerbTakeSlotType": null,
+                    "questionAboutSlot": null,
+                    "QuestionWhenSlotType": null,
+                    "QuestionHowCanISlotType": null,
+                    "TaxSlotType": null,
+                    "DateSlotType": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "13/13/1993",
+                            "resolvedValues": []
+                        }
+                    },
+                    "CopySlotType": null,
+                    "AnnuitySlotType": null,
+                    "NumberSlot": null,
+                    "FormSlotType": null,
+                    "RequestReceiveSlotType": null,
+                    "simpleGeneric_topic_slot": null
+                },
+                "state": "InProgress"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "intent": {
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress"
+            }
+        }
+    ],
+    "bot": {
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev",
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "proposedNextState": {
+        "prompt": {
+            "attempt": "Retry1"
+        },
+        "intent": {
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "13/13/1993",
+                        "resolvedValues": []
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1821590",
+                        "resolvedValues": [
+                            "e1821590"
+                        ],
+                        "interpretedValue": "e1821590"
+                    }
+                },
+                "ssn": null
+            },
+            "state": "InProgress"
+        },
+        "dialogAction": {
+            "slotToElicit": "dob",
+            "type": "ElicitSlot"
+        }
+    },
+    "sessionState": {
+        "originatingRequestId": "67ca5df5-eee1-41b7-9b7f-e459a428ef11",
+        "sessionAttributes": {
+            "dob_prompt_counter": "1",
+            "Utterance_History": "E1821590, Request tax forms in the mail (using this chat), Get your Tax Forms, Initial Intent, ",
+            "Lex_Intent_Score": "1.0",
+            "Lex_Intent_Name": "ProcessCustDupTaxFormIntent",
+            "cn_prompt_counter": "1"
+        },
+        "activeContexts": [],
+        "intent": {
+            "confirmationState": "None",
+            "name": "ProcessCustDupTaxFormIntent",
+            "slots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "13/13/1993",
+                        "resolvedValues": []
+                    }
+                },
+                "contractId": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "E1821590",
+                        "resolvedValues": [
+                            "e1821590"
+                        ],
+                        "interpretedValue": "e1821590"
+                    }
+                },
+                "ssn": null
+            },
+            "state": "InProgress"
+        }
+    },
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "ProcessCustDupTaxFormIntent"
+            },
+            "resolvedSlots": {
+                "dob": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "13/13/1993",
+                        "resolvedValues": []
+                    }
+                }
+            },
+            "transcriptionConfidence": 1.0,
+            "transcription": "13/13/1993"
+        }
+    ],
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook"
+},
+"response":[{"contentType": "PlainText", "content": "I'm sorry. I don't recognize what you just put in. Please enter your date of birth in <b>mm/dd/yyyy</b> format.<br><br>Make sure to use slashes, with no spaces in between (for example, 02/15/1953)."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"inputMasked\": \"Mask after value\"}}"}]
+}

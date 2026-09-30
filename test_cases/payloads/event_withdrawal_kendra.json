@@ -1,0 +1,770 @@
+{
+    "request":{
+    "inputMode": "Text",
+    "requestAttributes": {
+        "x-amz-lex:kendra-search-response-question_answer-question-2": "Withdrawal status",
+        "x-amz-lex:kendra-search-response-question_answer-question-1": "Withdrawals",
+        "x-amz-lex:kendra-search-response-question_answer-answer-2": "Withdrawals, as well as other previous transactions, can be viewed online by [clicking here](https://www.prudential.com/login). Go to the \"Transaction History\" section and look for an event labeled \"Withdrawal\" for the date in question. \r\n\r\nPlease note that the date listed is the day the withdrawal processed. Your money leaves the following business day and can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or seven business days if you elected check.  \r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+        "x-amz-lex:kendra-search-response-question_answer-answer-1": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.",
+        "x-amz-lex:kendra-search-response-question_answer-answer-4": "Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.\r\n\r\nIf you elect to not have income taxes withheld, you may incur penalties under the estimated tax rules if your withholding and estimated tax payments are not sufficient. There is a minimum 10% federal income tax withholding required on the taxable portion of non-periodic payments, and we will report transactions to you and the Internal Revenue Service (IRS) if required under tax law.\r\n\r\nYou may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.\r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+        "x-amz-lex:kendra-search-response-question_answer-answer-3": "You can request partial and full withdrawals online by [clicking here](https://www.prudential.com/login). Withdrawals process the same day, and you will receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within seven business days if you elected check.\r\n\r\nHere are some other relevant suggested topics.. Please select an option below or type in a question.  ",
+        "x-amz-lex:kendra-search-response-question_answer-question-4": "Withdrawal will be held on",
+        "x-amz-lex:kendra-search-response-question_answer-question-3": "I want to take a withdrawal"
+    },
+    "sessionId": "a8ac75b8-4555-4f01-9eb5-6bb1d4683c94",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "kendraResponse": {
+                    "queryId": "94e608f1-4b77-456c-a5e3-f3e623804354",
+                    "resultItems": [
+                        {
+                            "id": "94e608f1-4b77-456c-a5e3-f3e623804354-86b3d4f0-9951-4579-a9b2-f6b5f274d258",
+                            "type": "QUESTION_ANSWER",
+                            "additionalAttributes": [
+                                {
+                                    "key": "QuestionText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Withdrawals",
+                                            "highlights": [
+                                                {
+                                                    "beginOffset": 0,
+                                                    "endOffset": 11,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "AnswerText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.",
+                                            "highlights": []
+                                        }
+                                    }
+                                }
+                            ],
+                            "documentId": "7e0b8db543c5b801072801be801363398cd1ec8a86c967fe2687c4917f500cde1638537860762",
+                            "documentTitle": {
+                                "text": ""
+                            },
+                            "documentExcerpt": {
+                                "text": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.",
+                                "highlights": [
+                                    {
+                                        "beginOffset": 0,
+                                        "endOffset": 130,
+                                        "topAnswer": false,
+                                        "type": "STANDARD"
+                                    }
+                                ]
+                            },
+                            "documentURI": "",
+                            "documentAttributes": [
+                                {
+                                    "key": "intent_name",
+                                    "value": {
+                                        "stringValue": "Withdrawals"
+                                    }
+                                },
+                                {
+                                    "key": "suggestions",
+                                    "value": {
+                                        "stringListValue": [
+                                            "Who may withdraw funds from my annuity account?",
+                                            "Processing of a withdrawal",
+                                            "Will Prudential withhold income taxes from my withdrawal?"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "scoreAttributes": {
+                                "scoreConfidence": "VERY_HIGH"
+                            },
+                            "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-86b3d4f0-9951-4579-a9b2-f6b5f274d258"
+                        },
+                        {
+                            "id": "94e608f1-4b77-456c-a5e3-f3e623804354-397cf854-4cd2-43db-97e0-975a8f1a799e",
+                            "type": "QUESTION_ANSWER",
+                            "additionalAttributes": [
+                                {
+                                    "key": "QuestionText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Withdrawal status",
+                                            "highlights": []
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "AnswerText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Withdrawals, as well as other previous transactions, can be viewed online by [clicking here](https://www.prudential.com/login). Go to the \"Transaction History\" section and look for an event labeled \"Withdrawal\" for the date in question. \r\n\r\nPlease note that the date listed is the day the withdrawal processed. Your money leaves the following business day and can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or seven business days if you elected check.  \r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+                                            "highlights": [
+                                                {
+                                                    "beginOffset": 0,
+                                                    "endOffset": 11,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                },
+                                                {
+                                                    "beginOffset": 199,
+                                                    "endOffset": 209,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                },
+                                                {
+                                                    "beginOffset": 289,
+                                                    "endOffset": 299,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "documentId": "8d504f0bb84e5eeb56a104c692c8e897cd47d0c0d4e4a324f29fa3b1be8af6551638537860762",
+                            "documentTitle": {
+                                "text": ""
+                            },
+                            "documentExcerpt": {
+                                "text": "Withdrawals, as well as other previous transactions, can be viewed online by [clicking here](https://www.prudential.com/login). Go to the \"Transaction History\" section and look for an event labeled \"Withdrawal\" for the date in question. \r\n\r\nPlease note that the date listed is the day the withdrawal ",
+                                "highlights": [
+                                    {
+                                        "beginOffset": 0,
+                                        "endOffset": 300,
+                                        "topAnswer": false,
+                                        "type": "STANDARD"
+                                    }
+                                ]
+                            },
+                            "documentURI": "",
+                            "documentAttributes": [
+                                {
+                                    "key": "intent_name",
+                                    "value": {
+                                        "stringValue": "Withdrawals"
+                                    }
+                                },
+                                {
+                                    "key": "question_answered",
+                                    "value": {
+                                        "stringValue": "Who may withdraw funds from my annuity account?, Processing of a withdrawal, Will Prudential withhold income taxes from my withdrawal? "
+                                    }
+                                },
+                                {
+                                    "key": "suggestions",
+                                    "value": {
+                                        "stringListValue": [
+                                            "How long does it take to receive my funds?",
+                                            "How much money was sent",
+                                            "Stopping and reissuing a check",
+                                            "I'm done"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "scoreAttributes": {
+                                "scoreConfidence": "VERY_HIGH"
+                            },
+                            "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-397cf854-4cd2-43db-97e0-975a8f1a799e"
+                        },
+                        {
+                            "id": "94e608f1-4b77-456c-a5e3-f3e623804354-2b886c9f-c1cc-47c4-ba02-dd56c39a2062",
+                            "type": "QUESTION_ANSWER",
+                            "additionalAttributes": [
+                                {
+                                    "key": "QuestionText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "I want to take a withdrawal",
+                                            "highlights": []
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "AnswerText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "You can request partial and full withdrawals online by [clicking here](https://www.prudential.com/login). Withdrawals process the same day, and you will receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within seven business days if you elected check.\r\n\r\nHere are some other relevant suggested topics.. Please select an option below or type in a question.  ",
+                                            "highlights": [
+                                                {
+                                                    "beginOffset": 33,
+                                                    "endOffset": 44,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                },
+                                                {
+                                                    "beginOffset": 106,
+                                                    "endOffset": 117,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "documentId": "425141b11f8f39996e572a205aa37b275b56ed9891bd018a0bf3ada6ea2db0e21638537860762",
+                            "documentTitle": {
+                                "text": ""
+                            },
+                            "documentExcerpt": {
+                                "text": "You can request partial and full withdrawals online by [clicking here](https://www.prudential.com/login). Withdrawals process the same day, and you will receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within seven business days if you elected check.\r\n\r",
+                                "highlights": [
+                                    {
+                                        "beginOffset": 0,
+                                        "endOffset": 300,
+                                        "topAnswer": false,
+                                        "type": "STANDARD"
+                                    }
+                                ]
+                            },
+                            "documentURI": "",
+                            "documentAttributes": [
+                                {
+                                    "key": "intent_name",
+                                    "value": {
+                                        "stringValue": "Withdrawals"
+                                    }
+                                },
+                                {
+                                    "key": "question_answered",
+                                    "value": {
+                                        "stringValue": "Who may withdraw funds from my annuity account?, Will Prudential withhold income taxes from my withdrawal? "
+                                    }
+                                },
+                                {
+                                    "key": "suggestions",
+                                    "value": {
+                                        "stringListValue": [
+                                            "Will Prudential withhold income taxes from my withdrawal?",
+                                            "How long does it take to receive my funds?",
+                                            "I'm done"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "scoreAttributes": {
+                                "scoreConfidence": "HIGH"
+                            },
+                            "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-2b886c9f-c1cc-47c4-ba02-dd56c39a2062"
+                        },
+                        {
+                            "id": "94e608f1-4b77-456c-a5e3-f3e623804354-1a9e566b-25b5-4d43-b973-d7dca86e9ef4",
+                            "type": "QUESTION_ANSWER",
+                            "additionalAttributes": [
+                                {
+                                    "key": "QuestionText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Withdrawal will be held on",
+                                            "highlights": []
+                                        }
+                                    }
+                                },
+                                {
+                                    "key": "AnswerText",
+                                    "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                    "value": {
+                                        "textWithHighlightsValue": {
+                                            "text": "Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.\r\n\r\nIf you elect to not have income taxes withheld, you may incur penalties under the estimated tax rules if your withholding and estimated tax payments are not sufficient. There is a minimum 10% federal income tax withholding required on the taxable portion of non-periodic payments, and we will report transactions to you and the Internal Revenue Service (IRS) if required under tax law.\r\n\r\nYou may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.\r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+                                            "highlights": [
+                                                {
+                                                    "beginOffset": 61,
+                                                    "endOffset": 71,
+                                                    "topAnswer": false,
+                                                    "type": "STANDARD"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "documentId": "909e48d68aaf06a56496cbd03949975f7b2a4075b78f10ba5f3ff3e60a17a87e1638537860762",
+                            "documentTitle": {
+                                "text": ""
+                            },
+                            "documentExcerpt": {
+                                "text": "Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.\r\n\r\nIf you elect to not have income taxes withheld, you may incur penalties under the e",
+                                "highlights": [
+                                    {
+                                        "beginOffset": 0,
+                                        "endOffset": 300,
+                                        "topAnswer": false,
+                                        "type": "STANDARD"
+                                    }
+                                ]
+                            },
+                            "documentURI": "",
+                            "documentAttributes": [
+                                {
+                                    "key": "intent_name",
+                                    "value": {
+                                        "stringValue": "Withdrawals"
+                                    }
+                                },
+                                {
+                                    "key": "question_answered",
+                                    "value": {
+                                        "stringValue": "Who may withdraw funds from my annuity account?, Processing of a withdrawal"
+                                    }
+                                },
+                                {
+                                    "key": "suggestions",
+                                    "value": {
+                                        "stringListValue": [
+                                            "Processing of a withdrawal",
+                                            "How long does it take to receive my funds?",
+                                            "I'm done"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "scoreAttributes": {
+                                "scoreConfidence": "HIGH"
+                            },
+                            "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-1a9e566b-25b5-4d43-b973-d7dca86e9ef4"
+                        }
+                    ],
+                    "facetResults": [],
+                    "totalNumberOfResults": 4
+                },
+                "name": "Kendra",
+                "state": "ReadyForFulfillment"
+            },
+            "sentimentResponse": {
+                "sentimentScore": {
+                    "negative": 0.31108972430229187,
+                    "positive": 0.005727763753384352,
+                    "mixed": 0.010335727594792843,
+                    "neutral": 0.6728467345237732
+                },
+                "sentiment": "NEUTRAL"
+            }
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "sentimentResponse": {
+                "sentimentScore": {
+                    "negative": 0.31108972430229187,
+                    "positive": 0.005727763753384352,
+                    "mixed": 0.010335727594792843,
+                    "neutral": 0.6728467345237732
+                },
+                "sentiment": "NEUTRAL"
+            }
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "ProfanityIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "sentimentResponse": {
+                "sentimentScore": {
+                    "negative": 0.31108972430229187,
+                    "positive": 0.005727763753384352,
+                    "mixed": 0.010335727594792843,
+                    "neutral": 0.6728467345237732
+                },
+                "sentiment": "NEUTRAL"
+            },
+            "nluConfidence": 0.8
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "WelcomeIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "sentimentResponse": {
+                "sentimentScore": {
+                    "negative": 0.31108972430229187,
+                    "positive": 0.005727763753384352,
+                    "mixed": 0.010335727594792843,
+                    "neutral": 0.6728467345237732
+                },
+                "sentiment": "NEUTRAL"
+            },
+            "nluConfidence": 0.51
+        }
+    ],
+    "inputTranscript": "withdrawals",
+    "responseContentType": "text/plain; charset=utf-8",
+    "invocationSource": "FulfillmentCodeHook",
+    "messageVersion": "1.0",
+    "sessionState": {
+        "originatingRequestId": "3e7d3352-0694-4663-9c83-a4523ed9f5e4",
+        "sessionAttributes": {
+            "fallbackCount": "3"
+        },
+        "activeContexts": [],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "kendraResponse": {
+                "queryId": "94e608f1-4b77-456c-a5e3-f3e623804354",
+                "resultItems": [
+                    {
+                        "id": "94e608f1-4b77-456c-a5e3-f3e623804354-86b3d4f0-9951-4579-a9b2-f6b5f274d258",
+                        "type": "QUESTION_ANSWER",
+                        "additionalAttributes": [
+                            {
+                                "key": "QuestionText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Withdrawals",
+                                        "highlights": [
+                                            {
+                                                "beginOffset": 0,
+                                                "endOffset": 11,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "key": "AnswerText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.",
+                                        "highlights": []
+                                    }
+                                }
+                            }
+                        ],
+                        "documentId": "7e0b8db543c5b801072801be801363398cd1ec8a86c967fe2687c4917f500cde1638537860762",
+                        "documentTitle": {
+                            "text": ""
+                        },
+                        "documentExcerpt": {
+                            "text": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question.",
+                            "highlights": [
+                                {
+                                    "beginOffset": 0,
+                                    "endOffset": 130,
+                                    "topAnswer": false,
+                                    "type": "STANDARD"
+                                }
+                            ]
+                        },
+                        "documentURI": "",
+                        "documentAttributes": [
+                            {
+                                "key": "intent_name",
+                                "value": {
+                                    "stringValue": "Withdrawals"
+                                }
+                            },
+                            {
+                                "key": "suggestions",
+                                "value": {
+                                    "stringListValue": [
+                                        "Who may withdraw funds from my annuity account?",
+                                        "Processing of a withdrawal",
+                                        "Will Prudential withhold income taxes from my withdrawal?"
+                                    ]
+                                }
+                            }
+                        ],
+                        "scoreAttributes": {
+                            "scoreConfidence": "VERY_HIGH"
+                        },
+                        "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-86b3d4f0-9951-4579-a9b2-f6b5f274d258"
+                    },
+                    {
+                        "id": "94e608f1-4b77-456c-a5e3-f3e623804354-397cf854-4cd2-43db-97e0-975a8f1a799e",
+                        "type": "QUESTION_ANSWER",
+                        "additionalAttributes": [
+                            {
+                                "key": "QuestionText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Withdrawal status",
+                                        "highlights": []
+                                    }
+                                }
+                            },
+                            {
+                                "key": "AnswerText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Withdrawals, as well as other previous transactions, can be viewed online by [clicking here](https://www.prudential.com/login). Go to the \"Transaction History\" section and look for an event labeled \"Withdrawal\" for the date in question. \r\n\r\nPlease note that the date listed is the day the withdrawal processed. Your money leaves the following business day and can take up to three business days to receive if you elected EFT (Electronic Funds Transfer) or seven business days if you elected check.  \r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+                                        "highlights": [
+                                            {
+                                                "beginOffset": 0,
+                                                "endOffset": 11,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            },
+                                            {
+                                                "beginOffset": 199,
+                                                "endOffset": 209,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            },
+                                            {
+                                                "beginOffset": 289,
+                                                "endOffset": 299,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "documentId": "8d504f0bb84e5eeb56a104c692c8e897cd47d0c0d4e4a324f29fa3b1be8af6551638537860762",
+                        "documentTitle": {
+                            "text": ""
+                        },
+                        "documentExcerpt": {
+                            "text": "Withdrawals, as well as other previous transactions, can be viewed online by [clicking here](https://www.prudential.com/login). Go to the \"Transaction History\" section and look for an event labeled \"Withdrawal\" for the date in question. \r\n\r\nPlease note that the date listed is the day the withdrawal ",
+                            "highlights": [
+                                {
+                                    "beginOffset": 0,
+                                    "endOffset": 300,
+                                    "topAnswer": false,
+                                    "type": "STANDARD"
+                                }
+                            ]
+                        },
+                        "documentURI": "",
+                        "documentAttributes": [
+                            {
+                                "key": "intent_name",
+                                "value": {
+                                    "stringValue": "Withdrawals"
+                                }
+                            },
+                            {
+                                "key": "question_answered",
+                                "value": {
+                                    "stringValue": "Who may withdraw funds from my annuity account?, Processing of a withdrawal, Will Prudential withhold income taxes from my withdrawal? "
+                                }
+                            },
+                            {
+                                "key": "suggestions",
+                                "value": {
+                                    "stringListValue": [
+                                        "How long does it take to receive my funds?",
+                                        "How much money was sent",
+                                        "Stopping and reissuing a check",
+                                        "I'm done"
+                                    ]
+                                }
+                            }
+                        ],
+                        "scoreAttributes": {
+                            "scoreConfidence": "VERY_HIGH"
+                        },
+                        "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-397cf854-4cd2-43db-97e0-975a8f1a799e"
+                    },
+                    {
+                        "id": "94e608f1-4b77-456c-a5e3-f3e623804354-2b886c9f-c1cc-47c4-ba02-dd56c39a2062",
+                        "type": "QUESTION_ANSWER",
+                        "additionalAttributes": [
+                            {
+                                "key": "QuestionText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "I want to take a withdrawal",
+                                        "highlights": []
+                                    }
+                                }
+                            },
+                            {
+                                "key": "AnswerText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "You can request partial and full withdrawals online by [clicking here](https://www.prudential.com/login). Withdrawals process the same day, and you will receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within seven business days if you elected check.\r\n\r\nHere are some other relevant suggested topics.. Please select an option below or type in a question.  ",
+                                        "highlights": [
+                                            {
+                                                "beginOffset": 33,
+                                                "endOffset": 44,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            },
+                                            {
+                                                "beginOffset": 106,
+                                                "endOffset": 117,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "documentId": "425141b11f8f39996e572a205aa37b275b56ed9891bd018a0bf3ada6ea2db0e21638537860762",
+                        "documentTitle": {
+                            "text": ""
+                        },
+                        "documentExcerpt": {
+                            "text": "You can request partial and full withdrawals online by [clicking here](https://www.prudential.com/login). Withdrawals process the same day, and you will receive your money within three business days if you elected EFT (Electronic Funds Transfer) or within seven business days if you elected check.\r\n\r",
+                            "highlights": [
+                                {
+                                    "beginOffset": 0,
+                                    "endOffset": 300,
+                                    "topAnswer": false,
+                                    "type": "STANDARD"
+                                }
+                            ]
+                        },
+                        "documentURI": "",
+                        "documentAttributes": [
+                            {
+                                "key": "intent_name",
+                                "value": {
+                                    "stringValue": "Withdrawals"
+                                }
+                            },
+                            {
+                                "key": "question_answered",
+                                "value": {
+                                    "stringValue": "Who may withdraw funds from my annuity account?, Will Prudential withhold income taxes from my withdrawal? "
+                                }
+                            },
+                            {
+                                "key": "suggestions",
+                                "value": {
+                                    "stringListValue": [
+                                        "Will Prudential withhold income taxes from my withdrawal?",
+                                        "How long does it take to receive my funds?",
+                                        "I'm done"
+                                    ]
+                                }
+                            }
+                        ],
+                        "scoreAttributes": {
+                            "scoreConfidence": "HIGH"
+                        },
+                        "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-2b886c9f-c1cc-47c4-ba02-dd56c39a2062"
+                    },
+                    {
+                        "id": "94e608f1-4b77-456c-a5e3-f3e623804354-1a9e566b-25b5-4d43-b973-d7dca86e9ef4",
+                        "type": "QUESTION_ANSWER",
+                        "additionalAttributes": [
+                            {
+                                "key": "QuestionText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Withdrawal will be held on",
+                                        "highlights": []
+                                    }
+                                }
+                            },
+                            {
+                                "key": "AnswerText",
+                                "valueType": "TEXT_WITH_HIGHLIGHTS_VALUE",
+                                "value": {
+                                    "textWithHighlightsValue": {
+                                        "text": "Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.\r\n\r\nIf you elect to not have income taxes withheld, you may incur penalties under the estimated tax rules if your withholding and estimated tax payments are not sufficient. There is a minimum 10% federal income tax withholding required on the taxable portion of non-periodic payments, and we will report transactions to you and the Internal Revenue Service (IRS) if required under tax law.\r\n\r\nYou may wish to consult with your tax advisor if you have any tax questions. Because each situation is unique, neither we nor our representatives can provide tax advice.\r\n\r\nHere are some other relevant suggested topics. Please select an option below or type in a question.",
+                                        "highlights": [
+                                            {
+                                                "beginOffset": 61,
+                                                "endOffset": 71,
+                                                "topAnswer": false,
+                                                "type": "STANDARD"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "documentId": "909e48d68aaf06a56496cbd03949975f7b2a4075b78f10ba5f3ff3e60a17a87e1638537860762",
+                        "documentTitle": {
+                            "text": ""
+                        },
+                        "documentExcerpt": {
+                            "text": "Prudential is generally required to withhold taxes from your withdrawal unless you elect otherwise. However, based on federal and state tax laws, there are some situations where you may not opt out of withholding.\r\n\r\nIf you elect to not have income taxes withheld, you may incur penalties under the e",
+                            "highlights": [
+                                {
+                                    "beginOffset": 0,
+                                    "endOffset": 300,
+                                    "topAnswer": false,
+                                    "type": "STANDARD"
+                                }
+                            ]
+                        },
+                        "documentURI": "",
+                        "documentAttributes": [
+                            {
+                                "key": "intent_name",
+                                "value": {
+                                    "stringValue": "Withdrawals"
+                                }
+                            },
+                            {
+                                "key": "question_answered",
+                                "value": {
+                                    "stringValue": "Who may withdraw funds from my annuity account?, Processing of a withdrawal"
+                                }
+                            },
+                            {
+                                "key": "suggestions",
+                                "value": {
+                                    "stringListValue": [
+                                        "Processing of a withdrawal",
+                                        "How long does it take to receive my funds?",
+                                        "I'm done"
+                                    ]
+                                }
+                            }
+                        ],
+                        "scoreAttributes": {
+                            "scoreConfidence": "HIGH"
+                        },
+                        "feedbackToken": "AYADeN6_JAMSxiDbNAAopI4rGsYAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREF4YnlDdWkxZnlTcUsxSWxrbFB6YTZEQmcwakp1QWJtR0pOai9Zb3AvOFJ5UmdHRlh2c0pFcnY2K0JnRFNieHpmQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3OTQyODk5MjcwNzA6a2V5LzA4YjVkYTRmLWQyOWEtNDU3Mi04OTAwLTRkZjMzN2VjYzljYwC4AQIBAHgooOi6yInIz2MNEHDdrAvnkUT4RDxeObjhZj0qNuvTbAFTcV20k37KnizHoo29M9pAAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMTGwcwkk1mf88zmflAgEQgDsgbQjw1fRbS1Ck2jVbJfXpKGuih3DGgdE6jxHQNg1mKXANjR964TbDrUIREw6Z-Vfdn4uncAza3229GwIAAAAADAAAEAAAAAAAAAAAAAAAAACANYhkRr0JWzSJPzGoQjOa_____wAAAAEAAAAAAAAAAAAAAAEAAAF2l6c9_R79JP3KP3hnNk8hQ71Fpi3eGshqdgS_1bJwmHiMqSE4I0jGFJht80Q-1MH6WoDnXqylHLzkvL2QOHF_x1uzEcaBwHT47esr1eCrrA-VgkcNusfcrOBJuFKK8GB1L8DwOnbD1QwJw34gLxoh9ApKQS4niOtZvLNkxzj-CFsyBxImGGERyCNKjflqz6JvocP3lr1oH1brlVHc2DSNWx1qwS9Tb6G5SaymFTJSc_Vm4LVRBJxtufnSMAPQpSPTS3iitNoQuHIEVvDfHuB1SEBuyYxbTT1OAw6dKgLh5dC2lo3Sdi1WLdccuVDeYbLeFZF6-KfM07m8igBUQuBuSufMRbbD3dOJswm8l8Y0oKeoHqKEIFciuXtkxhiR24RGRP9fMolSk_xlSbGxz0TstEI7zVJvYgqxl0JayUqDe2nYxxi_HqCSithwn5wkfiGpjQpuRVZpXlzdRarheyxd26BliJGNLPV_0n_iEEtQX7MnK-2De3IElzZ5nc2ucQaDHHuO1OSpAGcwZQIwMhK2RdqZfgSwnrVFda7NlCE-_StwRwPQg9ZAqJl-lIyv05eFr-OyAOCglD0mF7KyAjEAyTEDpeMTg3p458kFA4lpevOH7mDJ_WVl_YoXWXqu3Q-HlcFtr4AQzytyeObrDn6i.94e608f1-4b77-456c-a5e3-f3e623804354-1a9e566b-25b5-4d43-b973-d7dca86e9ef4"
+                    }
+                ],
+                "facetResults": [],
+                "totalNumberOfResults": 4
+            },
+            "name": "Kendra",
+            "state": "ReadyForFulfillment"
+        }
+    },
+    "bot": {
+        "aliasId": "TSTALIASID",
+        "aliasName": "TestBotAlias",
+        "name": "Pru_Website_Bot_Dev",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "CNLII5AO51"
+    }
+},
+"response":[{"contentType": "PlainText", "content": "Here are the most popular questions that I have found for the selected topic. Please select an option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Who may withdraw funds from my annuity account?\", \"Processing of a withdrawal\", \"Will Prudential withhold income taxes from my withdrawal?\"]}}"}]
+}

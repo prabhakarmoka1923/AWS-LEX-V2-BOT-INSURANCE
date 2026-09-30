@@ -1,0 +1,114 @@
+{
+    "request":
+{
+    "sessionId": "777228421253755",
+    "inputTranscript": "how can i claim",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {
+                    "person": null
+                },
+                "confirmationState": "None",
+                "name": "FAQHowDoIFileDeathClaimIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.8
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQOtherOutOfScopeIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.28
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "QuestionAnswered-Yes",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.23
+        },
+        {
+            "intent": {
+                "slots": {
+                    "RMD_topic_slot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQRMDFormRequestIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.23
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQProcessingPartialWithdrawalIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.19
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "invocationSource": "FulfillmentCodeHook",
+    "messageVersion": "1.0",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "FAQWhoMayWithdrawFunds"
+        },
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 166
+                },
+                "name": "question_answered_yes",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 166
+                },
+                "name": "question_answered_no",
+                "contextAttributes": {
+                    "suggestions": "Processing a Partial or Full Withdrawal, Starting an automated or systematic withdrawal, Processing an RMD payment,I'm ready to move on"
+                }
+            }
+        ],
+        "intent": {
+            "slots": {
+                "person": null
+            },
+            "confirmationState": "None",
+            "name": "FAQWhoMayWithdrawFunds",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "307e9553-b68c-4f5f-a0a3-768687936e10"
+    },
+    "transcriptions": [
+        {
+            "resolvedSlots": {},
+            "resolvedContext": {
+                "intent": "FAQWhoMayWithdrawFunds"
+            },
+            "transcription": "how can i claim",
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "Annuities-FAQ-qa",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "LWLNZYBBOQ"
+    }
+},"response":[{"contentType": "PlainText", "content": "Please accept our condolences for your loss. Our team of specialists is ready to assist you with the claims process. Please call our Contact Center at <a href='tel:8887782888'>(888) 778-2888</a>, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET.<br><hr style=\"margin-top: 10px; margin-bottom: 10px;\"/>Did that answer your question?"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"question_answered\": [\"Yes, it answered my question\", \"No, I'm still unclear\", \"I want more information on this topic\", \"Show me a different topic<br> (go back to Main Menu)\"]}}"}]
+}

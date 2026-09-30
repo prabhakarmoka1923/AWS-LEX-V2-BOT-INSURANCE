@@ -1,0 +1,167 @@
+{
+    "request":{
+    "sessionId": "7ab23722-b904-417c-9f75-8b7da5696879",
+    "inputTranscript": "5 Stars",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {
+                    "FeedbackDescription": null,
+                    "FeedbackRating": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "5",
+                            "resolvedValues": [
+                                "5"
+                            ],
+                            "interpretedValue": "5"
+                        }
+                    }
+                },
+                "confirmationState": "None",
+                "name": "StoreFeedback",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "intent": {
+                "slots": {
+                    "CompanySlot": null,
+                    "FinanceProfSlotType": null,
+                    "HowSlot": null,
+                    "VerbSlotType": null,
+                    "CountrySlot": null,
+                    "ChangeSlotType": null,
+                    "RequestSlotType": null,
+                    "NeedSlotType": null,
+                    "SpeakSlotType": null,
+                    "ErrorSlotType": null,
+                    "AgentSlotType": null,
+                    "PolicySlotType": null
+                },
+                "confirmationState": "None",
+                "name": "FAQGeneralLiveAgent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.21
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQCasualTalkComplimentsIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.21
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "WelcomeIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.15
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "sessionAttributes": {
+            "Kendra_Intent_Name": "QuestionAnswered-Yes"
+        },
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 897
+                },
+                "name": "question_answered_yes",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 1,
+                    "timeToLiveInSeconds": 897
+                },
+                "name": "question_answered_no",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 4,
+                    "timeToLiveInSeconds": 897
+                },
+                "name": "store-feedback",
+                "contextAttributes": {}
+            },
+            {
+                "timeToLive": {
+                    "turnsToLive": 4,
+                    "timeToLiveInSeconds": 897
+                },
+                "name": "question_answered",
+                "contextAttributes": {}
+            }
+        ],
+        "intent": {
+            "slots": {
+                "FeedbackDescription": null,
+                "FeedbackRating": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "5",
+                        "resolvedValues": [
+                            "5"
+                        ],
+                        "interpretedValue": "5"
+                    }
+                }
+            },
+            "confirmationState": "None",
+            "name": "StoreFeedback",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "71880a46-4a08-4e31-95ea-097b7c3f6a62"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "StoreFeedback"
+            },
+            "transcription": "5 Stars",
+            "resolvedSlots": {
+                "FeedbackRating": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "5",
+                        "resolvedValues": [
+                            "5"
+                        ]
+                    }
+                }
+            },
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasId": "REBN1X1GGP",
+        "aliasName": "dev",
+        "name": "DeathClaim-FAQ-dev",
+        "version": "25",
+        "localeId": "en_US",
+        "id": "8ZX7ELPDZE"
+    }
+},"response":[{"contentType": "PlainText", "content": "Thank you. We always strive to improve.<br><br>If you have more questions, you can return to the Main Menu."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Go back to Main Menu\"]}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"text\": \"<hr style=\\\"margin-top: 10px; margin-bottom: 10px;\\\"/>If you still have not registered you're missing out on 24/7 digital service.\"}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions_links\": [{\"type\": \"hyperlink\", \"text\": \"Register for an Online Account\", \"value\": \"http://pru.us/RegisterAnnRW\"}]}}"}, {"contentType": "CustomPayload", "content": "{\"website\": {\"text\": \"If you are registered, you can sign up for E-delivery or update your online account by visiting your <a href=\\\"https://pru.us/ProfileAnnRW\\\" target=\\\"_blank\\\" role=\\\"link\\\" aria-label=\\\"Profile Page\\\" tabindex=0>Profile Page</a>.<br><br>Did you know you can <button id=\\\"botGoto\\\" title=\\\"Processing a Partial or Full Withdrawal\\\" aria-label=\\\"process your withdrawals\\\" role=\\\"button\\\" tabindex=0>process your withdrawals</button> online too?\"}}"}]
+}

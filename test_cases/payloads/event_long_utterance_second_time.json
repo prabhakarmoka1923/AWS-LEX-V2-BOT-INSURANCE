@@ -1,0 +1,133 @@
+{"request":
+    {
+    "inputMode": "Text",
+    "sessionId": "f00912e5-934c-4395-9f97-d3f7d4c05174",
+    "inputTranscript": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "intent": {
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.82,
+            "intent": {
+                "name": "FAQOtherOutOfScopeIntent",
+                "slots": {
+                    "CompanySlot": null,
+                    "HowSlot": null,
+                    "WhereSlot": null,
+                    "NumberSlot": null,
+                    "NeedSlot": null,
+                    "FormSlot": null,
+                    "OutOfScopeSlot": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.78,
+            "intent": {
+                "name": "FAQGeneralHoldTimeIntent",
+                "slots": {
+                    "HoldStatusSlotType": null,
+                    "DurationSlot": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.77,
+            "intent": {
+                "name": "FAQGeneralSubmitFormIntent",
+                "slots": {
+                    "POASlotType": null,
+                    "NeedSlot": null,
+                    "MailSlot": null,
+                    "ReturnSlot": null,
+                    "HowSlot": null,
+                    "SendSlot": null,
+                    "WhereSlot": null,
+                    "CitySlot": null,
+                    "AnnuitySlotType": null,
+                    "PersonSlot": null,
+                    "RequestReceiveSlotType": null,
+                    "FormSlot": null,
+                    "W8BENSlotType": null,
+                    "OnlineSlot": null,
+                    "WhatSlot": null,
+                    "CompanyNameSlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.76,
+            "intent": {
+                "name": "FAQSetupSystematicWithdrawalIntent",
+                "slots": {
+                    "MoneySlot": null,
+                    "withdrawSlot": null,
+                    "startSlot": null,
+                    "FormSlot": null,
+                    "howSlot": null,
+                    "PaymentSlot": null,
+                    "MonthlySlotType": null
+                },
+                "state": "InProgress",
+                "confirmationState": "None"
+            }
+        }
+    ],
+    "bot": {
+        "name": "Annuities-FAQ-dev",
+        "version": "106",
+        "localeId": "en_US",
+        "id": "KOQDXDGXFA",
+        "aliasId": "QFXU4ETS60",
+        "aliasName": "dev"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "originatingRequestId": "05ef7d9b-f460-49fc-8139-04413fe41683",
+        "sessionAttributes": {
+            "sagemaker_called": "true",
+            "Utterance_History": "I want to try a long sentence which is 100 charcters and going to fallbackI want to try a long sentence which is 100 charcters and going to fallback, Initial Intent, ",
+            "Lex_Intent_Score": "0",
+            "Lex_Intent_Name": "FallbackIntent",
+            "fallbackCount": "2"
+        },
+        "activeContexts": [],
+        "intent": {
+            "name": "FallbackIntent",
+            "slots": {},
+            "state": "InProgress",
+            "confirmationState": "None"
+        }
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "DialogCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "FallbackIntent"
+            },
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1.0,
+            "transcription": "I want to try a long sentence which is 100 charcters and going to fallback,I want to try a long sentence which is 100 charcters and going to fallback"
+        }
+    ]
+},
+"response": [{"contentType": "PlainText", "content": "Unfortunately, I can't help you with that at the moment.<br><br>You can visit our <a href=\"https://www.prudential.com/faq\" target=\"_blank\" role=\"link\" aria-label=\"FAQs\" tabindex=0>FAQs</a> site or call our Contact Center, Monday through Friday from 8:00 a.m. to 6:00 p.m. ET at<br><a href='tel:8887782888'>(888) 778-2888</a> for your queries.<br><br>You can also select below to go to the Main Menu."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Main Menu\"]}}"}]
+}

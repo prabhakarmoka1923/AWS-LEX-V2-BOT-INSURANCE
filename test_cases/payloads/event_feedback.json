@@ -1,0 +1,97 @@
+{
+    "request":{
+    "sessionId": "77722842125373",
+    "inputTranscript": "feedback",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FeedbackIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQValuesBenefitValueIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.2
+        },
+        {
+            "intent": {
+                "slots": {
+                    "RMDSlot": null
+                },
+                "confirmationState": "None",
+                "name": "FAQProcessingRMDIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.19
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FAQAccMaintWhoAreMyBenesIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.18
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "WelcomeIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.18
+        }
+    ],
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "activeContexts": [
+            {
+                "timeToLive": {
+                    "turnsToLive": 4,
+                    "timeToLiveInSeconds": 84
+                },
+                "name": "more_suggestions",
+                "contextAttributes": {}
+            }
+        ],
+        "intent": {
+            "slots": {},
+            "confirmationState": "None",
+            "name": "FeedbackIntent",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "ea84a30e-b6b6-44e2-af29-0f90ffdf07c1"
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedSlots": {},
+            "resolvedContext": {
+                "intent": "FeedbackIntent"
+            },
+            "transcription": "feedback",
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "Annuities-FAQ-qa",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "LWLNZYBBOQ"
+    }
+},
+"response": [{"contentType": "CustomPayload", "content": "{\"website\": {\"feedback\": \"That's great. I'm happy to help!\\n\\nCould you please rate your experience out of 5 stars? We would really appreciate it.\"}}"}]
+}

@@ -1,0 +1,151 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "sessionId": "8655da9e-1c42-468b-b782-8d02554ba60c",
+        "inputTranscript": "Show more options",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "MoreSuggestions",
+                    "slots": {},
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.8,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQRegisterSelfServiceIntent",
+                    "slots": {
+                        "HowSlot": null,
+                        "CountrySlot": null,
+                        "IRASlotType": null,
+                        "AnnuitySlotType": null,
+                        "RegisterSlotType": null,
+                        "OnlineSlot": null,
+                        "LoginSlotType": null,
+                        "WantSlot": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.77,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQAccMaintUpdateTaxWithholdingIntent",
+                    "slots": {
+                        "WithdrawSlotType": null,
+                        "ChangeSlotType": null,
+                        "HowSlotType": null,
+                        "TaxSlotType": null,
+                        "WithheldSlotType": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.76,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQAccMaintAccountCorrespondenceCopyIntent",
+                    "slots": {
+                        "WillorWouldSlotType": null,
+                        "StatementSlotType": null,
+                        "request_slot": null,
+                        "NeedSlot": null,
+                        "PaymentsSlotType": null,
+                        "CorrespondenceSlot": null,
+                        "MonthlySlotType": null,
+                        "HowSlot": null,
+                        "VerbSlot": null,
+                        "DateSlotType": null,
+                        "WhereSlot": null,
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "FormSlotType": null
+                    },
+                    "state": "InProgress"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.76,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQSIMP_Generic_Intent",
+                    "slots": {
+                        "1099RSlotType": null,
+                        "QuestionNeedToSlot": null,
+                        "EmailSlotType": null,
+                        "VerbTakeSlotType": null,
+                        "questionAboutSlot": null,
+                        "QuestionWhenSlotType": null,
+                        "QuestionHowCanISlotType": null,
+                        "TaxSlotType": null,
+                        "DateSlotType": null,
+                        "CopySlotType": null,
+                        "AnnuitySlotType": null,
+                        "NumberSlot": null,
+                        "FormSlotType": null,
+                        "RequestReceiveSlotType": null,
+                        "simpleGeneric_topic_slot": null
+                    },
+                    "state": "InProgress"
+                }
+            }
+        ],
+        "bot": {
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev",
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "a12600b0-001c-4a0e-b718-517f86c39837",
+            "sessionAttributes": {
+                "Utterance_History": "Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "WelcomeIntent"
+            },
+            "activeContexts": [
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 84,
+                        "turnsToLive": 4
+                    },
+                    "name": "more_suggestions",
+                    "contextAttributes": {}
+                }
+            ],
+            "intent": {
+                "confirmationState": "None",
+                "name": "MoreSuggestions",
+                "slots": {},
+                "state": "InProgress"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "DialogCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "MoreSuggestions"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1.0,
+                "transcription": "Show more options"
+            }
+        ]
+    },
+    "response": [{"contentType": "PlainText", "content": "Please select a relevant option below or type in a question."}, {"contentType": "CustomPayload", "content": "{\"website\": {\"suggestions\": [\"Duplicate statements and correspondence\", \"Values\", \"Beneficiary Updates/Information\", \"Update my contact information\"]}}"}]
+}

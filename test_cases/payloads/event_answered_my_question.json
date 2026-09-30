@@ -1,0 +1,132 @@
+{
+    "request": {
+        "inputMode": "Text",
+        "sessionId": "779681f5-2953-496b-bd00-29fd8a536acb",
+        "inputTranscript": "Yes, it answered my question",
+        "interpretations": [
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 1.0,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "QuestionAnswered-Yes",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FallbackIntent",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.89,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQOtherMenuIntent",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.87,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "QuestionAnswered-No",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                }
+            },
+            {
+                "interpretationSource": "Lex",
+                "nluConfidence": 0.79,
+                "intent": {
+                    "confirmationState": "None",
+                    "name": "FAQOtherFeedbackIntent",
+                    "slots": {},
+                    "state": "ReadyForFulfillment"
+                }
+            }
+        ],
+        "bot": {
+            "aliasId": "QFXU4ETS60",
+            "aliasName": "dev",
+            "name": "Annuities-FAQ-dev",
+            "version": "106",
+            "localeId": "en_US",
+            "id": "KOQDXDGXFA"
+        },
+        "responseContentType": "text/plain; charset=utf-8",
+        "sessionState": {
+            "originatingRequestId": "926f5ad0-62d3-41ba-8169-9e3088e25f91",
+            "sessionAttributes": {
+                "Utterance_History": "Required Minimum Distribution (RMD), Initial Intent, ",
+                "Lex_Intent_Score": "1.0",
+                "Lex_Intent_Name": "FAQAboutRMDIntent"
+            },
+            "activeContexts": [
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "more_suggestions",
+                    "contextAttributes": {
+                        "more_suggestions": "Will Prudential automatically send RMD, When does RMD need to be satisfied, Satisfying your RMD"
+                    }
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_yes",
+                    "contextAttributes": {}
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_no",
+                    "contextAttributes": {}
+                },
+                {
+                    "timeToLive": {
+                        "timeToLiveInSeconds": 176,
+                        "turnsToLive": 1
+                    },
+                    "name": "question_answered_more_info",
+                    "contextAttributes": {
+                        "suggestions": "Processing an RMD payment, Updating existing RMD program, RMD amount,Show more options"
+                    }
+                }
+            ],
+            "intent": {
+                "confirmationState": "None",
+                "name": "QuestionAnswered-Yes",
+                "slots": {},
+                "state": "ReadyForFulfillment"
+            }
+        },
+        "messageVersion": "1.0",
+        "invocationSource": "FulfillmentCodeHook",
+        "transcriptions": [
+            {
+                "resolvedContext": {
+                    "intent": "QuestionAnswered-Yes"
+                },
+                "resolvedSlots": {},
+                "transcriptionConfidence": 1.0,
+                "transcription": "Yes, it answered my question"
+            }
+        ]
+    },
+    "response": [{"contentType": "CustomPayload", "content": "{\"website\": {\"feedback\": \"That's great. I'm happy to help!\\n\\nCould you please rate your experience out of 5 stars? We would really appreciate it.\"}}"}]
+}
