@@ -1,0 +1,166 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: >
+  Annuities FAQ Bot (Rockwell)
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+        # Tags will be included in tags.json
+        - E9054
+        - E9361
+Parameters:
+  ZipBucket:
+    Type: String
+
+  Name:
+    Type: String
+
+  LambdaArn:
+    Type: String
+
+  BusinessUnit:
+    Type: String
+
+  LogRetentionInDays:
+    Type: String
+
+  Tier:
+    Type: String
+
+Conditions:
+  isProd: !Equals [!Ref Tier, "prod"]
+
+Resources:
+
+  LogGroup:
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Type: AWS::Logs::LogGroup
+    Properties:
+      RetentionInDays: !Ref LogRetentionInDays
+      KmsKeyId: !ImportValue "gbtskeychain"
+
+  LifecycleLambdaLogGroupSubscription:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      DestinationArn: !ImportValue "KINESIS-CDO-LEX::Stream"
+      FilterPattern: ""
+      LogGroupName: !Ref LogGroup
+      RoleArn: !ImportValue "KINESIS-CDO-LEX::Role"
+
+  Role:
+    Type: AWS::IAM::Role
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          # IAM role should not allow * resource on its permissions policy
+          - id: W11
+            reason: |
+              Poly requires * as synthesize speech is not a resouce based
+              permission
+    Properties:
+      Path: !Sub "/${BusinessUnit}/lex/"
+      PermissionsBoundary: !ImportValue GT-Devops-DefaultBoundary
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lexv2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: DescribeRulesPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - polly:SynthesizeSpeech
+                Resource:
+                  - "*"
+              - Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource:
+                  - !Ref LambdaArn
+              - Effect: Allow
+                Action:
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource:
+                  - "*"
+              - Effect: Deny
+                Action:
+                  - "logs:CreateLogGroup"
+                Resource:
+                  - "*"
+              - Effect: Allow
+                Action:
+                  - kms:Encrypt
+                  - kms:Decrypt
+                  - kms:ReEncrypt*
+                  - kms:GenerateDataKey*
+                  - kms:DescribeKey
+                Resource:
+                  - !ImportValue "gbtskeychain"
+
+  InvokeLambda:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LambdaArn
+      Action: "lambda:InvokeFunction"
+      Principal: lex.amazonaws.com
+      SourceArn: !Sub "arn:aws:lex:${AWS::Region}:${AWS::AccountId}:bot-alias/\
+        ${BotCFN.Id}/*"
+
+  BotCFN:
+    Type: AWS::Lex::Bot
+    Properties:
+      AutoBuildBotLocales: true
+      BotFileS3Location:
+        S3Bucket: !Ref ZipBucket
+        S3ObjectKey: "PLACEHOLDER/bot.zip"
+      Name: !If
+        - isProd
+        - !Sub "${Name}"
+        - !Sub "${Name}-${Tier}"
+      RoleArn: !GetAtt Role.Arn
+      DataPrivacy:
+        ChildDirected: false
+      IdleSessionTTLInSeconds: 300
+      Description: Annuities FAQ Bot
+
+  BotVersionCFP2:
+    Type: AWS::Lex::BotVersion
+    Properties:
+      BotId: !Ref BotCFN
+      BotVersionLocaleSpecification:
+        - LocaleId: en_US
+          BotVersionLocaleDetails:
+            SourceBotVersion: DRAFT
+      Description: Annuities FAQ Bot Version
+
+  BotAliasCFN:
+    Type: AWS::Lex::BotAlias
+    Properties:
+      BotId: !Ref BotCFN
+      BotAliasName: !Ref Tier
+      BotAliasLocaleSettings:
+        - LocaleId: en_US
+          BotAliasLocaleSetting:
+            Enabled: true
+            CodeHookSpecification:
+              LambdaCodeHook:
+                CodeHookInterfaceVersion: "1.0"
+                LambdaArn: !Ref LambdaArn
+      BotVersion: !GetAtt BotVersionCFP2.BotVersion
+      ConversationLogSettings:
+        TextLogSettings:
+          - Destination:
+              CloudWatch:
+                LogPrefix: !Ref Name
+                CloudWatchLogGroupArn: !GetAtt LogGroup.Arn
+            Enabled: false
+      SentimentAnalysisSettings:
+        DetectSentiment: false

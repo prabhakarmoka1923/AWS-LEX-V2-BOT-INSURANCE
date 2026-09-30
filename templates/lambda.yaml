@@ -1,0 +1,161 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  Annuities FAQ Lambda (Rockwell)
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks:
+        # Tags will be included in tags.json
+        - E9013
+Parameters:
+  BusinessUnit:
+    Type: String
+
+  DeployerBucket:
+    Type: String
+
+  DeployerPath:
+    Type: String
+
+  ExceptionNumber:
+    Type: String
+
+  LogRetentionInDays:
+    Type: String
+
+  Tier:
+    Type: String
+
+  SecretName:
+    Type: String
+
+  Layer:
+    Type: String
+
+  SageMakerEndPoint:
+    Type: String
+
+Resources:
+
+  LogGroup:
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/aws/lambda/${Lambda}"
+      RetentionInDays: !Ref LogRetentionInDays
+      KmsKeyId: !ImportValue gbtskeychain
+
+  LifecycleLambdaLogGroupSubscription:
+    Type: AWS::Logs::SubscriptionFilter
+    Properties:
+      DestinationArn: !ImportValue "KINESIS-CDO-LEX::Stream"
+      FilterPattern: ""
+      LogGroupName: !Ref LogGroup
+      RoleArn: !ImportValue "KINESIS-CDO-LEX::Role"
+
+  LambdaRole:
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W11
+            reason: >-
+              Log streams are dynamic
+    Type: AWS::IAM::Role
+    Properties:
+      PermissionsBoundary: !ImportValue GT-Devops-DefaultBoundary
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          Effect: Allow
+          Principal:
+            Service: lambda.amazonaws.com
+          Action: sts:AssumeRole
+      Path: !Sub "/${BusinessUnit}/"
+      Policies:
+        - PolicyName: Policy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'ec2:DescribeSecurityGroups'
+                  - 'ec2:DescribeSubnets'
+                  - 'ec2:CreateNetworkInterface'
+                  - 'ec2:DescribeNetworkInterfaces'
+                  - 'ec2:DeleteNetworkInterface'
+                  - 'ec2:DescribeDhcpOptions'
+                  - 'ec2:DescribeVpcs'
+                  - 'ec2:CreateNetworkInterfacePermission'
+                Resource:
+                  - '*'
+              - Effect: Allow
+                Action:
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource:
+                  - "*"
+              - Effect: Deny
+                Action:
+                  - "logs:CreateLogGroup"
+                Resource:
+                  - "*"
+              - Effect: Allow
+                Action:
+                  - kms:Encrypt
+                  - kms:Decrypt
+                  - kms:ReEncrypt*
+                  - kms:GenerateDataKey*
+                  - kms:DescribeKey
+                Resource:
+                  - !ImportValue "gbtskeychain"
+              - Effect: Allow
+                Action:
+                  - secretsmanager:GetSecretValue
+                Resource:
+                  - "*"
+
+  Lambda:
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W58
+            reason: >-
+              Permissioning to log group is handled automatically by the role
+          - id: W92
+            reason: >-
+              Unreserved concurrency due to this being ETL
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: index.lambda_handler
+      Code:
+        S3Bucket: !Ref DeployerBucket
+        S3Key: !Sub "${DeployerPath}/lambda.zip"
+      Description: !Ref AWS::StackName
+      MemorySize: 128
+      Role: !GetAtt LambdaRole.Arn
+      Environment:
+        Variables:
+          ENVIRONMENT: !Ref Tier
+          SMARN: !Ref SecretName
+          SAGE_MAKER_BASEURL: !Ref SageMakerEndPoint
+      KmsKeyArn: !ImportValue gbtskeychain
+      Layers:
+        - !Ref Layer
+      Runtime: python3.9
+      Timeout: 120
+      VpcConfig:
+        SecurityGroupIds:
+          - !ImportValue core-compliant-securitygroup
+        SubnetIds:
+          - !ImportValue VpcV3-Native-1
+          - !ImportValue VpcV3-Native-2
+          - !ImportValue VpcV3-Native-3
+      Tags:
+        - Key: __Exception-LambdaRuntime
+          Value: !Ref ExceptionNumber
+
+Outputs:
+  LambdaArn:
+    Value: !GetAtt Lambda.Arn
