@@ -1,0 +1,12 @@
+*.pyc
+*/__pycache__/*
+.log
+artifacts/*
+.DS_Store
+.persistent_*
+tooling*
+project.json
+example-project/keith.zip
+test
+*/faq/*
+.coverage

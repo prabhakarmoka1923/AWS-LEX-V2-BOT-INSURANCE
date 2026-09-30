@@ -1,0 +1,91 @@
+---
+Global:
+  Environment:
+    Fn::FromFile: !Sub
+      - config/${tier}.yaml
+      - tier: !Query Environment.CE_TIER
+
+  Options:
+    save-output: "output.json"
+    tags: "tags.json"
+    skip-no-update: true
+Jobs:
+  - Name: ZipArtifact
+    Type: create-artifact
+    Options:
+      filename: artifact.zip
+      files:
+        - buildspecs/*
+        - buildspec.yaml
+        - templates/*
+        - src/*
+        - src/**/*
+        - layer/*
+        - bot/bot.zip
+  - Name: DeployLayer
+    Options:
+      secret: /gt/ce/artifactory
+      requirements: layer/requirements.txt
+      type: python3.9
+      stack-name: !Sub
+        - ${ApplicationIDName}-annuities-faq-layer-${Tier}
+        - ApplicationIDName: !Query Environment.ApplicationIDName
+          Tier: !Query Environment.CE_TIER
+    Parameters:
+      LayerName: cdo-lex-cryptography-layer
+    Type: deploy-layer
+  - Name: CreateBucket
+    Options:
+      pattern: s3
+      pattern-version: latest
+      stack-name: !Sub
+        - ${ApplicationIDName}-annuities-faq-bucket-${Tier}
+        - ApplicationIDName: !Query Environment.ApplicationIDName
+          Tier: !Query Environment.CE_TIER
+    Parameters:
+      ApplicationIDName: !Query Environment.ApplicationIDName
+      CostCenter: !Query Environment.CostCenter
+      RSMs: !Query Environment.RSMs
+    Type: deploy-pattern
+  - Name: CreateLambda
+    Options:
+      artifact-file: !Query ZipArtifact.filename
+      buildspec: buildspecs/lambda.yaml
+      deploy-template: templates/lambda.yaml
+      name: CreateLambda
+      stack-name: !Sub
+        - ${ApplicationIDName}-annuities-faq-lambda-${Tier}
+        - ApplicationIDName: !Query Environment.ApplicationIDName
+          Tier: !Query Environment.CE_TIER
+      inject-parameters:
+        - DeployerBucket
+        - DeployerPath
+    Parameters:
+      BusinessUnit: !Query Environment.BusinessUnit
+      ExceptionNumber: "2109031258"
+      LogRetentionInDays: !Query Environment.LogRetentionInDays
+      Tier: !Query Environment.CE_TIER
+      SecretName: !Query Environment.SecretName
+      SageMakerEndPoint: !Query Environment.SageMakerEndPoint
+      Layer: !GetOutput DeployLayer.LayerArn
+    Type: deploy-artifact
+  - Name: CreateBot
+    Options:
+      artifact-file: !Query ZipArtifact.filename
+      buildspec: buildspecs/bot.yaml
+      build-vars:
+        BUCKET: !GetOutput CreateBucket.S3BucketName
+      deploy-template: templates/bot.yaml
+      name: CreateBot
+      stack-name: !Sub
+        - ${ApplicationIDName}-annuities-faq-bot-${Tier}
+        - ApplicationIDName: !Query Environment.ApplicationIDName
+          Tier: !Query Environment.CE_TIER
+    Parameters:
+      BusinessUnit: !Query Environment.BusinessUnit
+      ZipBucket: !GetOutput CreateBucket.S3BucketName
+      LambdaArn: !GetOutput CreateLambda.LambdaArn
+      LogRetentionInDays: !Query Environment.LogRetentionInDays
+      Name: "Annuities-FAQ"
+      Tier: !Query Environment.CE_TIER
+    Type: deploy-artifact
